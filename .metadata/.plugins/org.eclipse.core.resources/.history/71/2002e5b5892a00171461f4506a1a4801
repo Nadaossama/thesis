@@ -1,0 +1,77 @@
+package net.codejava.spring.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+ 
+import javax.sql.DataSource;
+ 
+import net.codejava.spring.model.Device;
+ 
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.jdbc.core.RowMapper;
+
+public class DeviceDAOImpl implements DeviceDAO {
+	private JdbcTemplate jdbcTemplate;
+	 
+    public DeviceDAOImpl(DataSource dataSource) {
+        jdbcTemplate = new JdbcTemplate(dataSource);
+    }
+ 
+    @Override
+    public void saveOrUpdate(Device device) {
+        // implementation details goes here...
+    	 if (device.getID() > 0) {
+    	        // update
+    	        String sql = "UPDATE Device SET Name=?, IPaddress=?, "
+    	                    + " WHERE ID=?";
+    	        jdbcTemplate.update(sql, device.getName(),
+    	                device.getIPAddress(), device.getID());
+    	    } else {
+    	        // insert
+    	        String sql = "INSERT INTO Device (Name, IPaddress)"
+    	                    + " VALUES (?, ?)";
+    	        jdbcTemplate.update(sql, device.getName(),
+    	                device.getIPAddress());
+    	    }
+    }
+ 
+    @Override
+    public void delete(int deviceId) {
+        // implementation details goes here...
+    	String sql = "DELETE FROM Device WHERE ID=?";
+        jdbcTemplate.update(sql, deviceId);
+    }
+ 
+    @Override
+    public List<Device> list() {
+        // implementation details goes here...
+    	String sql = "SELECT * FROM Device";
+        List<Device> listDevice = jdbcTemplate.query(sql, new RowMapper<Device>() {
+     
+            @Override
+            public Device mapRow(ResultSet rs, int rowNum) throws SQLException {
+            	Device aDevice = new Device();
+     
+            	aDevice.setID(rs.getInt("ID"));
+                aDevice.setName(rs.getString("Name"));
+                aDevice.setIPAddress(rs.getString("IPaddress"));
+     
+                return aDevice;
+            }
+     
+        });
+     
+        return listDevice;
+    }
+ 
+    @Override
+    public Device get(int deviceId) {
+        // implementation details goes here...
+    	return new Device();
+    }
+
+}

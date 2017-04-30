@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Sun Apr 30 18:21:11 CEST 2017
+org.eclipse.jst.j2ee.server\:/binary\:/Users/Noody/.m2/repository/org/springframework/spring-web/4.0.3.RELEASE/spring-web-4.0.3.RELEASE.jar=/Applications/sts-bundle/pivotal-tc-server-developer-3.2.4.SR1/tcServer/wtpwebapps/SpringMvcJdbcTemplate/WEB-INF/lib/spring-web-4.0.3.RELEASE.jar
+org.eclipse.jst.j2ee.server\:MySpringMvc=/Applications/sts-bundle/pivotal-tc-server-developer-3.2.4.SR1/tcServer/wtpwebapps/MySpringMvc
+org.eclipse.jst.j2ee.server\:SpringMvcJdbcTemplate=/Applications/sts-bundle/pivotal-tc-server-developer-3.2.4.SR1/tcServer/wtpwebapps/SpringMvcJdbcTemplate

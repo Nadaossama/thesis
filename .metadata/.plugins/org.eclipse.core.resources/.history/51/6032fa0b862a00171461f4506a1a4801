@@ -1,0 +1,61 @@
+package net.codejava.spring.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+ 
+import javax.sql.DataSource;
+ 
+import net.codejava.spring.model.Device;
+ 
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.jdbc.core.RowMapper;
+
+public class DeviceDAOImpl implements DeviceDAO {
+	private JdbcTemplate jdbcTemplate;
+	 
+    public DeviceDAOImpl(DataSource dataSource) {
+        jdbcTemplate = new JdbcTemplate(dataSource);
+    }
+ 
+    @Override
+    public void saveOrUpdate(Device device) {
+        // implementation details goes here...
+    	 if (device.getId() > 0) {
+    	        // update
+    	        String sql = "UPDATE device SET name=?, email=?, address=?, "
+    	                    + "telephone=? WHERE device_id=?";
+    	        jdbcTemplate.update(sql, device.getName(), device.getEmail(),
+    	                device.getAddress(), device.getTelephone(), device.getId());
+    	    } else {
+    	        // insert
+    	        String sql = "INSERT INTO device (name, email, address, telephone)"
+    	                    + " VALUES (?, ?, ?, ?)";
+    	        jdbcTemplate.update(sql, device.getName(), device.getEmail(),
+    	                device.getAddress(), device.getTelephone());
+    	    }
+    }
+ 
+    @Override
+    public void delete(int deviceId) {
+        // implementation details goes here...
+    }
+ 
+    @Override
+    public List<Device> list() {
+        // implementation details goes here...
+    	List<Device> List = new ArrayList<Device>();
+    	List.add(new Device("nothing","127.0.0.1"));
+    	return List;
+    }
+ 
+    @Override
+    public Device get(int deviceId) {
+        // implementation details goes here...
+    	return new Device();
+    }
+
+}

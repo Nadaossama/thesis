@@ -1,0 +1,5 @@
+package net.codejava.springmvc;
+
+public class Device {
+
+}

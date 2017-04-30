@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="gs-consuming-rest-complete"/>
+<aop-project name="gs-accessing-data-mysql-initial"/>
+<aop-project name="gs-consuming-rest-initial"/>
+<aop-project name="MySpringMvc"/>
+<aop-project name="Decision_Support"/>
+<aop-project name="gs-accessing-data-mysql-complete"/>
+</aop-reference-model>

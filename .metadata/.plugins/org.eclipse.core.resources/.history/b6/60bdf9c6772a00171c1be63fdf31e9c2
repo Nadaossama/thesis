@@ -1,0 +1,16 @@
+package net.codejava.spring.dao;
+import java.util.List;
+
+import net.codejava.spring.model.Device;
+
+public class DeviceDAO {
+	
+	 public void saveOrUpdate(Contact contact);
+     
+	    public void delete(int contactId);
+	     
+	    public Contact get(int contactId);
+	     
+	    public List<Contact> list();
+
+}
