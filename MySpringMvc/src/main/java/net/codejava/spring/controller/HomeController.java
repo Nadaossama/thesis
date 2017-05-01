@@ -1,7 +1,10 @@
 package net.codejava.spring.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -13,6 +16,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import net.codejava.spring.dao.DeviceDAO;
 import net.codejava.spring.model.Device;
@@ -24,24 +28,10 @@ public class HomeController {
 
 	 @Autowired
 	    private DeviceDAO deviceDAO;
-	 
-//	    public static final String home = "/";
-//	    public static final String newDevice = "/newDevice";
-//	    public static final String saveDevice = "/saveDevice";
-//	    public static final String deleteDevice = "/deleteDevice";
-//	    public static final String editDevice = "/editDevice";
-	    
-//	@RequestMapping(value="/")
-//	public ModelAndView test(HttpServletResponse response) throws IOException{
-//		return new ModelAndView("home");
-//	}
 	
 	@RequestMapping(value="/")
 	public ModelAndView listDevice(ModelAndView model) throws IOException{
 	    List<Device> listDevice = deviceDAO.list();
-//	    for (Device item : listDevice) {
-//	        System.out.println(item.getName());
-//	    }
 	    model.addObject("listDevice", listDevice);
 	    model.setViewName("home");
 	 
@@ -58,7 +48,6 @@ public class HomeController {
 	
 	@RequestMapping(value = "/saveDevice", method = RequestMethod.POST)
 	public ModelAndView saveDevice(@ModelAttribute Device device) {
-		System.out.print("blabla");
 	    deviceDAO.saveOrUpdate(device);
 	    return new ModelAndView("redirect:/");
 	}
@@ -72,12 +61,24 @@ public class HomeController {
 	
 	@RequestMapping(value = "/editDevice", method = RequestMethod.GET)
 	public ModelAndView editDevice(HttpServletRequest request) {
-		System.out.println("in edit Device" +request.getParameter("ID") );
 	    int deviceId = Integer.parseInt(request.getParameter("ID"));
 	    Device device = deviceDAO.get(deviceId);
+	    
 	    ModelAndView model = new ModelAndView("DeviceForm");
-	    model.addObject("device", device);
-	 
+	    model.addObject("Device", device);
 	    return model;
+	}
+	
+	@RequestMapping(value= "/dataVisualization", method = RequestMethod.GET)
+	public ModelAndView ShowDataVisualizatioForm(ModelAndView model) {
+		    model.setViewName("DataVisualizationForm");
+		    
+		    return model;
+	}
+	
+	@RequestMapping(value= "/decisionSupport", method = RequestMethod.GET)
+	public ModelAndView ShowDecisionSupportForm(ModelAndView model) {
+		    model.setViewName("DecisionSupportForm");
+		    return model;
 	}
 }

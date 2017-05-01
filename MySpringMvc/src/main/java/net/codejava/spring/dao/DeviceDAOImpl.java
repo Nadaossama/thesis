@@ -23,12 +23,13 @@ public class DeviceDAOImpl implements DeviceDAO {
     @Override
     public void saveOrUpdate(Device device) {
         // implementation details goes here...
+    	System.out.println(device.getName());
+    	System.out.println(device.getIPaddress());
+    	System.out.println(device.getID());
     	 if (device.getID() > 0) {
     	        // update
-    	        String sql = "UPDATE Device SET Name=?, IPaddress=?, "
-    	                    + " WHERE ID=?";
-    	        jdbcTemplate.update(sql, device.getName(),
-    	                device.getIPaddress(), device.getID());
+    	        String sql = "UPDATE Device SET Name=?, IPaddress=? WHERE ID=?";
+    	        int status = jdbcTemplate.update(sql, device.getName() ,device.getIPaddress(), device.getID());
     	    } else {
     	        // insert
     	        String sql = "INSERT INTO Device (Name, IPaddress)"
@@ -73,7 +74,8 @@ public class DeviceDAOImpl implements DeviceDAO {
         // implementation details goes here...
     	String sql = "SELECT * FROM Device WHERE ID=" + deviceId;
         return jdbcTemplate.query(sql, new ResultSetExtractor<Device>() {
-     
+        	
+        	
             @Override
             public Device extractData(ResultSet rs) throws SQLException,
                     DataAccessException {
