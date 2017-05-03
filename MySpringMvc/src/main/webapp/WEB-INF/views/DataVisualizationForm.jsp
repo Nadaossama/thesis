@@ -36,7 +36,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="${pageContext.request.contextPath}">Home</a></li>
+        <li class="active"><a href="${pageContext.request.contextPath}/home">Home</a></li>
         <li><a href="${pageContext.request.contextPath}/dataVisualization">Data Visualization</a></li>
         <li><a href="${pageContext.request.contextPath}/decisionSupport">Decision Support</a></li>
       </ul>
@@ -54,6 +54,10 @@
          <br>
          <h3>Energy Output / Time</h3>
          <div id="chart1"></div>
+          <br>
+         <h3>Other</h3>
+         <div id="chart2"></div>
+         </div>
          <script>
          var chart = c3.generate({
         	    data: {
@@ -86,6 +90,75 @@
         	    },
         	    bindto: '#chart1'
         	});
+         
+         var chart2 = c3.generate({
+        	    data: {
+        	        x: 'x',
+        	        columns: [
+        	            ['x', '2012-12-29', '2012-12-30', '2012-12-31'],
+        	            ['data1', 230, 300, 330],
+        	            ['data2', 190, 230, 200],
+        	            ['data3', 90, 130, 180],
+        	        ]
+        	    },
+        	    axis: {
+        	        x: {
+        	            type: 'timeseries',
+        	            tick: {
+        	                format: '%m/%d',
+        	            }
+        	        }
+        	    },
+        	    bindto: '#chart2'
+        	});
+
+        	setTimeout(function () {
+        	    chart.flow({
+        	        columns: [
+        	            ['x', '2013-01-11', '2013-01-21'],
+        	            ['data1', 500, 200],
+        	            ['data2', 100, 300],
+        	            ['data3', 200, 120],
+        	        ],
+        	        duration: 1500,
+        	        done: function () {
+        	            chart.flow({
+        	                columns: [
+        	                    ['x', '2013-02-11', '2013-02-12', '2013-02-13', '2013-02-14'],
+        	                    ['data1', 200, 300, 100, 250],
+        	                    ['data2', 100, 90, 40, 120],
+        	                    ['data3', 100, 100, 300, 500]
+        	                ],
+        	                length: 0,
+        	                duration: 1500,
+        	                done: function () {
+        	                    chart.flow({
+        	                        columns: [
+        	                            ['x', '2013-03-01', '2013-03-02'],
+        	                            ['data1', 200, 300],
+        	                            ['data2', 150, 250],
+        	                            ['data3', 100, 100]
+        	                        ],
+        	                        length: 2,
+        	                        duration: 1500,
+        	                        done: function () {
+        	                            chart.flow({
+        	                                columns: [
+        	                                    ['x', '2013-03-21', '2013-04-01'],
+        	                                    ['data1', 500, 200],
+        	                                    ['data2', 100, 150],
+        	                                    ['data3', 200, 400]
+        	                                ],
+        	                                to: '2013-03-01',
+        	                                duration: 1500,
+        	                            });
+        	                        }
+        	                    });
+        	                }
+        	            });
+        	        },
+        	    });
+        	}, 1000);
          </script>
        
   </div>

@@ -14,59 +14,34 @@
   <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css">
   <script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+    
+    <!-- Custom styles for this template -->
+    <link href="resources/signin.css" rel="stylesheet">
 </head>
 <body>
+ <div class="container">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">HydroConnect</a>
-    </div>
-    
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="${pageContext.request.contextPath}">Home</a></li>
-        <li><a href="${pageContext.request.contextPath}/dataVisualization">Data Visualization</a></li>
-        <li><a href="${pageContext.request.contextPath}/decisionSupport">Decision Support</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-<div  class="container theme-showcase" role="main">    
-  <div class="jumbotron">
-            <h2>Device List</h2>
-            <h3><a href="${pageContext.request.contextPath}/newDevice"> New Device</a></h3>
-            <table border="1">
-                <th>ID</th>
-                <th>Name</th>
-                <th>IPaddress</th>
-                <th>Action</th>
-                 
-                <c:forEach var="device" items="${listDevice}" >
-                <tr>
-                    <td>${device.ID}</td>
-                   <td>${device.name}</td>
-                    <td>${device.IPaddress}</td>
-                    <td>
-                        <a href="${pageContext.request.contextPath}/editDevice?ID=${device.ID}">Edit</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="${pageContext.request.contextPath}/deleteDevice?ID=${device.ID}">Delete</a>
-                    </td>
-                             
-                </tr>
-                </c:forEach>             
-            </table>
+      <form:form class="form-signin" action="home" modelAttribute="User" method="post">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <form:input type="email" id="inputEmail" class="form-control" placeholder="Email address" path="username"/>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <form:input type="password" id="inputPassword" class="form-control" path="Password" placeholder="password"/>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
         </div>
-  </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+	</form:form>
+    </div>
+     <!-- /container -->
     <div class="container">
       <hr>
       <footer>
