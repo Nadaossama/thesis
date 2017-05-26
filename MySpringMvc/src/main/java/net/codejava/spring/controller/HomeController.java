@@ -20,9 +20,12 @@ import org.springframework.web.servlet.ModelAndView;
 //import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import net.codejava.spring.dao.DeviceDAO;
+import net.codejava.spring.dao.PowerPlantDAO;
 //import net.codejava.spring.dao.UserDAO;
 import net.codejava.spring.model.Device;
 import net.codejava.spring.model.User;
+import org.json.*;
+
 
 @Controller
 @Configuration
@@ -30,7 +33,11 @@ import net.codejava.spring.model.User;
 public class HomeController {
 
 	 @Autowired
-	    private DeviceDAO deviceDAO;
+	    public DeviceDAO deviceDAO;
+
+	 @Autowired
+	    public PowerPlantDAO powerPlantDAO;
+	 
 //	 @Autowired
 //	 private UserDAO userDAO;
 	
@@ -47,10 +54,23 @@ public class HomeController {
 	public ModelAndView showLogin(ModelAndView model) throws IOException{
 	    List<Device> listDevice = deviceDAO.list();
 	    model.addObject("listDevice", listDevice);
+	    
+	    
+//	    for(int i=0; i<PowerPlantName.size();i++)
+//	    {
+//	    	System.out.println(PowerPlantName.get(i));
+//	    }
+	   
+	    
 	    model.setViewName("home");
 	    //model.setViewName("LoginForm");
 	    return model;
 	}
+	
+//	@Autowired(required = true)
+//	public void setPowerPlantDAO(PowerPlantDAO powerPlantDAO) {
+//	    this.powerPlantDAO = powerPlantDAO;
+//	}
 	
 //	@RequestMapping(value = "/", method = RequestMethod.POST)
 //	  public ModelAndView loginProcess(@ModelAttribute User user) {
@@ -100,14 +120,27 @@ public class HomeController {
 	
 	@RequestMapping(value= "/dataVisualization", method = RequestMethod.GET)
 	public ModelAndView ShowDataVisualizatioForm(ModelAndView model) {
+		 List<String> PowerPlantName = this.powerPlantDAO.listNames();
+		    model.addObject("nameOfList", PowerPlantName);
 		    model.setViewName("DataVisualizationForm");
+//		    JSONObject result;
+//			try {
+//				result = new JSONObject("{name: nada}");
+//				model.addObject("JSON",result.toString());
+//			} catch (JSONException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 		    
 		    return model;
 	}
 	
-	@RequestMapping(value= "/decisionSupport", method = RequestMethod.GET)
-	public ModelAndView ShowDecisionSupportForm(ModelAndView model) {
-		    model.setViewName("DecisionSupportForm");
+	@RequestMapping(value= "/eventMatrix", method = RequestMethod.GET)
+	public ModelAndView ShowEventMatrixForm(ModelAndView model) {
+		    model.setViewName("EventMatrixForm");
+		    
 		    return model;
 	}
+	
+	
 }

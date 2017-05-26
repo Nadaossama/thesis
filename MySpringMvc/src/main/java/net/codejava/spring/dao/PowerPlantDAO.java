@@ -2,16 +2,16 @@ package net.codejava.spring.dao;
 
 import java.util.List;
 
-import net.codejava.spring.model.Device;
+import net.codejava.spring.model.PowerPlant;
 
 public interface PowerPlantDAO {
 
-	public void saveOrUpdate(Device device);
+	public void saveOrUpdate(PowerPlant powerPlant);
     
-    public void delete(int deviceId);
+    public void delete(int powerPlantId);
      
-    public Device get(int deviceId);
+    public PowerPlant get(int powerPlantId);
      
-    public List<Device> list();
+    public List<String> listNames();
     
 }

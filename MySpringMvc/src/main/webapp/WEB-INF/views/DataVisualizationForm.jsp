@@ -39,26 +39,92 @@
         <li class="active"><a href="${pageContext.request.contextPath}/home">Home</a></li>
         <li><a href="${pageContext.request.contextPath}/dataVisualization">Data Visualization</a></li>
         <li><a href="${pageContext.request.contextPath}/decisionSupport">Decision Support</a></li>
+        <li><a href="${pageContext.request.contextPath}/eventMatrix">Event Matrix</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="${pageContext.request.contextPath}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
 <div  class="container theme-showcase" role="main">    
   <div class="jumbotron">
-        <h2>Data Visualization</h2>
-        <h3>Water level / Energy Output</h3>
-         <div id="chart"></div>
-         <br>
-         <h3>Energy Output / Time</h3>
-         <div id="chart1"></div>
-          <br>
-         <h3>Other</h3>
-         <div id="chart2"></div>
-         </div>
+    <!--     <h2>Data Visualization</h2> -->
+        <form class="form-inline" role="form">
+            <h2>Power Plants List</h2>
+           <%--  <pre>${JSON}</pre> --%>
+            <form:select path="nameOfList" class="form-control"  id="drpdwnPP">
+			    <form:option value="0" label="Select an Option" />
+			    <form:options items="${nameOfList}" />
+			</form:select>
+			<div class="container">
+    <div class='col-md-6'>
+        <div class="form-group">
+         <!-- <label>From: </label> -->
+            <div class='input-group date' id='datetimepicker6'>
+           
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class='col-md-6'>
+        <div class="form-group">
+        <!-- <label>To: </label> -->
+            <div class='input-group date' id='datetimepicker7'>
+            
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+			<button id="btnChoose" type="submit" class="btn btn-default">Choose</button>
+			
+			  <div id = "VisualizationDiv" style="display: none" class="jumbotron">
+			        <h3>Water level / Energy Output</h3>
+			         <div id="chart"></div>
+			         <br>
+			         <h3>Energy Output / Time</h3>
+			         <div id="chart1"></div>
+			          <br>
+			         <h3>Other</h3>
+			         <div id="chart2"></div>
+			  </div>
          <script>
+         var button = document.getElementById("btnChoose");
+
+         button.onclick = function() {
+             var div = document.getElementById("VisualizationDiv");
+             var dropdown = document.getElementById("drpdwnPP");
+             var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+             if (div.style.display !== "none") {
+                 div.style.display = "none";
+             }
+             else if (selectedValue !== "0")  {
+                 div.style.display = "block";
+             }
+             return false; 
+         };
+         
          var chart = c3.generate({
         	    data: {
         	        columns: [
@@ -113,7 +179,7 @@
         	});
 
         	setTimeout(function () {
-        	    chart.flow({
+        	    chart2.flow({
         	        columns: [
         	            ['x', '2013-01-11', '2013-01-21'],
         	            ['data1', 500, 200],
@@ -122,7 +188,7 @@
         	        ],
         	        duration: 1500,
         	        done: function () {
-        	            chart.flow({
+        	            chart2.flow({
         	                columns: [
         	                    ['x', '2013-02-11', '2013-02-12', '2013-02-13', '2013-02-14'],
         	                    ['data1', 200, 300, 100, 250],
@@ -132,7 +198,7 @@
         	                length: 0,
         	                duration: 1500,
         	                done: function () {
-        	                    chart.flow({
+        	                    chart2.flow({
         	                        columns: [
         	                            ['x', '2013-03-01', '2013-03-02'],
         	                            ['data1', 200, 300],
@@ -142,7 +208,7 @@
         	                        length: 2,
         	                        duration: 1500,
         	                        done: function () {
-        	                            chart.flow({
+        	                            chart2.flow({
         	                                columns: [
         	                                    ['x', '2013-03-21', '2013-04-01'],
         	                                    ['data1', 500, 200],
@@ -160,9 +226,9 @@
         	    });
         	}, 1000);
          </script>
-       
-  </div>
+         		</form>
  </div>
+  </div>  
     <div class="container">
       <hr>
       <footer>

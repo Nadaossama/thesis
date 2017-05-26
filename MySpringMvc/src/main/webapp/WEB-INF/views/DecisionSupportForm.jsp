@@ -9,15 +9,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Data Visualization</title>
-  <link rel="stylesheet" media="screen" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-  <script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Decision Support</title>
+  <link rel="stylesheet" media="screen" href="../webjars/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="../resources/theme.css">
+  <script src="../webjars/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<!--   
+ <script type="text/javascript" src="../webjars/jquery/2.1.1/jquery.js"></script> 
+ <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../webjars/jquery/2.1.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="../resources/scripts.js"></script>
+  <script type="text/javascript" src="../webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   .text-wrap {
   white-space: normal;
-}
+} 
   </style>
 </head>
 <body>
@@ -36,10 +43,11 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="${pageContext.request.contextPath}/home">Home</a></li>
         <li><a href="${pageContext.request.contextPath}/dataVisualization">Data Visualization</a></li>
-        <li><a href="${pageContext.request.contextPath}/decisionSupport">Decision Support</a></li>
+        <li><a href="${pageContext.request.contextPath}/decisionSupport/">Decision Support</a></li>
+        <li><a href="${pageContext.request.contextPath}/eventMatrix">Event Matrix</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="${pageContext.request.contextPath}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -47,94 +55,80 @@
 
 <div  class="container theme-showcase" role="main">    
   <div class="jumbotron">
-        <h2>Decision Support</h2>
-      <div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-  <p class="lead text-center bg-info btn text-info center-block">Water Level</p>
-      <div class="row">
-        <div class="col-xs-6 text-center">
-           <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
-        </div>
-        <div class="col-xs-6 text-center">
-          <p class="btn">
-          <span class="glyphicon glyphicon-arrow-down"></span></p>
-        </div>
-      </div>
+      <!--   <h2>Decision Support</h2> -->
+        
+          <form class="form-inline" role="form">
+            <h3>Choose Power Plant</h3>
+            <form:select path="nameOfList" class="form-control"  id="drpdwnPP">
+			    <form:option value="0" label="Select an Option" />
+			    <form:options items="${nameOfList}" />
+			</form:select>
+			<button id="btnChoose" type="submit" class="btn btn-default">Apply Rules</button>
+			
+		<!-- 	<script>
+			var button = document.getElementById("btnChoose");
 
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-6 text-center">
-  <p class="center-block"><span class="btn btn-success btn-lg">Low</span></p>
-      <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      
-      <p class="bg-success text-success btn">Regulate Turbine</p>
-    </div>
-    <div class="col-xs-6 text-center">
-      <p class="center-block"><span class="btn btn-danger btn-lg">High</span></p>
-       <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="bg-info text-info btn">Turn off Turbine & Activate Rack Cleaner</p>
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
-  
-  <div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-  <p class="lead text-center bg-info btn text-info center-block">Water Temperature</p>
-      <div class="row">
-        <div class="col-xs-6 text-center">
-           <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
-        </div>
-        <div class="col-xs-6 text-center">
-          <p class="btn">
-          <span class="glyphicon glyphicon-arrow-down"></span></p>
-        </div>
-      </div>
+	         button.onclick = function() {
+	             var div = document.getElementById("DecisionSupportDiv");
+	             var dropdown = document.getElementById("drpdwnPP");
+	             var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+	             if (div.style.display !== "none") {
+	                 div.style.display = "none";
+	             }
+	             else if (selectedValue !== "0")  {
+	                 div.style.display = "inline";
+	             }
+	             return false; 
+	         };
+			</script> -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-6 text-center">
-  <p class="center-block"><span class="btn btn-success btn-lg">Low</span></p>
-      <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      
-      <p class="bg-success text-success btn">Turn on Rack heating</p>
-    </div>
-    <div class="col-xs-6 text-center">
-      <p class="center-block"><span class="btn btn-danger btn-lg">High</span></p>
-       <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="bg-info text-info btn">Turbidity</p>
-     <div class="row">
-        <div class="col-xs-6 text-center">
-           <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+<div id = "DecisionSupportDiv" style="display: none" >
+    <div class="row">
+        <div class="col-md-6">
+            <div class="todolist not-done">
+             <h3>Action List</h3>
+               <!--  <input type="text" class="form-control add-todo" placeholder="Add todo">
+                    <button id="checkAll" class="btn btn-success">Mark all as done</button>
+                     -->
+                    <hr>
+                    <ul id="sortable" class="list-unstyled">
+                    <li class="ui-state-default">
+                       <!--  <div class="checkbox"> -->
+                            <label>
+                                <input type="checkbox" value="" />Action: Water Level is high, Turn down Turbine and activate Rack-Cleaner</label>
+                     <!--    </div>
+ -->                    </li>
+                    <li class="ui-state-default">
+                       <!--  <div class="checkbox"> -->
+                            <label>
+                                <input type="checkbox" value="" />Action: Activate Rack Cleaner</label>
+                        <!-- </div> -->
+                    </li>
+                  <!--   <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Teach penguins to fly</label>
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="todo-footer">
+                    <strong><span class="count-todos"></span></strong> Items Left
+                </div>
+            </div>
         </div>
-        <div class="col-xs-6 text-center">
-          <p class="btn">
-          <span class="glyphicon glyphicon-arrow-down"></span></p>
+        <div class="col-md-6">
+            <div class="todolist not-done">
+             <h3>Warning List</h3>
+                <ul id="sortable" class="list-unstyled">
+                    <li>Warning: Water Level high at previous Power Plant, Turn Down turbine</li>
+                    
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="row">
-    <div class="col-xs-6">
-    <p class="center-block"><span class="btn btn-success btn-lg">Low</span></p>
-     <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="bg-success text-success btn text-wrap">Okay!</p>
-      
     </div>
-    <div class="col-xs-6 text-center">
-             <p class="center-block"><span class="btn btn-danger btn-lg">High</span></p>
-       <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="btn bg-danger text-danger text-wrap">Turn off Turbine & Activate Rack Cleaner</p>
-    </div>
-      </div>
-    </div>
-  </div>
-  
-  
 </div>
+</form>
         </div>
     </div>
     

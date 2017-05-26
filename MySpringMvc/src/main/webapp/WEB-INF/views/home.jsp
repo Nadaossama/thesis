@@ -16,6 +16,7 @@
   <script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -31,7 +32,8 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="${pageContext.request.contextPath}/home">Home</a></li>
         <li><a href="${pageContext.request.contextPath}/dataVisualization">Data Visualization</a></li>
-        <li><a href="${pageContext.request.contextPath}/decisionSupport">Decision Support</a></li>
+        <li><a href="${pageContext.request.contextPath}/decisionSupport/">Decision Support</a></li>
+        <li><a href="${pageContext.request.contextPath}/eventMatrix">Event Matrix</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="${pageContext.request.contextPath}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -42,7 +44,17 @@
   
 <div  class="container theme-showcase" role="main">    
   <div class="jumbotron">
-            <h2>Device List</h2>
+  		<form class="form-inline" role="form">
+            <%-- <h2>Power Plants List</h2>
+            <form:select path="nameOfList" class="form-control"  id="drpdwnPP">
+			    <form:option value="0" label="Select an Option" />
+			    <form:options items="${nameOfList}" />
+			</form:select>
+			<button id="btnChoose" type="submit" class="btn btn-default">Choose</button>
+		</form> --%>
+
+			<!-- <div id = "deviceForm" style="display: none"> -->
+			<h2>Device List</h2>
             <h3><a href="${pageContext.request.contextPath}/newDevice"> New Device</a></h3>
             <table class="table">
                 <th>ID</th>
@@ -64,8 +76,26 @@
                 </tr>
                 </c:forEach>             
             </table>
+          <!--   </div> -->
         </div>
   </div>
+  
+  <script type="text/javascript">
+var button = document.getElementById("btnChoose");
+
+button.onclick = function() {
+    var div = document.getElementById("deviceForm");
+    var dropdown = document.getElementById("drpdwnPP");
+    var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+    if (div.style.display !== "none") {
+        div.style.display = "none";
+    }
+    else if (selectedValue !== "0")  {
+        div.style.display = "block";
+    }
+    return false; 
+};
+</script>
     <div class="container">
       <hr>
       <footer>

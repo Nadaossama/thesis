@@ -32,9 +32,10 @@
         <li class="active"><a href="${pageContext.request.contextPath}/home">Home</a></li>
         <li><a href="${pageContext.request.contextPath}/dataVisualization">Data Visualization</a></li>
         <li><a href="${pageContext.request.contextPath}/decisionSupport">Decision Support</a></li>
+        <li><a href="${pageContext.request.contextPath}/eventMatrix">Event Matrix</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="${pageContext.request.contextPath}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>

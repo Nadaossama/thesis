@@ -4,7 +4,9 @@ import javax.sql.DataSource;
 
 import net.codejava.spring.dao.DeviceDAO;
 import net.codejava.spring.dao.DeviceDAOImpl;
- 
+import net.codejava.spring.dao.PowerPlantDAO;
+import net.codejava.spring.dao.PowerPlantDAOImpl;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -64,5 +66,10 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 	    @Bean
 	    public DeviceDAO getDeviceDAO() {
 	        return new DeviceDAOImpl(getDataSource());
+	    }
+	    
+	    @Bean
+	    public PowerPlantDAO getPowerPlantDAO() {
+	        return new PowerPlantDAOImpl(getDataSource());
 	    }
 }
