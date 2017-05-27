@@ -28,14 +28,17 @@ public class PowerPlantDAOImpl implements PowerPlantDAO{
 		
 	}
 	@Override
-	public List<String> listNames() {
+	public List<PowerPlant> listNames() {
 		// TODO Auto-generated method stub
 		String sql = "SELECT ID,Name FROM PowerPlant";
-        List<String> listPowerPlantNames = jdbcTemplate.query(sql, new RowMapper<String>() {
+        List<PowerPlant> listPowerPlantNames = jdbcTemplate.query(sql, new RowMapper<PowerPlant>() {
      
             @Override
-            public String mapRow(ResultSet rs, int rowNum) throws SQLException {
-                return rs.getString("ID") + rs.getString("Name");
+            public PowerPlant mapRow(ResultSet rs, int rowNum) throws SQLException {
+                PowerPlant aPowerPlant = new PowerPlant();
+                aPowerPlant.setID(rs.getInt("ID"));
+                aPowerPlant.setName(rs.getString("Name"));
+                return aPowerPlant;
             }
      
         });

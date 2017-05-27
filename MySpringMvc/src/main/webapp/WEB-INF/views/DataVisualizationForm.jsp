@@ -55,7 +55,7 @@
            <%--  <pre>${JSON}</pre> --%>
             <form:select path="nameOfList" class="form-control"  id="drpdwnPP">
 			    <form:option value="0" label="Select an Option" />
-			    <form:options items="${nameOfList}" />
+			    <form:options items="${nameOfList}"  itemValue="ID" itemLabel="Name" />
 			</form:select>
 			<div class="container">
     <div class='col-md-6'>

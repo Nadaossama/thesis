@@ -15,10 +15,7 @@
   <link rel="stylesheet" type="text/css" href="../resources/theme.css">
   <script src="../webjars/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-<!--   
- <script type="text/javascript" src="../webjars/jquery/2.1.1/jquery.js"></script> 
- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../webjars/jquery/2.1.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="../webjars/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="../resources/scripts.js"></script>
   <script type="text/javascript" src="../webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -55,17 +52,15 @@
 
 <div  class="container theme-showcase" role="main">    
   <div class="jumbotron">
-      <!--   <h2>Decision Support</h2> -->
-        
           <form class="form-inline" role="form">
             <h3>Choose Power Plant</h3>
-            <form:select path="nameOfList" class="form-control"  id="drpdwnPP">
+             <form:select path="PowerPlantList" class="form-control"  id="drpdwnPP">
 			    <form:option value="0" label="Select an Option" />
-			    <form:options items="${nameOfList}" />
+			    <form:options items="${PowerPlantList}"  itemValue="ID" itemLabel="Name"/>
 			</form:select>
 			<button id="btnChoose" type="submit" class="btn btn-default">Apply Rules</button>
 			
-		<!-- 	<script>
+			<script>
 			var button = document.getElementById("btnChoose");
 
 	         button.onclick = function() {
@@ -80,9 +75,8 @@
 	             }
 	             return false; 
 	         };
-			</script> -->
+			</script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-
 <div id = "DecisionSupportDiv" style="display: none" >
     <div class="row">
         <div class="col-md-6">
@@ -129,6 +123,7 @@
     </div>
 </div>
 </form>
+<%-- </form:form> --%>
         </div>
     </div>
     

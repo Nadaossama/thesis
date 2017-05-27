@@ -23,6 +23,7 @@ import net.codejava.spring.dao.DeviceDAO;
 import net.codejava.spring.dao.PowerPlantDAO;
 //import net.codejava.spring.dao.UserDAO;
 import net.codejava.spring.model.Device;
+import net.codejava.spring.model.PowerPlant;
 import net.codejava.spring.model.User;
 import org.json.*;
 
@@ -120,7 +121,7 @@ public class HomeController {
 	
 	@RequestMapping(value= "/dataVisualization", method = RequestMethod.GET)
 	public ModelAndView ShowDataVisualizatioForm(ModelAndView model) {
-		 List<String> PowerPlantName = this.powerPlantDAO.listNames();
+		 List<PowerPlant> PowerPlantName = this.powerPlantDAO.listNames();
 		    model.addObject("nameOfList", PowerPlantName);
 		    model.setViewName("DataVisualizationForm");
 //		    JSONObject result;

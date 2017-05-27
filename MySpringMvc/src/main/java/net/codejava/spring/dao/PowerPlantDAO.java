@@ -12,6 +12,6 @@ public interface PowerPlantDAO {
      
     public PowerPlant get(int powerPlantId);
      
-    public List<String> listNames();
+    public List<PowerPlant> listNames();
     
 }
