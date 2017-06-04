@@ -16,8 +16,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 //import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.google.gson.Gson;
 
 import net.codejava.spring.dao.DeviceDAO;
 import net.codejava.spring.dao.PowerPlantDAO;
@@ -124,15 +128,6 @@ public class HomeController {
 		 List<PowerPlant> PowerPlantName = this.powerPlantDAO.listNames();
 		    model.addObject("nameOfList", PowerPlantName);
 		    model.setViewName("DataVisualizationForm");
-//		    JSONObject result;
-//			try {
-//				result = new JSONObject("{name: nada}");
-//				model.addObject("JSON",result.toString());
-//			} catch (JSONException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-		    
 		    return model;
 	}
 	
@@ -142,6 +137,42 @@ public class HomeController {
 		    
 		    return model;
 	}
+	
+	 
+	 @RequestMapping(value= "/GetRules", method = RequestMethod.POST)
+	 @ResponseBody
+	 public String GetRules(@RequestParam(value="selectedValue") String dropdownValue,@RequestParam(value="fromDate") String fromDate,@RequestParam(value="toDate") String toDate){
+//		 List<PowerPlant> PowerPlantName = this.powerPlantDAO.listNames();
+//		 System.out.println(dropdownValue);
+//		 model.addObject("PowerPlantList", PowerPlantName);
+		 ModelAndView model = new ModelAndView();
+		 model.setViewName("DataVisualizationForm");
+		 
+//		 System.out.println(fromDate);
+//		 System.out.println(toDate);
+//		 
+		 fromDate = "'" + fromDate + " 00:00:00'";
+		 toDate = "'" + toDate + " 00:00:00'";
+		 String DeviceID = powerPlantDAO.getDeviceID(dropdownValue);
+		 
+		 List<String> WaterLevelValues = powerPlantDAO.getWaterLevelValues(Integer.parseInt(dropdownValue),fromDate ,toDate, DeviceID);
+		 List<String> EnergyOutputValues = powerPlantDAO.getEnergyOutputValues(Integer.parseInt(dropdownValue), fromDate, toDate, DeviceID);
+		
+//		 JSONObject responseDetailsJson = new JSONObject();
+//		 JSONArray jsonArray = new JSONArray();
+		 
+		 // create a new Gson instance
+		 Gson gson = new Gson();
+		 // convert your list to json
+		 String jsonWaterLevel = gson.toJson(WaterLevelValues);
+		 String jsonEnergyOutput = gson.toJson(EnergyOutputValues);
+		
+		 String bothJson = "["+jsonWaterLevel+","+jsonEnergyOutput+"]";
+		 //System.out.println("jsonCartList: " + bothJson);
+		 return  bothJson;
+		 
+		 
+	 }
 	
 	
 }
