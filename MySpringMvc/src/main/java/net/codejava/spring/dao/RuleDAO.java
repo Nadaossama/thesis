@@ -22,6 +22,6 @@ public void saveOrUpdate(Rule rule);
     
     public String NoEnergyOutput(String parameters , String PowerPlantID);
     
-    public String Get2Predecessor( String PowerPlantID);
+    public String GetPredecessor( String PowerPlantID);
     
 }

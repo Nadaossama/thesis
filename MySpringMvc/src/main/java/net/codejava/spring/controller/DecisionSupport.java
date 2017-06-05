@@ -59,24 +59,31 @@ public class DecisionSupport {
 	public String GetRules(@RequestParam(value = "selectedValue") String dropdownValue) {
 		ModelAndView model = new ModelAndView();
 		model.setViewName("DecisionSupportForm");
-		String Predecessor = this.ruleDAO.Get2Predecessor(dropdownValue);
+		String Predecessor = this.ruleDAO.GetPredecessor(dropdownValue);
+		//System.out.println(Predecessor);
 		if (Predecessor != null) {
 			List<Rule> Rules = powerPlantDAO.GetRules(Predecessor);
 			List<String> toDoList = new ArrayList<String>();
 			for (Rule rule : Rules) {
-				System.out.println(rule.getID());
+				//System.out.println(rule.getID());
 				if (rule.getID().equals("Water Level")) {
-					toDoList.add(ruleDAO.WaterLevel(rule.getParameters(), rule.getPowerPlantID()));
+					toDoList.add(ruleDAO.WaterLevel(rule.getParameters(), Predecessor));
 				} else if (rule.getID().equals("Turbidity")) {
-					toDoList.add(ruleDAO.Turbidity(rule.getParameters(), rule.getPowerPlantID()));
+					toDoList.add(ruleDAO.Turbidity(rule.getParameters(), Predecessor));
 				} else if (rule.getID().equals("Water Temperature")) {
-					toDoList.add(ruleDAO.WaterTemperature(rule.getParameters(), rule.getPowerPlantID()));
+					toDoList.add(ruleDAO.WaterTemperature(rule.getParameters(), Predecessor));
 				} else if (rule.getID().equals("Rack Cleaning")) {
-					toDoList.add(ruleDAO.RackCleaning(rule.getParameters(), rule.getPowerPlantID()));
+					toDoList.add(ruleDAO.RackCleaning(rule.getParameters(), Predecessor));
 				} else if (rule.getID().equals("No Energy Output")) {
-					toDoList.add(ruleDAO.NoEnergyOutput(rule.getParameters(), rule.getPowerPlantID()));
+					toDoList.add(ruleDAO.NoEnergyOutput(rule.getParameters(), Predecessor));
 				}
 
+			}
+			
+			for(String item : toDoList)
+			{
+				if(item.equals(""))
+					toDoList.remove(item);
 			}
 
 			// create a new Gson instance

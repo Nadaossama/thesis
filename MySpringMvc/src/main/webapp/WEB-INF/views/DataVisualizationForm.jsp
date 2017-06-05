@@ -175,16 +175,10 @@
 																	.getElementById("drpdwnPP");
 															var selectedValue = dropdown.options[dropdown.selectedIndex].value;
 
-															var fromDate = $(
-																	'#date1')
-																	.val();
-															var toDate = $(
-																	'#date2')
-																	.val();
+															var fromDate = $('#date1').val();
+															var toDate = $('#date2').val();
 
-															$
-																	.post(
-																			"GetRules",
+															$.post("GetRules",
 																			{
 																				selectedValue : selectedValue,
 																				fromDate : fromDate,
@@ -193,33 +187,22 @@
 																			function(
 																					data) {
 																				//c3Data = data;
-																				var c3Data = JSON
-																						.parse(data);
-																				var data1 = c3Data[0]
-																						.slice(
-																								0,
-																								500);
-																				var data2 = c3Data[1]
-																						.slice(
-																								0,
-																								500);
-																				data1
-																						.unshift("Water Level");
-																				data2
-																						.unshift("Energy Output");
+																				var c3Data = JSON.parse(data);
+																				var data1 = c3Data[0].slice(0,500);
+																				var data2 = c3Data[1].slice(0,500);
+																				
+																				data1.unshift("Water Level");
+																				data2.unshift("Energy Output");
 																				//console.log(JSON.parse("[['30','200','100','400', '150', '250'],[ '30', '200', '100', '400', '150', '250']]"));
-																				var chart = c3
-																						.generate({
+																				var chart = c3.generate({
 																							data : {
 																								columns : [
 																										data1,
-																										data2 ]
-																							},
+																										data2 ]},
 																							bindto : '#chart'
 																						});
 
-																				var chart1 = c3
-																						.generate({
+																				var chart1 = c3.generate({
 																							data : {
 																								x : 'x',
 																								//			       	        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'

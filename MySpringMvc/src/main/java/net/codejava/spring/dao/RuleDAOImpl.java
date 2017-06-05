@@ -2,6 +2,7 @@ package net.codejava.spring.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -42,7 +43,7 @@ public class RuleDAOImpl implements RuleDAO {
 	}
 
 	@Override
-	public String Get2Predecessor(String PowerPlantID) {
+	public String GetPredecessor(String PowerPlantID) {
 		String sql = "SELECT Predeccessor_PP_ID FROM Successor_Predeccessor WHERE successor_PP_ID =?";
 		try {
 			String successor = (String) jdbcTemplate.queryForObject(sql, new Object[] { PowerPlantID }, String.class);
@@ -58,14 +59,40 @@ public class RuleDAOImpl implements RuleDAO {
 	public String WaterLevel(String parameters, String PowerPlantID) {
 		// TODO Auto-generated method stub
 		// sensor_Type_ID = 8
-		return "water level";
+		
+		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID =" + PowerPlantID +" AND Sensor_Type_ID= 8 ORDER BY loTs desc limit 180) dt";
+		//List<String> Data = new ArrayList<String>();
+		System.out.println(sql);
+		String Data = jdbcTemplate.queryForObject(sql, new Object[]{}, String.class);
+		
+		System.out.println("Water Level" + Data);
+		if(Double.parseDouble(Data) >= Double.parseDouble(parameters))
+		{
+			return "Water Level is HIGH! Turn off Turbine and Activate Rack Cleaning.";
+		}
+		else{
+			return "Water Level is Normal, Regulate Turbine.";
+		}
+		//return Data;
 	}
 
 	@Override
 	public String Turbidity(String parameters, String PowerPlantID) {
 		// sensor_Type_ID = 1
 		// TODO Auto-generated method stub
-		return "Turbidity";
+
+		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID =" + PowerPlantID +" AND Sensor_Type_ID= 1 ORDER BY loTs desc limit 180) dt";
+		//List<String> Data = new ArrayList<String>();
+		System.out.println(sql);
+		String Data = jdbcTemplate.queryForObject(sql, new Object[]{}, String.class);
+		System.out.println("Turbidity" + Data);
+		if(Double.parseDouble(Data) >= Double.parseDouble(parameters))
+		{
+			return "Turbidity of Water is HIGH! Turn off Turbine and Activate Rack Cleaning.";
+		}
+		else{
+			return "";
+		}
 	}
 
 	@Override

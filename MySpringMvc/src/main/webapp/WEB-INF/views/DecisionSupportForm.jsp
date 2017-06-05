@@ -86,8 +86,7 @@
 										$("#btnChoose")
 												.click(
 														function(event) {
-															var div = document
-																	.getElementById("DecisionSupportDiv");
+
 															var dropdown = document
 																	.getElementById("drpdwnPP");
 															var selectedValue = dropdown.options[dropdown.selectedIndex].value;
@@ -95,9 +94,7 @@
 															/*  if (div.style.display !== "none") {
 															     div.style.display = "none";
 															 }
-															 else */if (selectedValue !== "0") {
-																div.style.display = "inline";
-															}
+															 else */
 															$
 																	.post(
 																			"GetRules",
@@ -112,7 +109,9 @@
 																						.log(json);
 																				//now json variable contains data in json format
 																				//let's display a few items
-
+																				$(
+																						'#table')
+																						.empty();
 																				// we'll put all our html in here for now
 																				var tr;
 																				for (var i = 0; i < json.length; i++) {
@@ -125,6 +124,12 @@
 																							'table')
 																							.append(
 																									tr);
+																				}
+
+																				var div = document
+																						.getElementById("DecisionSupportDiv");
+																				if (selectedValue !== "0") {
+																					div.style.display = "inline";
 																				}
 
 																			})
