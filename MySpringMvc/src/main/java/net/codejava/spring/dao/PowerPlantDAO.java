@@ -25,4 +25,6 @@ public interface PowerPlantDAO {
     
     public List<String> getEnergyOutputValues(int powerPlantId, String DeviceID);
     
+    public List<String> getTimestampValues(int powerPlantId, String From, String To, String DeviceID);
+    
 }

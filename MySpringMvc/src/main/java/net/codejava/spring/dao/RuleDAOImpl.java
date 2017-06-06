@@ -59,21 +59,20 @@ public class RuleDAOImpl implements RuleDAO {
 	public String WaterLevel(String parameters, String PowerPlantID) {
 		// TODO Auto-generated method stub
 		// sensor_Type_ID = 8
-		
-		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID =" + PowerPlantID +" AND Sensor_Type_ID= 8 ORDER BY loTs desc limit 180) dt";
-		//List<String> Data = new ArrayList<String>();
-		System.out.println(sql);
-		String Data = jdbcTemplate.queryForObject(sql, new Object[]{}, String.class);
-		
-		System.out.println("Water Level" + Data);
-		if(Double.parseDouble(Data) >= Double.parseDouble(parameters))
-		{
+
+		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID ="
+				+ PowerPlantID + " AND Sensor_Type_ID= 8 GROUP BY CEIL(TO_SECONDS(loTs)/300) ORDER by lots) dt";
+		// List<String> Data = new ArrayList<String>();
+		// System.out.println(sql);
+		String Data = jdbcTemplate.queryForObject(sql, new Object[] {}, String.class);
+
+		// System.out.println("Water Level" + Data);
+		if (Data != null && Double.parseDouble(Data) >= Double.parseDouble(parameters)) {
 			return "Water Level is HIGH! Turn off Turbine and Activate Rack Cleaning.";
+		} else {
+			return "";
 		}
-		else{
-			return "Water Level is Normal, Regulate Turbine.";
-		}
-		//return Data;
+		// return Data;
 	}
 
 	@Override
@@ -81,18 +80,21 @@ public class RuleDAOImpl implements RuleDAO {
 		// sensor_Type_ID = 1
 		// TODO Auto-generated method stub
 
-		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID =" + PowerPlantID +" AND Sensor_Type_ID= 1 ORDER BY loTs desc limit 180) dt";
-		//List<String> Data = new ArrayList<String>();
-		System.out.println(sql);
-		String Data = jdbcTemplate.queryForObject(sql, new Object[]{}, String.class);
+		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID ="
+				+ PowerPlantID + " AND Sensor_Type_ID= 1 GROUP BY CEIL(TO_SECONDS(loTs)/300) ORDER by lots) dt";
+		// List<String> Data = new ArrayList<String>();
+		//System.out.println(sql);
+		String Data = jdbcTemplate.queryForObject(sql, new Object[] {}, String.class);
 		System.out.println("Turbidity" + Data);
-		if(Double.parseDouble(Data) >= Double.parseDouble(parameters))
-		{
-			return "Turbidity of Water is HIGH! Turn off Turbine and Activate Rack Cleaning.";
+		if (Data != null) {
+			if (Double.parseDouble(Data) >= Double.parseDouble(parameters)) {
+				return "Turbidity of Water is HIGH! Turn off Turbine and Activate Rack Cleaning.";
+			} else {
+				System.out.println("in else");
+				return "";
+			}
 		}
-		else{
-			return "";
-		}
+		return "";
 	}
 
 	@Override

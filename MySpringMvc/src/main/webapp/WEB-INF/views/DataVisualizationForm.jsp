@@ -187,12 +187,18 @@
 																			function(
 																					data) {
 																				//c3Data = data;
+																				
 																				var c3Data = JSON.parse(data);
-																				var data1 = c3Data[0].slice(0,500);
-																				var data2 = c3Data[1].slice(0,500);
+																				console.log(c3Data);
+																				var data1 = c3Data[0].slice(0,300);
+																				var data2 = c3Data[1].slice(0,300);
+																				var data3 = c3Data[2].slice(0,300);
+																				var data4 = c3Data[3].slice(0,300);
 																				
 																				data1.unshift("Water Level");
 																				data2.unshift("Energy Output");
+																				data3.unshift("Energy Output");
+																				data4.unshift("TimeStamp");
 																				//console.log(JSON.parse("[['30','200','100','400', '150', '250'],[ '30', '200', '100', '400', '150', '250']]"));
 																				var chart = c3.generate({
 																							data : {
@@ -204,33 +210,18 @@
 
 																				var chart1 = c3.generate({
 																							data : {
-																								x : 'x',
-																								//			       	        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
+																								x : 'TimeStamp',
+																								xFormat: '%Y-%m-%d %H:%M:%S',
 																								columns : [
-																										[
-																												'x',
-																												'2013-01-01',
-																												'2013-01-02',
-																												'2013-01-03',
-																												'2013-01-04',
-																												'2013-01-05',
-																												'2013-01-06' ],
-																										[
-																												'PowerPlant 1',
-																												30,
-																												200,
-																												100,
-																												400,
-																												150,
-																												250 ] /* ,
-																											       	            ['PowerPlant 2', 130, 340, 200, 500, 250, 350] */
+																									data4,
+																									data3 
 																								]
 																							},
 																							axis : {
 																								x : {
 																									type : 'timeseries',
 																									tick : {
-																										format : '%Y-%m-%d'
+																										format : '%Y-%m-%d %H:%M:%S'
 																									}
 																								}
 																							},

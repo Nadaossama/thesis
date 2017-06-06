@@ -1,6 +1,7 @@
 package net.codejava.spring.controller;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -80,11 +81,12 @@ public class DecisionSupport {
 
 			}
 			
-			for(String item : toDoList)
-			{
-				if(item.equals(""))
-					toDoList.remove(item);
-			}
+//			for(String item : toDoList)
+//			{
+//				if(item.equals(""))
+//					toDoList.remove(item);
+//			}
+			toDoList.removeAll(Arrays.asList("", null));
 
 			// create a new Gson instance
 			Gson gson = new Gson();

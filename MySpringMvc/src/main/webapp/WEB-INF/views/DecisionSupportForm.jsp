@@ -109,9 +109,7 @@
 																						.log(json);
 																				//now json variable contains data in json format
 																				//let's display a few items
-																				$(
-																						'#table')
-																						.empty();
+																				 $("#table td").remove(); 
 																				// we'll put all our html in here for now
 																				var tr;
 																				for (var i = 0; i < json.length; i++) {
