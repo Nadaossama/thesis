@@ -61,9 +61,10 @@ public class DecisionSupport {
 		ModelAndView model = new ModelAndView();
 		model.setViewName("DecisionSupportForm");
 		String Predecessor = this.ruleDAO.GetPredecessor(dropdownValue);
+		//String Predecessor = dropdownValue;
 		//System.out.println(Predecessor);
 		if (Predecessor != null) {
-			List<Rule> Rules = powerPlantDAO.GetRules(Predecessor);
+			List<Rule> Rules = powerPlantDAO.GetRules(dropdownValue);
 			List<String> toDoList = new ArrayList<String>();
 			for (Rule rule : Rules) {
 				//System.out.println(rule.getID());

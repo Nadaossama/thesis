@@ -68,7 +68,7 @@ public class PowerPlantDAOImpl implements PowerPlantDAO{
 	public List<String> getWaterLevelValues(int powerPlantId, String DeviceID)
 	{
 		
-		String sql = "SELECT loValue FROM Sensor_Values WHERE Sensor_PowerPlant_ID =" + powerPlantId +" AND Sensor_PowerPlant_Device_ID =" + DeviceID +" AND Sensor_Type_ID= 8 ";
+		String sql = "SELECT loValue FROM Sensor_Values WHERE Sensor_PowerPlant_ID =" + powerPlantId +" AND Sensor_PowerPlant_Device_ID =" + DeviceID +" AND Sensor_Type_ID= 5 ";
 		List<String> Data = new ArrayList<String>();
 		Data = jdbcTemplate.queryForList(sql,String.class);
 		
@@ -79,7 +79,7 @@ public class PowerPlantDAOImpl implements PowerPlantDAO{
 	public List<String> getWaterLevelValues(int powerPlantId, String From, String To, String DeviceID)
 	{
 		
-		String sql = "SELECT loValue FROM Sensor_Values WHERE Sensor_PowerPlant_ID =" + powerPlantId +" AND Sensor_PowerPlant_Device_ID =" + DeviceID +" AND Sensor_Type_ID= 8 AND loTs BETWEEN " + From + " AND " + To + " GROUP BY FLOOR(TO_SECONDS(loTs)/86400)";
+		String sql = "SELECT avg(loValue) FROM Sensor_Values WHERE Sensor_PowerPlant_ID =" + powerPlantId +" AND Sensor_PowerPlant_Device_ID =" + DeviceID +" AND Sensor_Type_ID= 5 AND loTs BETWEEN " + From + " AND " + To + " GROUP BY CEIL(TO_SECONDS(loTs)/86400)";
 		//System.out.println(sql);
 		List<String> Data = new ArrayList<String>();
 		Data = jdbcTemplate.queryForList(sql,String.class);
@@ -103,7 +103,7 @@ public class PowerPlantDAOImpl implements PowerPlantDAO{
 	{
 		
 		String PowerOutput = "SELECT avg(loValue) From Sensor_Values WHERE Sensor_PowerPlant_ID ="
-				+ powerPlantId + " AND Sensor_PowerPlant_Device_ID="  + DeviceID +" AND Sensor_Type_ID= 4 AND loTs BETWEEN " + From + " AND " + To + " GROUP BY FLOOR(TO_SECONDS(loTs)/86400)";
+				+ powerPlantId + " AND Sensor_PowerPlant_Device_ID="  + DeviceID +" AND Sensor_Type_ID= 4 AND loTs BETWEEN " + From + " AND " + To + " GROUP BY CEIL(TO_SECONDS(loTs)/86400)";
 		
 		//System.out.println(PowerOutput);
 		List<String> Data = jdbcTemplate.queryForList(PowerOutput, String.class);
@@ -117,8 +117,8 @@ public class PowerPlantDAOImpl implements PowerPlantDAO{
 	public List<String> getTimestampValues(int powerPlantId, String From, String To, String DeviceID)
 	{
 		
-		String PowerOutput = "SELECT CAST(AVG(loTs) AS DATETIME) time From Sensor_Values WHERE Sensor_PowerPlant_ID ="
-				+ powerPlantId + " AND Sensor_PowerPlant_Device_ID="  + DeviceID +" AND Sensor_Type_ID= 4 AND loTs BETWEEN " + From + " AND " + To + " GROUP BY FLOOR(TO_SECONDS(loTs)/86400)";
+		String PowerOutput = "SELECT CAST(AVG(loTs) AS DATE) time From Sensor_Values WHERE Sensor_PowerPlant_ID ="
+				+ powerPlantId + " AND Sensor_PowerPlant_Device_ID="  + DeviceID +" AND Sensor_Type_ID= 4 AND loTs BETWEEN " + From + " AND " + To + " GROUP BY CEIL(TO_SECONDS(loTs)/86400)";
 		//System.out.println(PowerOutput);
 		List<String> Data = jdbcTemplate.queryForList(PowerOutput, String.class);
 		//List<String> Result = jdbcTemplate.queryForList(Data,String.class);

@@ -162,7 +162,11 @@ public class HomeController {
 
 		List<String> EnergyOutputValues2 = new ArrayList<String>(EnergyOutputValues);
 
-		for (int i = 0; i < TimestampValues.size() - 1; i++) {
+//		System.out.println(TimestampValues);
+//		System.out.println(EnergyOutputValues);
+//		System.out.println(EnergyOutputValues2);
+		
+		for (int i = 0; i < TimestampValues.size(); i++) {
 			if (TimestampValues.get(i) == null) {
 				TimestampValues.remove(i);
 				EnergyOutputValues2.remove(i);
@@ -170,17 +174,17 @@ public class HomeController {
 			}
 
 		}
+		
+//		System.out.println(TimestampValues);
+//		System.out.println(EnergyOutputValues2);
 
-		for (int i = 0; i < TimestampValues.size(); i++) {
-			String bla = TimestampValues.get(i);
-			int x = bla.length();
-			String newString = bla.substring(0, x - 2);
-			TimestampValues.set(i, newString);
-		}
-
-		// System.out.println(TimestampValues);
-		// JSONObject responseDetailsJson = new JSONObject();
-		// JSONArray jsonArray = new JSONArray();
+		//System.out.println(TimestampValues);
+//		for (int i = 0; i < TimestampValues.size(); i++) {
+//			String bla = TimestampValues.get(i);
+//			int x = bla.length();
+//			String newString = bla.substring(0, x - 2);
+//			TimestampValues.set(i, newString);
+//		}
 
 		// create a new Gson instance
 		Gson gson = new Gson();

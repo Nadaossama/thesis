@@ -47,7 +47,7 @@ public class RuleDAOImpl implements RuleDAO {
 		String sql = "SELECT Predeccessor_PP_ID FROM Successor_Predeccessor WHERE successor_PP_ID =?";
 		try {
 			String successor = (String) jdbcTemplate.queryForObject(sql, new Object[] { PowerPlantID }, String.class);
-			//System.out.println(successor);
+			// System.out.println(successor);
 			return successor;
 
 		} catch (EmptyResultDataAccessException e) {
@@ -61,14 +61,14 @@ public class RuleDAOImpl implements RuleDAO {
 		// sensor_Type_ID = 8
 
 		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID ="
-				+ PowerPlantID + " AND Sensor_Type_ID= 8 GROUP BY CEIL(TO_SECONDS(loTs)/300) ORDER by lots) dt";
+				+ PowerPlantID + " AND Sensor_Type_ID= 5 GROUP BY CEIL(TO_SECONDS(loTs)/1800) ORDER by lots) dt";
 		// List<String> Data = new ArrayList<String>();
-		// System.out.println(sql);
+		System.out.println(sql);
 		String Data = jdbcTemplate.queryForObject(sql, new Object[] {}, String.class);
-
-		// System.out.println("Water Level" + Data);
+		System.out.println("Water Level " + Data);
+		//System.out.println("Water Level" + Data);
 		if (Data != null && Double.parseDouble(Data) >= Double.parseDouble(parameters)) {
-			return "Water Level is HIGH! Turn off Turbine and Activate Rack Cleaning.";
+			return "Water Level is High! Turn off Turbine and Activate Rack Cleaning.";
 		} else {
 			return "";
 		}
@@ -81,16 +81,16 @@ public class RuleDAOImpl implements RuleDAO {
 		// TODO Auto-generated method stub
 
 		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID ="
-				+ PowerPlantID + " AND Sensor_Type_ID= 1 GROUP BY CEIL(TO_SECONDS(loTs)/300) ORDER by lots) dt";
+				+ PowerPlantID + " AND Sensor_Type_ID= 2 GROUP BY CEIL(TO_SECONDS(loTs)/1800) ORDER by lots) dt";
 		// List<String> Data = new ArrayList<String>();
-		//System.out.println(sql);
+		System.out.println(sql);
 		String Data = jdbcTemplate.queryForObject(sql, new Object[] {}, String.class);
-		System.out.println("Turbidity" + Data);
+		System.out.println("Turbidity " + Data);
 		if (Data != null) {
 			if (Double.parseDouble(Data) >= Double.parseDouble(parameters)) {
-				return "Turbidity of Water is HIGH! Turn off Turbine and Activate Rack Cleaning.";
+				return "Turbidity of Water is High! Turn off Turbine and Activate Rack Cleaning.";
 			} else {
-				System.out.println("in else");
+				//System.out.println("in else");
 				return "";
 			}
 		}
@@ -100,21 +100,47 @@ public class RuleDAOImpl implements RuleDAO {
 	@Override
 	public String WaterTemperature(String parameters, String PowerPlantID) {
 		// TODO Auto-generated method stub
-		return "Water temperature";
+		return "";
 	}
 
 	@Override
 	public String RackCleaning(String parameters, String PowerPlantID) {
 		// TODO Auto-generated method stub
-		// sensor_Type_ID = 11
-		return "Rack Cleaning";
+		// sensor_Type_ID = 11	
+		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID ="
+				+ PowerPlantID + " AND Sensor_Type_ID= 11 GROUP BY CEIL(TO_SECONDS(loTs)/1800) ORDER by lots) dt";
+		// System.out.println(sql);
+		String Data = jdbcTemplate.queryForObject(sql, new Object[] {}, String.class);
+		System.out.println("Rack Cleaning " + Data);
+		if (Data != null) {
+			if (Double.parseDouble(Data) < Double.parseDouble(parameters)) {
+				return "There is an error at the Rack Cleaning.";
+			} else {
+				return "";
+			}
+		}
+		return "";
 	}
 
 	@Override
 	public String NoEnergyOutput(String parameters, String PowerPlantID) {
 		// TODO Auto-generated method stub
 		// sensor_Type_ID = 4
-		return "No Energy output";
-	}
 
+		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID ="
+				+ PowerPlantID + " AND Sensor_Type_ID= 5 GROUP BY CEIL(TO_SECONDS(loTs)/1800) ORDER by lots) dt";
+		String Data = jdbcTemplate.queryForObject(sql, new Object[] {}, String.class);
+
+		if (Data != null && Double.parseDouble(Data) < Double.parseDouble(parameters)) {
+			// Low water level
+			String sql2 = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID ="
+					+ PowerPlantID + " AND Sensor_Type_ID= 4 GROUP BY CEIL(TO_SECONDS(loTs)/1800) ORDER by lots) dt";
+			String Data2 = jdbcTemplate.queryForObject(sql2, new Object[] {}, String.class);
+			// No Energy Output
+			if (Data2 != null && Double.parseDouble(Data2) <= 0) {
+				return "Low water level and No energy output, Please Turn Off Turbine.";
+			}
+		}
+		return "";
+	}
 }

@@ -134,8 +134,8 @@
 											format : 'yyyy-mm-dd',
 											container : container1,
 											todayHighlight : true,
-											startDate : "2017-03-01",
-											endDate : "2017-04-27",
+											startDate : "2016-11-01",
+											endDate : "2016-11-30",
 											autoclose : true
 										};
 										date_input1.datepicker(options1);
@@ -148,8 +148,8 @@
 											format : 'yyyy-mm-dd',
 											container : container2,
 											todayHighlight : true,
-											startDate : "2017-03-01",
-											endDate : "2017-04-27",
+											startDate : "2016-11-01",
+											endDate : "2016-11-30",
 											autoclose : true
 										};
 										date_input2.datepicker(options2);
@@ -189,11 +189,11 @@
 																				//c3Data = data;
 																				
 																				var c3Data = JSON.parse(data);
-																				console.log(c3Data);
-																				var data1 = c3Data[0].slice(0,300);
-																				var data2 = c3Data[1].slice(0,300);
-																				var data3 = c3Data[2].slice(0,300);
-																				var data4 = c3Data[3].slice(0,300);
+																				//console.log(c3Data);
+																				var data1 = c3Data[0];//.slice(0,300);
+																				var data2 = c3Data[1];//.slice(0,300);
+																				var data3 = c3Data[2];//.slice(0,300);
+																				var data4 = c3Data[3];//.slice(0,300);
 																				
 																				data1.unshift("Water Level");
 																				data2.unshift("Energy Output");
@@ -211,7 +211,7 @@
 																				var chart1 = c3.generate({
 																							data : {
 																								x : 'TimeStamp',
-																								xFormat: '%Y-%m-%d %H:%M:%S',
+																								xFormat: '%Y-%m-%d',
 																								columns : [
 																									data4,
 																									data3 
@@ -221,7 +221,7 @@
 																								x : {
 																									type : 'timeseries',
 																									tick : {
-																										format : '%Y-%m-%d %H:%M:%S'
+																										format : '%Y-%m-%d'
 																									}
 																								}
 																							},
