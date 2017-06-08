@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Device Manager Home</title>
+  <title>Connect Hydro</title>
   <link rel="stylesheet" media="screen" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css">
   <script type="text/javascript" src="webjars/jquery/1.12.0/jquery.min.js"></script>
@@ -84,14 +84,14 @@
     <div class="col-xs-6 text-center">
              <p class="center-block"><span class="btn btn-danger btn-lg">Yes</span></p>
        <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="btn bg-danger text-danger text-wrap">Turn off Turbine & Close Water Canal</p>
+      <p class="btn bg-danger text-danger text-wrap" style = "margin-bottom:4px;white-space: normal;">Turn off Turbine & Close Water Canal</p>
     </div>
       </div>
     </div>
     <div class="col-xs-6 text-center">
       <p class="center-block"><span class="btn btn-danger btn-lg">> Threshold</span></p>
        <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="btn bg-danger text-danger text-wrap">Turn off Turbine & Activate Rack Cleaner</p>
+      <p class="btn bg-danger text-danger text-wrap" style = "margin-bottom:4px;white-space: normal;">Turn off Turbine & Activate Rack Cleaner</p>
       </div>
     </div>
   </div>
@@ -144,7 +144,7 @@
     <div class="col-xs-6 text-center">
              <p class="center-block"><span class="btn btn-danger btn-lg">High</span></p>
        <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="btn bg-danger text-danger text-wrap">Turn off Turbine & Activate Rack Cleaner</p>
+      <p class="btn bg-danger text-danger text-wrap" style = "margin-bottom:4px;white-space: normal;">Turn off Turbine & Activate Rack Cleaner</p>
     </div>
       </div>
     </div>

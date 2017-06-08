@@ -178,6 +178,12 @@
 															var fromDate = $('#date1').val();
 															var toDate = $('#date2').val();
 
+															
+															/* var div = document
+															.getElementById("VisualizationDiv");
+													 if (div.style.display !== "none") {
+													    div.style.display = "none"; 
+													}		*/
 															$.post("GetRules",
 																			{
 																				selectedValue : selectedValue,
@@ -236,10 +242,12 @@
 																					div.style.display = "inline";
 																				}
 																				//...
+																				
 
 																			})
 																	.done(
 																			function() {
+																				
 																			})
 																	.fail(
 																			function(
@@ -248,6 +256,7 @@
 																					errorThrown) {
 																				alert('error');
 																				alert(errorThrown);
+																				
 																			})
 																	.complete(
 																			function() {
@@ -256,6 +265,7 @@
 																						.prop(
 																								"disabled",
 																								false);
+																				
 
 																			});
 															return false;

@@ -1,0 +1,190 @@
+\documentclass[11pt,a4paper,titlepage,chapterprefix,headsepline,parskip,pdftex,a4paper,pointlessnumbers,bibtotoc]{scrreprt}
+%%% Absätze bei tieferen Ebenen einschalten
+\makeatletter %% Sonderbedeutung von @ aufheben
+\renewcommand{\paragraph}{\@startsection
+   {paragraph} % name
+   {4} % ebene
+   {0mm} % einzug
+   {-\baselineskip} % vorabstand
+   {0.1\baselineskip} % nachabstand
+   {\normalfont\normalsize\bfseries}} % stil
+\makeatother %% Sonderbedeutung von @ wieder
+
+\makeatletter %% Sonderbedeutung von @ aufheben
+\renewcommand{\subparagraph}{\@startsection
+   {subparagraph} % name
+   {5} % ebene
+   {0mm} % einzug
+   {-\baselineskip} % vorabstand
+   {0.1\baselineskip} % nachabstand
+   {\normalfont\normalsize\bfseries}} % stil
+\makeatother %% Sonderbedeutung von @ wieder
+\usepackage{amssymb, amsmath}
+\usepackage{setspace}
+\onehalfspacing
+
+% multirow bei tables
+\usepackage{multirow}
+
+%\usepackage{graphicx}
+\usepackage[pdftex]{graphicx}
+
+% for colours
+\usepackage[pdftex]{color}
+
+% for including title page
+\usepackage{pdfpages}
+
+\usepackage[colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    pagecolor=black,
+    urlcolor=black,
+    breaklinks=true,
+    bookmarksnumbered=true,
+    hypertexnames=false,
+    pdfpagemode=UseOutlines,
+    pdfview=FitH,
+    plainpages=false,
+    pdfpagelabels,
+    bookmarks=true,
+    linktocpage=true]{hyperref}    
+
+\hypersetup{pdfauthor={Andreea Buga},
+    pdftitle={A Timestamp Algorithm Approach for Offline Data Synchronization in Mobile Computing},
+    pdfsubject={Master Thesis},
+    pdfkeywords={Database synchronization, replication, consistency, mobile platforms},
+    pdfcreator={pdfLaTeX with hyperref (\today})}
+
+%%% für Source-Code
+\usepackage{listings}
+\lstset{language=Java}
+
+\lstset{% general command to set parameter(s)
+basicstyle=\small, % print whole listing small
+tabsize=2, %
+keywordstyle=\color[rgb]{0.00,0.00,0.50}{}\bfseries,
+% underlined bold black keywords
+%identifierstyle=, % nothing happens
+commentstyle=\color[rgb]{0.00,0.50,0.25}{}, % white comments
+%stringstyle=\ttfamily, % typewriter type for strings
+%showstringspaces=false} % no special string spaces
+numbers=left, numberstyle=\tiny, numbersep=5pt}
+
+% To-Do Befehl
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{To-Do:} #1}}
+
+% Interner-Link-Befehl
+\newcommand{\internerLink}[1]{\hyperref[#1]{Siehe \ref*{#1}~\nameref{#1} auf S.~\pageref{#1}}}
+
+% Interner-Link-Befehl 2
+\newcommand{\ffinternerLink}[1]{\hyperref[#1]{Siehe S.~\pageref{#1}ff}}
+
+% Interner-Link-Befehl x
+\newcommand{\xinternerLink}[1]{\hyperref[#1]{\ref*{#1}~\nameref{#1} auf S.~\pageref{#1}}}
+
+
+%%% continous footnote
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter} 
+
+%\newcounter{cfootnotecounter}
+%\newcommand{\cfootnote}[1]{\stepcounter{cfootnotecounter}\footnote[\value{cfootnotecounter}]{#1}}
+
+% Image manipulation
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{rotate}
+
+% Change page settings
+\setlength{\hoffset}{0mm} \setlength{\voffset}{0mm}
+\setlength{\evensidemargin}{14.6mm}
+\setlength{\oddsidemargin}{14.6mm} \setlength{\topmargin}{-20mm}
+\setlength{\headheight}{15mm} \setlength{\headsep}{9mm}
+\setlength{\textheight}{242mm} \setlength{\textwidth}{145mm}
+\setlength{\footskip}{10mm}
+%\setlength{\parskip}{3ex plus0.5ex minus0.5ex}
+%\setlength{\parindent}{0mm}
+
+%Abstände von float-Umgebungen
+\setlength{\textfloatsep}{25pt plus5pt minus5pt}
+\setlength{\intextsep}{25pt plus5pt minus5pt}
+
+%Gliederungs-Nummern in den Rand schreiben
+\renewcommand*{\othersectionlevelsformat}[1]{%
+\llap{\csname the#1\endcsname\autodot\enskip}}
+
+%Setting chapter font formating
+%In Kopfzeile nur Kapitel-Text ohne "Kapitel x"
+\renewcommand*{\chaptermarkformat}{}
+\setkomafont{chapter}{\Huge}
+\renewcommand*{\chapterformat}{\LARGE{\chapappifchapterprefix{\ }\thechapter\autodot\enskip}}
+
+% Header formatting
+\usepackage[automark]{scrpage2}
+\clearscrheadings
+\clearscrplain
+\clearscrheadfoot
+\pagestyle{scrheadings}
+\ohead{\pagemark}
+\ihead{\headmark}
+\cfoot{}
+
+%%% Formatting chapter pages
+\renewcommand*{\chapterpagestyle}{scrheadings}
+
+%% Outline numbering and TOC depth
+\setcounter{tocdepth}{\subsubsectionlevel}
+\setcounter{secnumdepth}{\paragraphlevel}
+
+\makeatletter
+\def\bstctlcite#1{\@bsphack
+\@for\@citeb:=#1\do{%
+\edef\@citeb{\expandafter\@firstofone\@citeb}%
+\if@filesw\immediate\write\@auxout{\string\citat
+ion{\@citeb}}\fi}%
+\@esphack}
+\makeatother
+
+% Array for tables
+\usepackage{array}
+
+
+% Language packages
+\usepackage[english, ngerman]{babel}% Section and Subsection Fonts
+
+\addtokomafont{chapter}{\rmfamily}
+\addtokomafont{sectioning}{\rmfamily}
+
+\usepackage{url}
+
+% Text Fonts
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage[scaled]{uarial}
+%\renewcommand*\familydefault{\sfdefault}
+
+% Disable single lines at the start of a paragraph
+\clubpenalty = 10000
+
+% Disable single lines at the end of a paragraph )
+\widowpenalty = 10000 \displaywidowpenalty = 10000
+
+% Other required packages
+\usepackage{algorithmic}
+\usepackage[chapter]{algorithm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+
+\usepackage{url}
+\urlstyle{same}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{lscape}
+
+\usepackage{hyphenat}
+
+\usepackage{listings}

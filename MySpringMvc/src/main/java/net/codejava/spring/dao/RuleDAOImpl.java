@@ -138,7 +138,10 @@ public class RuleDAOImpl implements RuleDAO {
 			String Data2 = jdbcTemplate.queryForObject(sql2, new Object[] {}, String.class);
 			// No Energy Output
 			if (Data2 != null && Double.parseDouble(Data2) <= 0) {
-				return "Low water level and No energy output, Please Turn Off Turbine.";
+				return "Low water level and No energy output, Please Turn Off Turbine and Close the Water Canal.";
+			}
+			else{
+				return "Regulate Turbine.";
 			}
 		}
 		return "";

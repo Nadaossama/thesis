@@ -1,0 +1,56 @@
+\input{Structure/header}
+\input{Structure/silben}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{acronym}
+\usepackage{indentfirst}
+\usepackage{pdfpages}
+\setlength{\parindent}{12pt}
+\textwidth 16.7cm
+\textheight 25cm
+\topmargin -2.7cm
+\oddsidemargin 0.25cm
+\parindent 0pt
+\pagestyle{empty}
+\begin{document}
+
+%%% Struktur-Elemente
+\selectlanguage{english}
+\pagenumbering{roman}
+\include{Cover/coversheet}
+\pagenumbering{Roman}
+
+\include{Structure/acknowledgement}
+\include{Structure/abstract}
+\input{Structure/verzeichnisse}
+
+
+
+%%% Inhalt
+\newpage
+\pagenumbering{arabic}
+\input{chapter_one}
+\input{chapter_two}
+\input{chapter_three}
+\input{chapter_four}
+\input{chapter_five}
+\input{chapter_six}
+\input{chapter_seven}
+%\input{chapter_eight}
+
+
+
+%%% Anhang
+\appendix
+\input{Structure/abkuerzungen}
+\input{Structure/bibliographie}
+
+\includepdf[pages=-,pagecommand={},width=\textwidth]{cv/NadaOssama-CV.pdf}
+
+\include{Structure/ee}
+
+%\input{source}
+%\input{Structure/cv}
+
+
+\end{document}
