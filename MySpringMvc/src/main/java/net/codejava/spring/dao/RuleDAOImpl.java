@@ -70,7 +70,7 @@ public class RuleDAOImpl implements RuleDAO {
 		if (Data != null && Double.parseDouble(Data) >= Double.parseDouble(parameters)) {
 			return "Water Level is High! Turn off Turbine and Activate Rack Cleaning.";
 		} else {
-			return "";
+			return "Water Level is Low! Regulate Turbine.";
 		}
 		// return Data;
 	}

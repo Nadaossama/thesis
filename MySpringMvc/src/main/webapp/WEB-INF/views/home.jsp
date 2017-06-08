@@ -42,7 +42,7 @@
 
 <div  class="container theme-showcase" role="main">    
   <div class="jumbotron">
-        <h2>Event Matrix</h2>
+        <h2>Rules</h2>
       <div class="container">
   <div class="row">
     <div class="col-xs-12">
@@ -64,7 +64,29 @@
   <p class="center-block"><span class="btn btn-success btn-lg">&lt; Threshold</span></p>
       <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
       
-      <p class="bg-success text-success btn">Regulate Turbine</p>
+       <p class="bg-info text-info btn">Have Energy Output ?</p>
+     <div class="row">
+        <div class="col-xs-6 text-center">
+           <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+        </div>
+        <div class="col-xs-6 text-center">
+          <p class="btn">
+          <span class="glyphicon glyphicon-arrow-down"></span></p>
+        </div>
+      </div>
+      <div class="row">
+    <div class="col-xs-6">
+    <p class="center-block"><span class="btn btn-success btn-lg">No</span></p>
+     <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+      <p class="bg-success text-success btn text-wrap">Regulate Turbine</p>
+      
+    </div>
+    <div class="col-xs-6 text-center">
+             <p class="center-block"><span class="btn btn-danger btn-lg">Yes</span></p>
+       <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+      <p class="btn bg-danger text-danger text-wrap">Turn off Turbine & Close Water Canal</p>
+    </div>
+      </div>
     </div>
     <div class="col-xs-6 text-center">
       <p class="center-block"><span class="btn btn-danger btn-lg">> Threshold</span></p>
