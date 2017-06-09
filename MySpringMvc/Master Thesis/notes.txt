@@ -1,0 +1,31 @@
+future work:
+check the feedback effect
+statistics about users abiding to supplying feedback
+
+\item Provide customers with a confirmation based registration mechanism in order to gain access to their data.
+\item Provide customers with a mechanism to request access to sensitive data.
+\item Provide the company with secure authentication mechanism.
+\item Provide the company with access level control mechanism.
+\item Provide the company with a mechanism to track data sources.
+\item Provide the company with logging and version control mechanism to ensure data integrity.
+\item Provide the company with on the spot data validation mechanism.
+\item Provide admin access for company employees.
+
+\item Provide customers with on-site notification system, to notify them about important events in the portal.
+\item Provide customers with email based notification system, to notify them when they are not currently engaged with the portal.
+
+
+\item Provide customers with intuitive yet attractive user interface and great user experience.
+\item Provide customers with matching detailed corporate design to provide them with the feeling of association to the company's identity.
+\item Provide customers with cross platform interface to ensure availability at all times.
+
+\item Provide customers with efficient, quick and easy method to submit feedback.
+\item Provide the company with analytics and insights about the submitted feedback data.
+
+
+
+
+\item Provide customers with an underlying structure that reflects the nature of the industry of the company.
+\item Provide the company with a mechanism for flexible data importing.
+\item Provide the company with easy non-conflicting integration with previous existing digital systems.
+\item Provide the company with flexibility to accommodate for exiting routines.

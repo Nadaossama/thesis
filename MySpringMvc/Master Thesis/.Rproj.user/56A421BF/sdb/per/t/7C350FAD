@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\\input{Structure/header}\n\\input{Structure/silben}\n\\usepackage{graphicx}\n\\usepackage{epstopdf}\n\\usepackage{acronym}\n\\usepackage{indentfirst}\n\\usepackage{pdfpages}\n\\setlength{\\parindent}{12pt}\n\\textwidth 16.7cm\n\\textheight 25cm\n\\topmargin -2.7cm\n\\oddsidemargin 0.25cm\n\\parindent 0pt\n\\pagestyle{empty}\n\\begin{document}\n\n%%% Struktur-Elemente\n\\selectlanguage{english}\n\\pagenumbering{roman}\n\\include{Cover/coversheet}\n\\pagenumbering{Roman}\n\n\\include{Structure/acknowledgement}\n\\include{Structure/abstract}\n\\input{Structure/verzeichnisse}\n\n\n\n%%% Inhalt\n\\newpage\n\\pagenumbering{arabic}\n\\input{chapter_one}\n\\input{chapter_two}\n\\input{chapter_three}\n\\input{chapter_four}\n\\input{chapter_five}\n\\input{chapter_six}\n%\\input{chapter_seven}\n%\\input{chapter_eight}\n\n\n\n%%% Anhang\n\\appendix\n\\input{Structure/abkuerzungen}\n\\input{Structure/bibliographie}\n\n\\includepdf[pages=-,pagecommand={},width=\\textwidth]{cv/CV_AndreeaBuga.pdf}\n\n\\include{Structure/ee}\n\n%\\input{source}\n%\\input{Structure/cv}\n\n\n\\end{document}\n",
+    "created" : 1496442379437.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3188448803",
+    "id" : "7C350FAD",
+    "lastKnownWriteTime" : 1496446561,
+    "last_content_update" : 1496446561233,
+    "path" : "~/Desktop/MasterThesisProject-AT/MasterThesisAT.tex",
+    "project_path" : "MasterThesisAT.tex",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "tex"
+}
