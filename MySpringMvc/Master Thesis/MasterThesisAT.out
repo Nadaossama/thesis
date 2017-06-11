@@ -7,24 +7,30 @@
 \BOOKMARK [1][-]{section.11}{1.5 Original Contribution}{chapter.5}% 7
 \BOOKMARK [1][-]{section.12}{1.6 Outline of the Thesis}{chapter.5}% 8
 \BOOKMARK [0][-]{chapter.13}{2 Decision Support Systems}{}% 9
-\BOOKMARK [1][-]{section.14}{2.1 Foundations}{chapter.13}% 10
-\BOOKMARK [1][-]{section.15}{2.2 Functionality}{chapter.13}% 11
-\BOOKMARK [1][-]{section.16}{2.3 Interfaces}{chapter.13}% 12
-\BOOKMARK [1][-]{section.17}{2.4 Implementation}{chapter.13}% 13
-\BOOKMARK [1][-]{section.18}{2.5 Evaluation and Impact}{chapter.13}% 14
-\BOOKMARK [0][-]{chapter.19}{3 Connect Hydro Project}{}% 15
-\BOOKMARK [0][-]{chapter.20}{4 Decision Support in Connect Hydro}{}% 16
-\BOOKMARK [0][-]{chapter.21}{5 System Architecture and Details}{}% 17
-\BOOKMARK [1][-]{section.22}{5.1 Frameworks and Technologies}{chapter.21}% 18
-\BOOKMARK [1][-]{section.23}{5.2 Database Design and Implementation}{chapter.21}% 19
-\BOOKMARK [1][-]{section.24}{5.3 Web Portal}{chapter.21}% 20
-\BOOKMARK [1][-]{section.25}{5.4 Data Visualization}{chapter.21}% 21
-\BOOKMARK [1][-]{section.26}{5.5 Decision Support}{chapter.21}% 22
-\BOOKMARK [0][-]{chapter.27}{6 Evaluation}{}% 23
-\BOOKMARK [0][-]{chapter.28}{7 Conclusion}{}% 24
-\BOOKMARK [1][-]{section.29}{7.1 Summary}{chapter.28}% 25
-\BOOKMARK [1][-]{section.30}{7.2 Lessons Learned}{chapter.28}% 26
-\BOOKMARK [1][-]{section.31}{7.3 Future Research}{chapter.28}% 27
-\BOOKMARK [2][-]{subsection.32}{7.3.1 Machine Learning}{section.31}% 28
-\BOOKMARK [2][-]{subsection.33}{7.3.2 No-SQL Database}{section.31}% 29
-\BOOKMARK [0][-]{chapter*.35}{Bibliography}{}% 30
+\BOOKMARK [1][-]{section.14}{2.1 History of Decision support systems}{chapter.13}% 10
+\BOOKMARK [1][-]{section.15}{2.2 Concept of DSS}{chapter.13}% 11
+\BOOKMARK [1][-]{section.18}{2.3 Types of DSS}{chapter.13}% 12
+\BOOKMARK [2][-]{subsection.19}{2.3.1 Communication-driven DSS}{section.18}% 13
+\BOOKMARK [2][-]{subsection.20}{2.3.2 Data-driven DSS}{section.18}% 14
+\BOOKMARK [2][-]{subsection.21}{2.3.3 Document-driven DSS}{section.18}% 15
+\BOOKMARK [2][-]{subsection.22}{2.3.4 Knowledge-driven DSS}{section.18}% 16
+\BOOKMARK [2][-]{subsection.23}{2.3.5 Model-driven DSS}{section.18}% 17
+\BOOKMARK [1][-]{section.24}{2.4 Interfaces}{chapter.13}% 18
+\BOOKMARK [1][-]{section.25}{2.5 Implementation}{chapter.13}% 19
+\BOOKMARK [1][-]{section.26}{2.6 Evaluation and Impact}{chapter.13}% 20
+\BOOKMARK [0][-]{chapter.27}{3 Connect Hydro Project}{}% 21
+\BOOKMARK [0][-]{chapter.28}{4 Decision Support in Connect Hydro}{}% 22
+\BOOKMARK [0][-]{chapter.29}{5 System Architecture and Details}{}% 23
+\BOOKMARK [1][-]{section.30}{5.1 Frameworks and Technologies}{chapter.29}% 24
+\BOOKMARK [1][-]{section.31}{5.2 Database Design and Implementation}{chapter.29}% 25
+\BOOKMARK [1][-]{section.32}{5.3 Web Portal}{chapter.29}% 26
+\BOOKMARK [1][-]{section.33}{5.4 Data Visualization}{chapter.29}% 27
+\BOOKMARK [1][-]{section.34}{5.5 Decision Support}{chapter.29}% 28
+\BOOKMARK [0][-]{chapter.35}{6 Evaluation}{}% 29
+\BOOKMARK [0][-]{chapter.36}{7 Conclusion}{}% 30
+\BOOKMARK [1][-]{section.37}{7.1 Summary}{chapter.36}% 31
+\BOOKMARK [1][-]{section.38}{7.2 Lessons Learned}{chapter.36}% 32
+\BOOKMARK [1][-]{section.39}{7.3 Future Research}{chapter.36}% 33
+\BOOKMARK [2][-]{subsection.40}{7.3.1 Machine Learning}{section.39}% 34
+\BOOKMARK [2][-]{subsection.41}{7.3.2 No-SQL Database}{section.39}% 35
+\BOOKMARK [0][-]{chapter*.43}{Bibliography}{}% 36

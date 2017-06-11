@@ -1,10 +1,63 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{Ajila2011synchronization}
-{\sc Ajila, S., and Al-Asaad, A.}
-\newblock Mobile databases - synchronization and conflict resolution strategies
-  using sql server.
-\newblock In {\em Information Reuse and Integration, 2011. IRI '11. IEEE
-  International Conference on\/} (2011), pp.~487 -- 489.
+\bibitem{DDSTypes}
+Decision support systems.
+\newblock \url{http://dssresources.com/dsstypes/}.
+\newblock Accessed: 2017-06-11.
+
+\bibitem{bhargava2001decision}
+{\sc Bhargava, H., and Power, D.}
+\newblock Decision support systems and web technologies: a status report.
+\newblock {\em AMCIS 2001 Proceedings\/} (2001), 46.
+
+\bibitem{bonczek1981generalized}
+{\sc Bonczek, R.~H., Holsapple, C.~W., and Whinston, A.~B.}
+\newblock A generalized decision support system using predicate calculus and
+  network data base management.
+\newblock {\em Operations Research 29}, 2 (1981), 263--281.
+
+\bibitem{gorry1989framework}
+{\sc Gorry, G.~A., and Morton, M. S.~S.}
+\newblock A framework for management information systems.
+\newblock {\em MIT Sloan Management Review 30}, 3 (1989), 49.
+
+\bibitem{khodashahri2013decision}
+{\sc Khodashahri, N.~G., and Sarabi, M. M.~H.}
+\newblock Decision support system (dss).
+\newblock {\em Singaporean Journal of Business Economics and Management
+  Studies, Vol1}, 6 (2013).
+
+\bibitem{makowski2003modeling}
+{\sc Makowski, M., and Wierzbicki, A.~P.}
+\newblock Modeling knowledge: Model-based decision support and soft
+  computations.
+\newblock In {\em Applied decision support with soft computing}. Springer,
+  2003, pp.~3--60.
+
+\bibitem{SEIT2017}
+{\sc Markus~Jager, Markus M.~Schwarzb, D. A. B. P. J.~K.}
+\newblock Connecting small, private and independent hydro power plants to
+  increase the overall power generating efficiency.
+\newblock {\em Procedia Computer Science 00\/} (2016), 000--000.
+
+\bibitem{powell2001dm}
+{\sc Powell, R.}
+\newblock Dm review: A 10 year journey.
+\newblock {\em DM Review, February\/} (2001).
+
+\bibitem{power2007brief}
+{\sc Power, D.~J.}
+\newblock A brief history of decision support systems.
+
+\bibitem{power2002building}
+{\sc Power, D.~J., and Kaparthi, S.}
+\newblock Building web-based decision support systems.
+\newblock {\em Studies in Informatics and Control 11}, 4 (2002), 291--302.
+
+\bibitem{shim2002past}
+{\sc Shim, J.~P., Warkentin, M., Courtney, J.~F., Power, D.~J., Sharda, R., and
+  Carlsson, C.}
+\newblock Past, present, and future of decision support technology.
+\newblock {\em Decision support systems 33}, 2 (2002), 111--126.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.9)  9 JUN 2017 19:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.9)  9 JUN 2017 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -40,7 +40,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.3 \section
+l.4 \section
             {Reading Instructions}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2506,7 +2506,7 @@ Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <recently read> \section 
                          
-l.13 \section
+l.14 \section
              {Foreword}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2772,11 +2772,11 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no [ in font nullfont!
-\citation{Ajila2011synchronization}
+\citation{SEIT2017}
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.15 ...uce energy.\cite{Ajila2011synchronization}
+l.16 ...chniques to produce energy.\cite{SEIT2017}
                                                    \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2785,14 +2785,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Ajila2011synchronization' on page  undefined on input 
-line 15.
+LaTeX Warning: Citation `SEIT2017' on page  undefined on input line 16.
 
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 <recently read> \subsection 
                             
-l.16 \subsection
+l.17 \subsection
                 {Motivation}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2811,7 +2810,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.18 \section
+l.19 \section
              {Problem Statement}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2836,7 +2835,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.21 \section
+l.22 \section
              {Goal and Approach}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2860,7 +2859,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
 ! Undefined control sequence.
-l.23 \section
+l.24 \section
              {Original Contribution}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2889,7 +2888,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.25 \section
+l.26 \section
              {Outline of the Thesis}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2924,7 +2923,7 @@ Missing character: There is no s in font nullfont!
  
 Here is how much of TeX's memory you used:
  13 strings out of 493014
- 232 string characters out of 6133352
+ 216 string characters out of 6133352
  55601 words of memory out of 5000000
  3654 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000

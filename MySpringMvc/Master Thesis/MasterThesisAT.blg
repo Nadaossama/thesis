@@ -7,44 +7,55 @@ A level-1 auxiliary file: Structure/abstract.aux
 The style file: Structure/acm.bst
 A level-1 auxiliary file: Structure/ee.aux
 Database file #1: MasterThesisAt.bib
-You've used 1 entry,
+Too many commas in name 1 of "Markus Jager, Markus M. Schwarzb, Dagmar Auera, Barbara Platzer, Josef Küng" for entry SEIT2017
+while executing---line 1086 of file Structure/acm.bst
+Too many commas in name 1 of "Markus Jager, Markus M. Schwarzb, Dagmar Auera, Barbara Platzer, Josef Küng" for entry SEIT2017
+while executing---line 1086 of file Structure/acm.bst
+Warning--to sort, need author or key in DDSTypes
+Too many commas in name 1 of "Markus Jager, Markus M. Schwarzb, Dagmar Auera, Barbara Platzer, Josef Küng" for entry SEIT2017
+while executing---line 1127 of file Structure/acm.bst
+Too many commas in name 1 of "Markus Jager, Markus M. Schwarzb, Dagmar Auera, Barbara Platzer, Josef Küng" for entry SEIT2017
+while executing---line 1127 of file Structure/acm.bst
+Warning--empty journal in power2007brief
+You've used 11 entries,
             2253 wiz_defined-function locations,
-            538 strings with 4260 characters,
-and the built_in function-call counts, 493 in all, are:
-= -- 48
-> -- 12
+            601 strings with 5835 characters,
+and the built_in function-call counts, 3159 in all, are:
+= -- 311
+> -- 131
 < -- 0
-+ -- 5
-- -- 4
-* -- 30
-:= -- 70
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 5
++ -- 58
+- -- 44
+* -- 240
+:= -- 526
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 26
-empty$ -- 46
-format.name$ -- 4
-if$ -- 115
+cite$ -- 13
+duplicate$ -- 107
+empty$ -- 264
+format.name$ -- 44
+if$ -- 650
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 9
+int.to.str$ -- 11
+missing$ -- 10
+newline$ -- 57
+num.names$ -- 20
+pop$ -- 52
 preamble$ -- 1
-purify$ -- 4
+purify$ -- 44
 quote$ -- 0
-skip$ -- 22
+skip$ -- 64
 stack$ -- 0
-substring$ -- 41
-swap$ -- 12
+substring$ -- 189
+swap$ -- 24
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 4
-width$ -- 2
-write$ -- 12
+type$ -- 44
+warning$ -- 2
+while$ -- 33
+width$ -- 13
+write$ -- 108
+(There were 4 error messages)
