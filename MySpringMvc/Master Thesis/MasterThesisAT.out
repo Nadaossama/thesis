@@ -1,36 +1,58 @@
 \BOOKMARK [0][-]{chapter.5}{1 Introduction}{}% 1
 \BOOKMARK [1][-]{section.6}{1.1 Reading Instructions}{chapter.5}% 2
-\BOOKMARK [1][-]{section.7}{1.2 Foreword}{chapter.5}% 3
-\BOOKMARK [2][-]{subsection.8}{1.2.1 Motivation}{section.7}% 4
-\BOOKMARK [1][-]{section.9}{1.3 Problem Statement}{chapter.5}% 5
-\BOOKMARK [1][-]{section.10}{1.4 Goal and Approach}{chapter.5}% 6
-\BOOKMARK [1][-]{section.11}{1.5 Original Contribution}{chapter.5}% 7
-\BOOKMARK [1][-]{section.12}{1.6 Outline of the Thesis}{chapter.5}% 8
-\BOOKMARK [0][-]{chapter.13}{2 Decision Support Systems}{}% 9
-\BOOKMARK [1][-]{section.14}{2.1 History of Decision support systems}{chapter.13}% 10
-\BOOKMARK [1][-]{section.15}{2.2 Concept of DSS}{chapter.13}% 11
-\BOOKMARK [1][-]{section.18}{2.3 Types of DSS}{chapter.13}% 12
-\BOOKMARK [2][-]{subsection.19}{2.3.1 Communication-driven DSS}{section.18}% 13
-\BOOKMARK [2][-]{subsection.20}{2.3.2 Data-driven DSS}{section.18}% 14
-\BOOKMARK [2][-]{subsection.21}{2.3.3 Document-driven DSS}{section.18}% 15
-\BOOKMARK [2][-]{subsection.22}{2.3.4 Knowledge-driven DSS}{section.18}% 16
-\BOOKMARK [2][-]{subsection.23}{2.3.5 Model-driven DSS}{section.18}% 17
-\BOOKMARK [1][-]{section.24}{2.4 Interfaces}{chapter.13}% 18
-\BOOKMARK [1][-]{section.25}{2.5 Implementation}{chapter.13}% 19
-\BOOKMARK [1][-]{section.26}{2.6 Evaluation and Impact}{chapter.13}% 20
-\BOOKMARK [0][-]{chapter.27}{3 Connect Hydro Project}{}% 21
-\BOOKMARK [0][-]{chapter.28}{4 Decision Support in Connect Hydro}{}% 22
-\BOOKMARK [0][-]{chapter.29}{5 System Architecture and Details}{}% 23
-\BOOKMARK [1][-]{section.30}{5.1 Frameworks and Technologies}{chapter.29}% 24
-\BOOKMARK [1][-]{section.31}{5.2 Database Design and Implementation}{chapter.29}% 25
-\BOOKMARK [1][-]{section.32}{5.3 Web Portal}{chapter.29}% 26
-\BOOKMARK [1][-]{section.33}{5.4 Data Visualization}{chapter.29}% 27
-\BOOKMARK [1][-]{section.34}{5.5 Decision Support}{chapter.29}% 28
-\BOOKMARK [0][-]{chapter.35}{6 Evaluation}{}% 29
-\BOOKMARK [0][-]{chapter.36}{7 Conclusion}{}% 30
-\BOOKMARK [1][-]{section.37}{7.1 Summary}{chapter.36}% 31
-\BOOKMARK [1][-]{section.38}{7.2 Lessons Learned}{chapter.36}% 32
-\BOOKMARK [1][-]{section.39}{7.3 Future Research}{chapter.36}% 33
-\BOOKMARK [2][-]{subsection.40}{7.3.1 Machine Learning}{section.39}% 34
-\BOOKMARK [2][-]{subsection.41}{7.3.2 No-SQL Database}{section.39}% 35
-\BOOKMARK [0][-]{chapter*.43}{Bibliography}{}% 36
+\BOOKMARK [1][-]{section.7}{1.2 Motivation}{chapter.5}% 3
+\BOOKMARK [1][-]{section.8}{1.3 Problem Statement}{chapter.5}% 4
+\BOOKMARK [1][-]{section.9}{1.4 Goal and Approach}{chapter.5}% 5
+\BOOKMARK [1][-]{section.10}{1.5 Original Contribution}{chapter.5}% 6
+\BOOKMARK [1][-]{section.11}{1.6 Outline of the Thesis}{chapter.5}% 7
+\BOOKMARK [0][-]{chapter.12}{2 Decision Support Systems}{}% 8
+\BOOKMARK [1][-]{section.13}{2.1 History of Decision support systems}{chapter.12}% 9
+\BOOKMARK [1][-]{section.14}{2.2 Concept of DSS}{chapter.12}% 10
+\BOOKMARK [1][-]{section.17}{2.3 Types of DSS}{chapter.12}% 11
+\BOOKMARK [2][-]{subsection.18}{2.3.1 Communication-driven DSS}{section.17}% 12
+\BOOKMARK [2][-]{subsection.19}{2.3.2 Data-driven DSS}{section.17}% 13
+\BOOKMARK [2][-]{subsection.20}{2.3.3 Document-driven DSS}{section.17}% 14
+\BOOKMARK [2][-]{subsection.21}{2.3.4 Knowledge-driven DSS}{section.17}% 15
+\BOOKMARK [2][-]{subsection.22}{2.3.5 Model-driven DSS}{section.17}% 16
+\BOOKMARK [1][-]{section.23}{2.4 Tools to Develop DSS}{chapter.12}% 17
+\BOOKMARK [2][-]{subsection.24}{2.4.1 Data Warehouse Systems}{section.23}% 18
+\BOOKMARK [2][-]{subsection.25}{2.4.2 On-line Analytical Processing}{section.23}% 19
+\BOOKMARK [2][-]{subsection.26}{2.4.3 Data Mining}{section.23}% 20
+\BOOKMARK [2][-]{subsection.27}{2.4.4 Web-based DSS}{section.23}% 21
+\BOOKMARK [1][-]{section.30}{2.5 DSS Design}{chapter.12}% 22
+\BOOKMARK [2][-]{subsection.31}{2.5.1 Analyzing Business Decision Making Process}{section.30}% 23
+\BOOKMARK [2][-]{subsection.32}{2.5.2 Decision Making Process}{section.30}% 24
+\BOOKMARK [1][-]{section.33}{2.6 Decision Support Implementation and Development}{chapter.12}% 25
+\BOOKMARK [2][-]{subsection.34}{2.6.1 Choosing a System Development Approach}{section.33}% 26
+\BOOKMARK [2][-]{subsection.41}{2.6.2 Designing User Interface}{section.33}% 27
+\BOOKMARK [3][-]{subsubsection.42}{2.6.2.1 ROMC Design Approach}{subsection.41}% 28
+\BOOKMARK [3][-]{subsubsection.43}{2.6.2.2 UI design success Factors}{subsection.41}% 29
+\BOOKMARK [1][-]{section.44}{2.7 Decision Support Architecture}{chapter.12}% 30
+\BOOKMARK [1][-]{section.45}{2.8 Decision Support Networking and Security}{chapter.12}% 31
+\BOOKMARK [2][-]{subsection.46}{2.8.1 Security}{section.45}% 32
+\BOOKMARK [1][-]{section.47}{2.9 Evaluation and Impact}{chapter.12}% 33
+\BOOKMARK [0][-]{chapter.50}{3 Connect Hydro Project}{}% 34
+\BOOKMARK [1][-]{section.51}{3.1 Hydro Power Plants}{chapter.50}% 35
+\BOOKMARK [0][-]{chapter.52}{4 Decision Support in Connect Hydro}{}% 36
+\BOOKMARK [0][-]{chapter.53}{5 System Architecture and Details}{}% 37
+\BOOKMARK [1][-]{section.54}{5.1 Frameworks and Technologies}{chapter.53}% 38
+\BOOKMARK [2][-]{subsection.55}{5.1.1 Web Development}{section.54}% 39
+\BOOKMARK [3][-]{subsubsection.56}{5.1.1.1 JSON}{subsection.55}% 40
+\BOOKMARK [2][-]{subsection.57}{5.1.2 Front-End Technologies}{section.54}% 41
+\BOOKMARK [3][-]{subsubsection.58}{5.1.2.1 AJAX}{subsection.57}% 42
+\BOOKMARK [3][-]{subsubsection.59}{5.1.2.2 Bootstrap}{subsection.57}% 43
+\BOOKMARK [2][-]{subsection.60}{5.1.3 Back-End Technologies}{section.54}% 44
+\BOOKMARK [3][-]{subsubsection.61}{5.1.3.1 Spring}{subsection.60}% 45
+\BOOKMARK [3][-]{subsubsection.62}{5.1.3.2 MySQL Database}{subsection.60}% 46
+\BOOKMARK [1][-]{section.63}{5.2 Database Design and Implementation}{chapter.53}% 47
+\BOOKMARK [1][-]{section.64}{5.3 Web Portal}{chapter.53}% 48
+\BOOKMARK [1][-]{section.65}{5.4 Data Visualization}{chapter.53}% 49
+\BOOKMARK [1][-]{section.66}{5.5 Decision Support}{chapter.53}% 50
+\BOOKMARK [0][-]{chapter.67}{6 Evaluation}{}% 51
+\BOOKMARK [0][-]{chapter.68}{7 Conclusion}{}% 52
+\BOOKMARK [1][-]{section.69}{7.1 Summary}{chapter.68}% 53
+\BOOKMARK [1][-]{section.70}{7.2 Lessons Learned}{chapter.68}% 54
+\BOOKMARK [1][-]{section.71}{7.3 Future Research}{chapter.68}% 55
+\BOOKMARK [2][-]{subsection.72}{7.3.1 Machine Learning}{section.71}% 56
+\BOOKMARK [2][-]{subsection.73}{7.3.2 No-SQL Database}{section.71}% 57
+\BOOKMARK [0][-]{chapter*.75}{Bibliography}{}% 58
