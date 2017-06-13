@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.9)  12 JUN 2017 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.9)  13 JUN 2017 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -756,7 +756,7 @@ LaTeX Font Info:    Try loading font information for T1+aess on input line 119.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
-<jku_en.pdf, id=237, 475.7775pt x 228.855pt>
+<jku_en.pdf, id=289, 475.7775pt x 228.855pt>
 File: jku_en.pdf Graphic file (type pdf)
  <use jku_en.pdf>
 Package pdftex.def Info: jku_en.pdf used on input line 122.
@@ -765,7 +765,7 @@ Package pdftex.def Info: jku_en.pdf used on input line 122.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<arr.pdf, id=238, 441.65pt x 396.48125pt>
+<arr.pdf, id=290, 441.65pt x 396.48125pt>
 File: arr.pdf Graphic file (type pdf)
  <use arr.pdf>
 Package pdftex.def Info: arr.pdf used on input line 201.
@@ -855,7 +855,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 chapter 2.
 [4
 
-] [5] <Images/decisionSuppotProcess.png, id=396, 769.87625pt x 528.97626pt>
+] [5] <Images/decisionSuppotProcess.png, id=461, 769.87625pt x 528.97626pt>
 File: Images/decisionSuppotProcess.png Graphic file (type png)
 
 <use Images/decisionSuppotProcess.png>
@@ -863,7 +863,7 @@ Package pdftex.def Info: Images/decisionSuppotProcess.png used on input line 33
 .
 (pdftex.def)             Requested size: 307.94504pt x 211.58675pt.
  [6 <./Images/decisionSuppotProcess.png>] [7] [8] [9] [10] <Images/Web-based.pn
-g, id=449, 492.84125pt x 397.485pt>
+g, id=515, 492.84125pt x 397.485pt>
 File: Images/Web-based.png Graphic file (type png)
 
 <use Images/Web-based.png>
@@ -873,7 +873,7 @@ Package pdftex.def Info: Images/Web-based.png used on input line 124.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [13]
-<Images/DSSDevelopmentApproaches.png, id=479, 446.66875pt x 268.00125pt>
+<Images/DSSDevelopmentApproaches.png, id=544, 446.66875pt x 268.00125pt>
 File: Images/DSSDevelopmentApproaches.png Graphic file (type png)
 
 <use Images/DSSDevelopmentApproaches.png>
@@ -881,7 +881,7 @@ Package pdftex.def Info: Images/DSSDevelopmentApproaches.png used on input line
  170.
 (pdftex.def)             Requested size: 312.66599pt x 187.59958pt.
 
-<Images/SLDC.png, id=483, 404.51125pt x 341.275pt>
+<Images/SLDC.png, id=548, 404.51125pt x 341.275pt>
 File: Images/SLDC.png Graphic file (type png)
  <use Images/SLDC.png>
 Package pdftex.def Info: Images/SLDC.png used on input line 185.
@@ -892,7 +892,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--187
  []
 
 [14 <./Images/DSSDevelopmentApproaches.png>]
-<Images/RPA.png, id=495, 567.11874pt x 456.70625pt>
+<Images/RPA.png, id=560, 567.11874pt x 456.70625pt>
 File: Images/RPA.png Graphic file (type png)
  <use Images/RPA.png>
 Package pdftex.def Info: Images/RPA.png used on input line 199.
@@ -908,7 +908,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--227
  []
 
 [17] [18] [19]
-<Images/Evaluation_Features_DSS.png, id=546, 438.63875pt x 614.295pt>
+<Images/Evaluation_Features_DSS.png, id=612, 438.63875pt x 614.295pt>
 File: Images/Evaluation_Features_DSS.png Graphic file (type png)
 
 <use Images/Evaluation_Features_DSS.png>
@@ -917,50 +917,101 @@ Package pdftex.def Info: Images/Evaluation_Features_DSS.png used on input line
 (pdftex.def)             Requested size: 263.18527pt x 368.57983pt.
 ) (./chapter_three.tex [20 <./Images/Evaluation_Features_DSS.png>] [21]
 chapter 3.
-) (./chapter_four.tex [22
+[22
 
-]
+] [23]) (./chapter_four.tex [24]
 chapter 4.
-) (./chapter_five.tex [23
+) (./chapter_five.tex [25
 
 ]
 chapter 5.
-) (./chapter_six.tex [24
+) (./chapter_six.tex [26
 
 ]
 Overfull \vbox (17.17079pt too high) has occurred while \output is active []
 
 
-[25]
+[27]
 chapter 6.
-) (./chapter_seven.tex [26
+) (./chapter_seven.tex [28
 
 ]
 chapter 7.
-) (./Structure/abkuerzungen.tex [27
+) (./Structure/abkuerzungen.tex [29
 
 ]) (./Structure/bibliographie.tex
-(./MasterThesisAT.bbl [28
+(./MasterThesisAT.bbl [30
 
 ]
 chapter without number
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
-[]\T1/aess/m/n/10.95 Decision sup-port sys-tems.  [][]$https : / / www . manage
-mentstudyguide . com /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
 []\T1/aess/m/n/10.95 Rapid pro-to-typ-ing ap-proach.  [][]$https : / / www . sl
 ideshare . net / delaco /
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 26--30
-[]\T1/aess/m/n/10.95 System de-vel-op-ment life cy-cle.  [][]$https : / / shapa
-ro-[]mis . wikispaces . com / System +
- []
+Class scrreprt Warning: deprecated old font command `\sc' used.
+(scrreprt)              You should note, that since 1994 LaTeX2e provides a
+(scrreprt)              new font selection scheme called NFSS2 with several
+(scrreprt)              new, combinable font commands. New KOMA-Script classes
+(scrreprt)              have defined the old font commands like `\sc' only for
+(scrreprt)              compatibility with LaTeX 2.09 document styles of
+(scrreprt)              Script 2.0. These commands are deprecated and
+(scrreprt)              undocumented at least since 2003. Since 2013,
+(scrreprt)              KOMA-Script classes warn about soon removement of
+(scrreprt)              these deprecated commands. Now, after two decades of
+(scrreprt)              LaTeX2e, NFSS2, and KOMA-Script these commands will
+(scrreprt)              not work any longer. If loading a package results in
+(scrreprt)              this message you should contact the author of that
+(scrreprt)              package and ask him to replace the depracted font
+(scrreprt)              command `\sc', e.g., by `\normalfont \scshape '.
+(scrreprt)              Otherwise you should reconfigure or replace the
+(scrreprt)              package. If you have used the old font command
+(scrreprt)              `\sc' yourself you should replace it, e.g., by
+(scrreprt)              `\normalfont \scshape ' on input line 15.
+
+
+Class scrreprt Warning: deprecated old font command `\sc' used.
+(scrreprt)              You should note, that since 1994 LaTeX2e provides a
+(scrreprt)              new font selection scheme called NFSS2 with several
+(scrreprt)              new, combinable font commands. New KOMA-Script classes
+(scrreprt)              have defined the old font commands like `\sc' only for
+(scrreprt)              compatibility with LaTeX 2.09 document styles of
+(scrreprt)              Script 2.0. These commands are deprecated and
+(scrreprt)              undocumented at least since 2003. Since 2013,
+(scrreprt)              KOMA-Script classes warn about soon removement of
+(scrreprt)              these deprecated commands. Now, after two decades of
+(scrreprt)              LaTeX2e, NFSS2, and KOMA-Script these commands will
+(scrreprt)              not work any longer. If loading a package results in
+(scrreprt)              this message you should contact the author of that
+(scrreprt)              package and ask him to replace the depracted font
+(scrreprt)              command `\sc', e.g., by `\normalfont \scshape '.
+(scrreprt)              Otherwise you should reconfigure or replace the
+(scrreprt)              package. If you have used the old font command
+(scrreprt)              `\sc' yourself you should replace it, e.g., by
+(scrreprt)              `\normalfont \scshape ' on input line 20.
+
+
+Class scrreprt Warning: deprecated old font command `\sc' used.
+(scrreprt)              You should note, that since 1994 LaTeX2e provides a
+(scrreprt)              new font selection scheme called NFSS2 with several
+(scrreprt)              new, combinable font commands. New KOMA-Script classes
+(scrreprt)              have defined the old font commands like `\sc' only for
+(scrreprt)              compatibility with LaTeX 2.09 document styles of
+(scrreprt)              Script 2.0. These commands are deprecated and
+(scrreprt)              undocumented at least since 2003. Since 2013,
+(scrreprt)              KOMA-Script classes warn about soon removement of
+(scrreprt)              these deprecated commands. Now, after two decades of
+(scrreprt)              LaTeX2e, NFSS2, and KOMA-Script these commands will
+(scrreprt)              not work any longer. If loading a package results in
+(scrreprt)              this message you should contact the author of that
+(scrreprt)              package and ask him to replace the depracted font
+(scrreprt)              command `\sc', e.g., by `\normalfont \scshape '.
+(scrreprt)              Otherwise you should reconfigure or replace the
+(scrreprt)              package. If you have used the old font command
+(scrreprt)              `\sc' yourself you should replace it, e.g., by
+(scrreprt)              `\normalfont \scshape ' on input line 27.
 
 
 Class scrreprt Warning: deprecated old font command `\sc' used.
@@ -1002,7 +1053,7 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 37.
+(scrreprt)              `\normalfont \scshape ' on input line 38.
 
 
 Class scrreprt Warning: deprecated old font command `\sc' used.
@@ -1023,7 +1074,7 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 42.
+(scrreprt)              `\normalfont \scshape ' on input line 45.
 
 
 Class scrreprt Warning: deprecated old font command `\sc' used.
@@ -1044,7 +1095,7 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 48.
+(scrreprt)              `\normalfont \scshape ' on input line 52.
 
 
 Class scrreprt Warning: deprecated old font command `\sc' used.
@@ -1065,7 +1116,7 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 55.
+(scrreprt)              `\normalfont \scshape ' on input line 58.
 
 
 Class scrreprt Warning: deprecated old font command `\sc' used.
@@ -1086,9 +1137,9 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 61.
+(scrreprt)              `\normalfont \scshape ' on input line 66.
 
-[29
+[31
 
 ]
 
@@ -1110,7 +1161,7 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 69.
+(scrreprt)              `\normalfont \scshape ' on input line 71.
 
 
 Class scrreprt Warning: deprecated old font command `\sc' used.
@@ -1131,7 +1182,7 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 74.
+(scrreprt)              `\normalfont \scshape ' on input line 75.
 
 
 Class scrreprt Warning: deprecated old font command `\sc' used.
@@ -1152,7 +1203,7 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 78.
+(scrreprt)              `\normalfont \scshape ' on input line 81.
 
 
 Class scrreprt Warning: deprecated old font command `\sc' used.
@@ -1173,7 +1224,7 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 84.
+(scrreprt)              `\normalfont \scshape ' on input line 87.
 
 
 Class scrreprt Warning: deprecated old font command `\sc' used.
@@ -1194,9 +1245,9 @@ Class scrreprt Warning: deprecated old font command `\sc' used.
 (scrreprt)              Otherwise you should reconfigure or replace the
 (scrreprt)              package. If you have used the old font command
 (scrreprt)              `\sc' yourself you should replace it, e.g., by
-(scrreprt)              `\normalfont \scshape ' on input line 89.
+(scrreprt)              `\normalfont \scshape ' on input line 92.
 
-)) <cv/NadaOssama-CV.pdf, id=611, 598.235pt x 846.16125pt>
+)) <cv/NadaOssama-CV.pdf, id=686, 598.235pt x 846.16125pt>
 File: cv/NadaOssama-CV.pdf Graphic file (type pdf)
 
 <use cv/NadaOssama-CV.pdf>
@@ -1207,7 +1258,7 @@ File: cv/NadaOssama-CV.pdf Graphic file (type pdf)
 Package pdftex.def Info: cv/NadaOssama-CV.pdf used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
 
-<cv/NadaOssama-CV.pdf, id=614, page=1, 598.235pt x 846.16125pt>
+<cv/NadaOssama-CV.pdf, id=689, page=1, 598.235pt x 846.16125pt>
 File: cv/NadaOssama-CV.pdf Graphic file (type pdf)
 
 <use cv/NadaOssama-CV.pdf, page 1>
@@ -1217,7 +1268,7 @@ File: cv/NadaOssama-CV.pdf Graphic file (type pdf)
  <use cv/NadaOssama-CV.pdf, page 1>
 Package pdftex.def Info: cv/NadaOssama-CV.pdf, page1 used on input line 51.
 (pdftex.def)             Requested size: 752.28305pt x 1064.05138pt.
- [30]
+ [32]
 File: cv/NadaOssama-CV.pdf Graphic file (type pdf)
 
 <use cv/NadaOssama-CV.pdf, page 1>
@@ -1232,11 +1283,11 @@ File: cv/NadaOssama-CV.pdf Graphic file (type pdf)
 <use cv/NadaOssama-CV.pdf, page 1>
 Package pdftex.def Info: cv/NadaOssama-CV.pdf, page1 used on input line 51.
 (pdftex.def)             Requested size: 752.28305pt x 1064.05138pt.
- [31 <./cv/NadaOssama-CV.pdf
+ [33 <./cv/NadaOssama-CV.pdf
 
 pdfTeX warning: pdflatex (file ./cv/NadaOssama-CV.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <cv/NadaOssama-CV.pdf, id=658, page=2, 598.235pt x 846.16125pt>
+>] <cv/NadaOssama-CV.pdf, id=731, page=2, 598.235pt x 846.16125pt>
 File: cv/NadaOssama-CV.pdf Graphic file (type pdf)
 
 <use cv/NadaOssama-CV.pdf, page 2>
@@ -1251,14 +1302,14 @@ File: cv/NadaOssama-CV.pdf Graphic file (type pdf)
 <use cv/NadaOssama-CV.pdf, page 2>
 Package pdftex.def Info: cv/NadaOssama-CV.pdf, page2 used on input line 51.
 (pdftex.def)             Requested size: 752.28305pt x 1064.05138pt.
- [32 <./cv/NadaOssama-CV.pdf
+ [34 <./cv/NadaOssama-CV.pdf
 
 pdfTeX warning: pdflatex (file ./cv/NadaOssama-CV.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
 \openout2 = `Structure/ee.aux'.
 
- (./Structure/ee.tex) [33
+ (./Structure/ee.tex) [35
 
 
 ]
@@ -1270,14 +1321,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `MasterThesisAT.out' has not changed.
-(rerunfilecheck)             Checksum: 0171CC6BC8916B4D400711E38928A998;4149.
+(rerunfilecheck)             Checksum: C88A4A7E50D1855C233AA179C38B1870;5177.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
- 13986 strings out of 493014
- 214122 string characters out of 6133352
- 402644 words of memory out of 5000000
- 17001 multiletter control sequences out of 15000+600000
+ 14014 strings out of 493014
+ 214492 string characters out of 6133352
+ 403662 words of memory out of 5000000
+ 17014 multiletter control sequences out of 15000+600000
  47493 words of font info for 96 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  45i,18n,66p,8565b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1292,10 +1343,10 @@ r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MasterThesisAT.pdf (39 pages, 763132 bytes).
+Output written on MasterThesisAT.pdf (41 pages, 773067 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 646 compressed objects within 7 object streams
- 132 named destinations out of 1000 (max. 500000)
- 530 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 824 PDF objects out of 1000 (max. 8388607)
+ 721 compressed objects within 8 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 634 words of extra memory for PDF output out of 10000 (max. 10000000)
 

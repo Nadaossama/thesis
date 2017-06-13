@@ -1,16 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{DSS}
-Decision support systems.
-\newblock
-  \url{https://www.managementstudyguide.com/decision-support-systems-articles.htm}.
-\newblock Accessed: 2017-06-12.
-
-\bibitem{DDSTypes}
-Decision support systems types.
-\newblock \url{http://dssresources.com/dsstypes/}.
-\newblock Accessed: 2017-06-11.
-
 \bibitem{ROMC}
 Designing and evaluating dss user interfaces.
 \newblock
@@ -22,16 +11,17 @@ Rapid prototyping approach.
 \newblock \url{https://www.slideshare.net/delaco/1-rapid-prototyping-model}.
 \newblock Accessed: 2017-06-12.
 
-\bibitem{SDLC}
-System development life cycle.
-\newblock
-  \url{https://shaparo-mis.wikispaces.com/System+Development+Life+Cycle}.
-\newblock Accessed: 2017-06-12.
-
 \bibitem{bhargava2001decision}
 {\sc Bhargava, H., and Power, D.}
 \newblock Decision support systems and web technologies: a status report.
 \newblock {\em AMCIS 2001 Proceedings\/} (2001), 46.
+
+\bibitem{DSS}
+{\sc Experts, M.}
+\newblock Decision support systems.
+\newblock
+  \url{https://www.managementstudyguide.com/decision-support-systems-articles.htm}.
+\newblock Accessed: 2017-06-12.
 
 \bibitem{gorry1989framework}
 {\sc Gorry, G.~A., and Morton, M. S.~S.}
@@ -43,6 +33,13 @@ System development life cycle.
 \newblock Decision support system (dss).
 \newblock {\em Singaporean Journal of Business Economics and Management
   Studies, Vol1}, 6 (2013).
+
+\bibitem{SDLC}
+{\sc LLC, T.}
+\newblock System development life cycle.
+\newblock
+  \url{https://shaparo-mis.wikispaces.com/System+Development+Life+Cycle}.
+\newblock Accessed: 2017-06-12.
 
 \bibitem{makowski2003modeling}
 {\sc Makowski, M., and Wierzbicki, A.~P.}
@@ -73,6 +70,12 @@ System development life cycle.
 \bibitem{power2007brief}
 {\sc Power, D.~J.}
 \newblock A brief history of decision support systems.
+
+\bibitem{DDSTypes}
+{\sc Power, D.~J.}
+\newblock Decision support systems types.
+\newblock \url{http://dssresources.com/dsstypes/}.
+\newblock Accessed: 2017-06-11.
 
 \bibitem{power2000web}
 {\sc Power, D.~J.}

@@ -36,27 +36,40 @@
 \contentsline {subsection}{\numberline {2.8.1}Security}{19}{subsection.46}
 \contentsline {section}{\numberline {2.9}Evaluation and Impact}{20}{section.47}
 \contentsline {chapter}{\numberline {3}Connect Hydro Project}{22}{chapter.50}
-\contentsline {section}{\numberline {3.1}Hydro Power Plants}{22}{section.51}
-\contentsline {chapter}{\numberline {4}Decision Support in Connect Hydro}{23}{chapter.52}
-\contentsline {chapter}{\numberline {5}System Architecture and Details}{24}{chapter.53}
-\contentsline {section}{\numberline {5.1}Frameworks and Technologies}{25}{section.54}
-\contentsline {subsection}{\numberline {5.1.1}Web Development}{25}{subsection.55}
-\contentsline {subsubsection}{\numberline {5.1.1.1}JSON}{25}{subsubsection.56}
-\contentsline {subsection}{\numberline {5.1.2}Front-End Technologies}{25}{subsection.57}
-\contentsline {subsubsection}{\numberline {5.1.2.1}AJAX}{25}{subsubsection.58}
-\contentsline {subsubsection}{\numberline {5.1.2.2}Bootstrap}{25}{subsubsection.59}
-\contentsline {subsection}{\numberline {5.1.3}Back-End Technologies}{25}{subsection.60}
-\contentsline {subsubsection}{\numberline {5.1.3.1}Spring}{25}{subsubsection.61}
-\contentsline {subsubsection}{\numberline {5.1.3.2}MySQL Database}{25}{subsubsection.62}
-\contentsline {section}{\numberline {5.2}Database Design and Implementation}{25}{section.63}
-\contentsline {section}{\numberline {5.3}Web Portal}{25}{section.64}
-\contentsline {section}{\numberline {5.4}Data Visualization}{25}{section.65}
-\contentsline {section}{\numberline {5.5}Decision Support}{25}{section.66}
-\contentsline {chapter}{\numberline {6}Evaluation}{26}{chapter.67}
-\contentsline {chapter}{\numberline {7}Conclusion}{27}{chapter.68}
-\contentsline {section}{\numberline {7.1}Summary}{27}{section.69}
-\contentsline {section}{\numberline {7.2}Lessons Learned}{27}{section.70}
-\contentsline {section}{\numberline {7.3}Future Research}{27}{section.71}
-\contentsline {subsection}{\numberline {7.3.1}Machine Learning}{27}{subsection.72}
-\contentsline {subsection}{\numberline {7.3.2}No-SQL Database}{27}{subsection.73}
-\contentsline {chapter}{\nonumberline Bibliography}{29}{chapter*.75}
+\contentsline {section}{\numberline {3.1}Small Hydro Power Plants}{22}{section.51}
+\contentsline {subsection}{\numberline {3.1.1}Benefits of Small Hydro Power Plants}{23}{subsection.52}
+\contentsline {subsection}{\numberline {3.1.2}Generating methods}{23}{subsection.53}
+\contentsline {subsection}{\numberline {3.1.3}Problems with Small Hydro Power Plants}{24}{subsection.54}
+\contentsline {section}{\numberline {3.2}Control Strategies}{24}{section.55}
+\contentsline {subsection}{\numberline {3.2.1}Local Control Strategy}{24}{subsection.56}
+\contentsline {subsection}{\numberline {3.2.2}Cooperative Control Strategy}{24}{subsection.57}
+\contentsline {subsection}{\numberline {3.2.3}Centralized Control Strategy}{24}{subsection.58}
+\contentsline {section}{\numberline {3.3}Connect Hydro Problem}{24}{section.59}
+\contentsline {subsection}{\numberline {3.3.1}Technical \& Financial Aspects}{24}{subsection.60}
+\contentsline {subsection}{\numberline {3.3.2}Proposed Concept}{24}{subsection.61}
+\contentsline {section}{\numberline {3.4}Proposed Implementation}{24}{section.62}
+\contentsline {subsection}{\numberline {3.4.1}Technical Level}{24}{subsection.63}
+\contentsline {subsection}{\numberline {3.4.2}Software Level}{24}{subsection.64}
+\contentsline {chapter}{\numberline {4}Decision Support in Connect Hydro}{25}{chapter.65}
+\contentsline {chapter}{\numberline {5}System Architecture and Details}{26}{chapter.66}
+\contentsline {section}{\numberline {5.1}Frameworks and Technologies}{27}{section.67}
+\contentsline {subsection}{\numberline {5.1.1}Web Development}{27}{subsection.68}
+\contentsline {subsubsection}{\numberline {5.1.1.1}JSON}{27}{subsubsection.69}
+\contentsline {subsection}{\numberline {5.1.2}Front-End Technologies}{27}{subsection.70}
+\contentsline {subsubsection}{\numberline {5.1.2.1}AJAX}{27}{subsubsection.71}
+\contentsline {subsubsection}{\numberline {5.1.2.2}Bootstrap}{27}{subsubsection.72}
+\contentsline {subsection}{\numberline {5.1.3}Back-End Technologies}{27}{subsection.73}
+\contentsline {subsubsection}{\numberline {5.1.3.1}Spring}{27}{subsubsection.74}
+\contentsline {subsubsection}{\numberline {5.1.3.2}MySQL Database}{27}{subsubsection.75}
+\contentsline {section}{\numberline {5.2}Database Design and Implementation}{27}{section.76}
+\contentsline {section}{\numberline {5.3}Web Portal}{27}{section.77}
+\contentsline {section}{\numberline {5.4}Data Visualization}{27}{section.78}
+\contentsline {section}{\numberline {5.5}Decision Support}{27}{section.79}
+\contentsline {chapter}{\numberline {6}Evaluation}{28}{chapter.80}
+\contentsline {chapter}{\numberline {7}Conclusion}{29}{chapter.81}
+\contentsline {section}{\numberline {7.1}Summary}{29}{section.82}
+\contentsline {section}{\numberline {7.2}Lessons Learned}{29}{section.83}
+\contentsline {section}{\numberline {7.3}Future Research}{29}{section.84}
+\contentsline {subsection}{\numberline {7.3.1}Machine Learning}{29}{subsection.85}
+\contentsline {subsection}{\numberline {7.3.2}No-SQL Database}{29}{subsection.86}
+\contentsline {chapter}{\nonumberline Bibliography}{31}{chapter*.88}
