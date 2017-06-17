@@ -11,6 +11,11 @@ Rapid prototyping approach.
 \newblock \url{https://www.slideshare.net/delaco/1-rapid-prototyping-model}.
 \newblock Accessed: 2017-06-12.
 
+\bibitem{SmallScale}
+Small scale hydropower.
+\newblock \url{http://www.small-hydro.com/about/small-scale-hydrpower.aspx}.
+\newblock Accessed: 2017-06-13.
+
 \bibitem{bhargava2001decision}
 {\sc Bhargava, H., and Power, D.}
 \newblock Decision support systems and web technologies: a status report.
@@ -23,10 +28,22 @@ Rapid prototyping approach.
   \url{https://www.managementstudyguide.com/decision-support-systems-articles.htm}.
 \newblock Accessed: 2017-06-12.
 
+\bibitem{farina2012distributed}
+{\sc Farina, M., and Scattolini, R.}
+\newblock Distributed predictive control: A non-cooperative algorithm with
+  neighbor-to-neighbor communication for linear systems.
+\newblock {\em Automatica 48}, 6 (2012), 1088--1096.
+
 \bibitem{gorry1989framework}
 {\sc Gorry, G.~A., and Morton, M. S.~S.}
 \newblock A framework for management information systems.
 \newblock {\em MIT Sloan Management Review 30}, 3 (1989), 49.
+
+\bibitem{HydroPower}
+{\sc José Luis~Carrasco, Andrea~Pain, D.~S.}
+\newblock Hydropower (small-scale).
+\newblock \url{http://www.sswm.info/content/hydropower-small-scale}.
+\newblock Accessed: 2017-06-13.
 
 \bibitem{khodashahri2013decision}
 {\sc Khodashahri, N.~G., and Sarabi, M. M.~H.}
@@ -62,6 +79,11 @@ Rapid prototyping approach.
 \newblock Policies and Tools for Sustainable Water Management in the European
   Union.
 
+\bibitem{paish2002small}
+{\sc Paish, O.}
+\newblock Small hydro power: technology and current status.
+\newblock {\em Renewable and sustainable energy reviews 6}, 6 (2002), 537--556.
+
 \bibitem{powell2001dm}
 {\sc Powell, R.}
 \newblock Dm review: A 10 year journey.
@@ -93,5 +115,16 @@ Rapid prototyping approach.
   Carlsson, C.}
 \newblock Past, present, and future of decision support technology.
 \newblock {\em Decision support systems 33}, 2 (2002), 111--126.
+
+\bibitem{stewart2010cooperative}
+{\sc Stewart, B.~T., Venkat, A.~N., Rawlings, J.~B., Wright, S.~J., and
+  Pannocchia, G.}
+\newblock Cooperative distributed model predictive control.
+\newblock {\em Systems \& Control Letters 59}, 8 (2010), 460--469.
+
+\bibitem{HydroPP}
+{\sc Timofeyev, M.}
+\newblock Hydro power plants.
+\newblock {\em National Research Tomsk Polytechnic University.\/}.
 
 \end{thebibliography}

@@ -1,71 +1,79 @@
 \BOOKMARK [0][-]{chapter.5}{1 Introduction}{}% 1
 \BOOKMARK [1][-]{section.6}{1.1 Reading Instructions}{chapter.5}% 2
-\BOOKMARK [1][-]{section.7}{1.2 Motivation}{chapter.5}% 3
-\BOOKMARK [1][-]{section.8}{1.3 Problem Statement}{chapter.5}% 4
-\BOOKMARK [1][-]{section.9}{1.4 Goal and Approach}{chapter.5}% 5
-\BOOKMARK [1][-]{section.10}{1.5 Original Contribution}{chapter.5}% 6
-\BOOKMARK [1][-]{section.11}{1.6 Outline of the Thesis}{chapter.5}% 7
-\BOOKMARK [0][-]{chapter.12}{2 Decision Support Systems}{}% 8
-\BOOKMARK [1][-]{section.13}{2.1 History of Decision support systems}{chapter.12}% 9
-\BOOKMARK [1][-]{section.14}{2.2 Concept of DSS}{chapter.12}% 10
-\BOOKMARK [1][-]{section.17}{2.3 Types of DSS}{chapter.12}% 11
-\BOOKMARK [2][-]{subsection.18}{2.3.1 Communication-driven DSS}{section.17}% 12
-\BOOKMARK [2][-]{subsection.19}{2.3.2 Data-driven DSS}{section.17}% 13
-\BOOKMARK [2][-]{subsection.20}{2.3.3 Document-driven DSS}{section.17}% 14
-\BOOKMARK [2][-]{subsection.21}{2.3.4 Knowledge-driven DSS}{section.17}% 15
-\BOOKMARK [2][-]{subsection.22}{2.3.5 Model-driven DSS}{section.17}% 16
-\BOOKMARK [1][-]{section.23}{2.4 Tools to Develop DSS}{chapter.12}% 17
-\BOOKMARK [2][-]{subsection.24}{2.4.1 Data Warehouse Systems}{section.23}% 18
-\BOOKMARK [2][-]{subsection.25}{2.4.2 On-line Analytical Processing}{section.23}% 19
-\BOOKMARK [2][-]{subsection.26}{2.4.3 Data Mining}{section.23}% 20
-\BOOKMARK [2][-]{subsection.27}{2.4.4 Web-based DSS}{section.23}% 21
-\BOOKMARK [1][-]{section.30}{2.5 DSS Design}{chapter.12}% 22
-\BOOKMARK [2][-]{subsection.31}{2.5.1 Analyzing Business Decision Making Process}{section.30}% 23
-\BOOKMARK [2][-]{subsection.32}{2.5.2 Decision Making Process}{section.30}% 24
-\BOOKMARK [1][-]{section.33}{2.6 Decision Support Implementation and Development}{chapter.12}% 25
-\BOOKMARK [2][-]{subsection.34}{2.6.1 Choosing a System Development Approach}{section.33}% 26
-\BOOKMARK [2][-]{subsection.41}{2.6.2 Designing User Interface}{section.33}% 27
-\BOOKMARK [3][-]{subsubsection.42}{2.6.2.1 ROMC Design Approach}{subsection.41}% 28
-\BOOKMARK [3][-]{subsubsection.43}{2.6.2.2 UI design success Factors}{subsection.41}% 29
-\BOOKMARK [1][-]{section.44}{2.7 Decision Support Architecture}{chapter.12}% 30
-\BOOKMARK [1][-]{section.45}{2.8 Decision Support Networking and Security}{chapter.12}% 31
-\BOOKMARK [2][-]{subsection.46}{2.8.1 Security}{section.45}% 32
-\BOOKMARK [1][-]{section.47}{2.9 Evaluation and Impact}{chapter.12}% 33
-\BOOKMARK [0][-]{chapter.50}{3 Connect Hydro Project}{}% 34
-\BOOKMARK [1][-]{section.51}{3.1 Small Hydro Power Plants}{chapter.50}% 35
-\BOOKMARK [2][-]{subsection.52}{3.1.1 Benefits of Small Hydro Power Plants}{section.51}% 36
-\BOOKMARK [2][-]{subsection.53}{3.1.2 Generating methods}{section.51}% 37
-\BOOKMARK [2][-]{subsection.54}{3.1.3 Problems with Small Hydro Power Plants}{section.51}% 38
-\BOOKMARK [1][-]{section.55}{3.2 Control Strategies}{chapter.50}% 39
-\BOOKMARK [2][-]{subsection.56}{3.2.1 Local Control Strategy}{section.55}% 40
-\BOOKMARK [2][-]{subsection.57}{3.2.2 Cooperative Control Strategy}{section.55}% 41
-\BOOKMARK [2][-]{subsection.58}{3.2.3 Centralized Control Strategy}{section.55}% 42
-\BOOKMARK [1][-]{section.59}{3.3 Connect Hydro Problem}{chapter.50}% 43
-\BOOKMARK [2][-]{subsection.60}{3.3.1 Technical \046 Financial Aspects}{section.59}% 44
-\BOOKMARK [2][-]{subsection.61}{3.3.2 Proposed Concept}{section.59}% 45
-\BOOKMARK [1][-]{section.62}{3.4 Proposed Implementation}{chapter.50}% 46
-\BOOKMARK [2][-]{subsection.63}{3.4.1 Technical Level}{section.62}% 47
-\BOOKMARK [2][-]{subsection.64}{3.4.2 Software Level}{section.62}% 48
-\BOOKMARK [0][-]{chapter.65}{4 Decision Support in Connect Hydro}{}% 49
-\BOOKMARK [0][-]{chapter.66}{5 System Architecture and Details}{}% 50
-\BOOKMARK [1][-]{section.67}{5.1 Frameworks and Technologies}{chapter.66}% 51
-\BOOKMARK [2][-]{subsection.68}{5.1.1 Web Development}{section.67}% 52
-\BOOKMARK [3][-]{subsubsection.69}{5.1.1.1 JSON}{subsection.68}% 53
-\BOOKMARK [2][-]{subsection.70}{5.1.2 Front-End Technologies}{section.67}% 54
-\BOOKMARK [3][-]{subsubsection.71}{5.1.2.1 AJAX}{subsection.70}% 55
-\BOOKMARK [3][-]{subsubsection.72}{5.1.2.2 Bootstrap}{subsection.70}% 56
-\BOOKMARK [2][-]{subsection.73}{5.1.3 Back-End Technologies}{section.67}% 57
-\BOOKMARK [3][-]{subsubsection.74}{5.1.3.1 Spring}{subsection.73}% 58
-\BOOKMARK [3][-]{subsubsection.75}{5.1.3.2 MySQL Database}{subsection.73}% 59
-\BOOKMARK [1][-]{section.76}{5.2 Database Design and Implementation}{chapter.66}% 60
-\BOOKMARK [1][-]{section.77}{5.3 Web Portal}{chapter.66}% 61
-\BOOKMARK [1][-]{section.78}{5.4 Data Visualization}{chapter.66}% 62
-\BOOKMARK [1][-]{section.79}{5.5 Decision Support}{chapter.66}% 63
-\BOOKMARK [0][-]{chapter.80}{6 Evaluation}{}% 64
-\BOOKMARK [0][-]{chapter.81}{7 Conclusion}{}% 65
-\BOOKMARK [1][-]{section.82}{7.1 Summary}{chapter.81}% 66
-\BOOKMARK [1][-]{section.83}{7.2 Lessons Learned}{chapter.81}% 67
-\BOOKMARK [1][-]{section.84}{7.3 Future Research}{chapter.81}% 68
-\BOOKMARK [2][-]{subsection.85}{7.3.1 Machine Learning}{section.84}% 69
-\BOOKMARK [2][-]{subsection.86}{7.3.2 No-SQL Database}{section.84}% 70
-\BOOKMARK [0][-]{chapter*.88}{Bibliography}{}% 71
+\BOOKMARK [1][-]{section.7}{1.2 Foreword}{chapter.5}% 3
+\BOOKMARK [2][-]{subsection.8}{1.2.1 Motivation}{section.7}% 4
+\BOOKMARK [1][-]{section.9}{1.3 Problem Statement}{chapter.5}% 5
+\BOOKMARK [1][-]{section.10}{1.4 Goal and Approach}{chapter.5}% 6
+\BOOKMARK [1][-]{section.11}{1.5 Original Contribution}{chapter.5}% 7
+\BOOKMARK [1][-]{section.12}{1.6 Outline of the Thesis}{chapter.5}% 8
+\BOOKMARK [0][-]{chapter.13}{2 Decision Support Systems}{}% 9
+\BOOKMARK [1][-]{section.14}{2.1 History of Decision support systems}{chapter.13}% 10
+\BOOKMARK [1][-]{section.15}{2.2 Concept of DSS}{chapter.13}% 11
+\BOOKMARK [1][-]{section.18}{2.3 Types of DSS}{chapter.13}% 12
+\BOOKMARK [2][-]{subsection.19}{2.3.1 Communication-driven DSS}{section.18}% 13
+\BOOKMARK [2][-]{subsection.20}{2.3.2 Data-driven DSS}{section.18}% 14
+\BOOKMARK [2][-]{subsection.21}{2.3.3 Document-driven DSS}{section.18}% 15
+\BOOKMARK [2][-]{subsection.22}{2.3.4 Knowledge-driven DSS}{section.18}% 16
+\BOOKMARK [2][-]{subsection.23}{2.3.5 Model-driven DSS}{section.18}% 17
+\BOOKMARK [1][-]{section.24}{2.4 Tools to Develop DSS}{chapter.13}% 18
+\BOOKMARK [2][-]{subsection.25}{2.4.1 Data Warehouse Systems}{section.24}% 19
+\BOOKMARK [2][-]{subsection.26}{2.4.2 On-line Analytical Processing}{section.24}% 20
+\BOOKMARK [2][-]{subsection.27}{2.4.3 Data Mining}{section.24}% 21
+\BOOKMARK [2][-]{subsection.28}{2.4.4 Web-based DSS}{section.24}% 22
+\BOOKMARK [1][-]{section.31}{2.5 DSS Design}{chapter.13}% 23
+\BOOKMARK [2][-]{subsection.32}{2.5.1 Analyzing Business Decision Making Process}{section.31}% 24
+\BOOKMARK [2][-]{subsection.33}{2.5.2 Decision Making Process}{section.31}% 25
+\BOOKMARK [1][-]{section.34}{2.6 Decision Support Implementation and Development}{chapter.13}% 26
+\BOOKMARK [2][-]{subsection.35}{2.6.1 Choosing a System Development Approach}{section.34}% 27
+\BOOKMARK [2][-]{subsection.42}{2.6.2 Designing User Interface}{section.34}% 28
+\BOOKMARK [3][-]{subsubsection.43}{2.6.2.1 ROMC Design Approach}{subsection.42}% 29
+\BOOKMARK [3][-]{subsubsection.44}{2.6.2.2 UI design success Factors}{subsection.42}% 30
+\BOOKMARK [1][-]{section.45}{2.7 Decision Support Architecture}{chapter.13}% 31
+\BOOKMARK [1][-]{section.46}{2.8 Decision Support Networking and Security}{chapter.13}% 32
+\BOOKMARK [2][-]{subsection.47}{2.8.1 Security}{section.46}% 33
+\BOOKMARK [1][-]{section.48}{2.9 Evaluation and Impact}{chapter.13}% 34
+\BOOKMARK [0][-]{chapter.51}{3 Connect Hydro Project}{}% 35
+\BOOKMARK [1][-]{section.52}{3.1 Small Hydro Power Plants}{chapter.51}% 36
+\BOOKMARK [2][-]{subsection.57}{3.1.1 Advantages of Small Hydro Power Plants}{section.52}% 37
+\BOOKMARK [2][-]{subsection.58}{3.1.2 Disadvantages of Small Hydro Power Plants}{section.52}% 38
+\BOOKMARK [2][-]{subsection.59}{3.1.3 Small Hydro Power Plants Types}{section.52}% 39
+\BOOKMARK [1][-]{section.62}{3.2 Control Strategies}{chapter.51}% 40
+\BOOKMARK [2][-]{subsection.63}{3.2.1 Local Control Strategy}{section.62}% 41
+\BOOKMARK [2][-]{subsection.64}{3.2.2 Cooperative Control Strategy}{section.62}% 42
+\BOOKMARK [2][-]{subsection.65}{3.2.3 Centralized Control Strategy}{section.62}% 43
+\BOOKMARK [1][-]{section.66}{3.3 Connect Hydro Problem}{chapter.51}% 44
+\BOOKMARK [2][-]{subsection.67}{3.3.1 Technical \046 Financial Aspects}{section.66}% 45
+\BOOKMARK [2][-]{subsection.68}{3.3.2 Proposed Concept}{section.66}% 46
+\BOOKMARK [1][-]{section.69}{3.4 Proposed Implementation}{chapter.51}% 47
+\BOOKMARK [2][-]{subsection.70}{3.4.1 Technical Level}{section.69}% 48
+\BOOKMARK [3][-]{subsubsection.71}{3.4.1.1 Implementing a control system with external logic}{subsection.70}% 49
+\BOOKMARK [3][-]{subsubsection.72}{3.4.1.2 Components of the central server}{subsection.70}% 50
+\BOOKMARK [3][-]{subsubsection.73}{3.4.1.3 Components of the networking unit}{subsection.70}% 51
+\BOOKMARK [3][-]{subsubsection.74}{3.4.1.4 Central server tasks}{subsection.70}% 52
+\BOOKMARK [2][-]{subsection.75}{3.4.2 Software Level}{section.69}% 53
+\BOOKMARK [0][-]{chapter.78}{4 Decision Support in Connect Hydro}{}% 54
+\BOOKMARK [1][-]{section.79}{4.1 Connect Hydro DSS Type}{chapter.78}% 55
+\BOOKMARK [1][-]{section.80}{4.2 Connect Hydro Event Matrix}{chapter.78}% 56
+\BOOKMARK [1][-]{section.85}{4.3 Connect Hydro DSS Design \046 Implementation}{chapter.78}% 57
+\BOOKMARK [1][-]{section.86}{4.4 Visualization for Connect Hydro}{chapter.78}% 58
+\BOOKMARK [0][-]{chapter.91}{5 System Architecture and Details}{}% 59
+\BOOKMARK [1][-]{section.92}{5.1 Frameworks and Technologies}{chapter.91}% 60
+\BOOKMARK [2][-]{subsection.93}{5.1.1 Web Development}{section.92}% 61
+\BOOKMARK [2][-]{subsection.94}{5.1.2 Front-End Technologies}{section.92}% 62
+\BOOKMARK [3][-]{subsubsection.95}{5.1.2.1 Asynchronous Javascript And Xml}{subsection.94}% 63
+\BOOKMARK [3][-]{subsubsection.96}{5.1.2.2 Bootstrap}{subsection.94}% 64
+\BOOKMARK [2][-]{subsection.97}{5.1.3 Back-End Technologies}{section.92}% 65
+\BOOKMARK [3][-]{subsubsection.98}{5.1.3.1 Spring}{subsection.97}% 66
+\BOOKMARK [3][-]{subsubsection.99}{5.1.3.2 MySQL Database}{subsection.97}% 67
+\BOOKMARK [1][-]{section.100}{5.2 Database Design and Implementation}{chapter.91}% 68
+\BOOKMARK [1][-]{section.101}{5.3 Web Portal}{chapter.91}% 69
+\BOOKMARK [1][-]{section.102}{5.4 Data Visualization}{chapter.91}% 70
+\BOOKMARK [1][-]{section.103}{5.5 Decision Support}{chapter.91}% 71
+\BOOKMARK [0][-]{chapter.104}{6 Evaluation}{}% 72
+\BOOKMARK [0][-]{chapter.105}{7 Conclusion}{}% 73
+\BOOKMARK [1][-]{section.106}{7.1 Summary}{chapter.105}% 74
+\BOOKMARK [1][-]{section.107}{7.2 Lessons Learned}{chapter.105}% 75
+\BOOKMARK [1][-]{section.108}{7.3 Future Research}{chapter.105}% 76
+\BOOKMARK [2][-]{subsection.109}{7.3.1 Machine Learning}{section.108}% 77
+\BOOKMARK [2][-]{subsection.110}{7.3.2 No-SQL Database}{section.108}% 78
+\BOOKMARK [0][-]{chapter*.112}{Bibliography}{}% 79
