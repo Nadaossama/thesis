@@ -5,79 +5,83 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.5}
 \contentsline {section}{\numberline {1.1}Reading Instructions}{1}{section.6}
 \contentsline {section}{\numberline {1.2}Foreword}{2}{section.7}
-\contentsline {subsection}{\numberline {1.2.1}Motivation}{2}{subsection.8}
-\contentsline {section}{\numberline {1.3}Problem Statement}{2}{section.9}
-\contentsline {section}{\numberline {1.4}Goal and Approach}{3}{section.10}
-\contentsline {section}{\numberline {1.5}Original Contribution}{3}{section.11}
-\contentsline {section}{\numberline {1.6}Outline of the Thesis}{3}{section.12}
-\contentsline {chapter}{\numberline {2}Decision Support Systems}{4}{chapter.13}
-\contentsline {section}{\numberline {2.1}History of Decision support systems}{4}{section.14}
-\contentsline {section}{\numberline {2.2}Concept of DSS}{5}{section.15}
-\contentsline {section}{\numberline {2.3}Types of DSS}{6}{section.18}
-\contentsline {subsection}{\numberline {2.3.1}Communication-driven DSS}{7}{subsection.19}
-\contentsline {subsection}{\numberline {2.3.2}Data-driven DSS}{8}{subsection.20}
-\contentsline {subsection}{\numberline {2.3.3}Document-driven DSS}{8}{subsection.21}
-\contentsline {subsection}{\numberline {2.3.4}Knowledge-driven DSS}{8}{subsection.22}
-\contentsline {subsection}{\numberline {2.3.5}Model-driven DSS}{9}{subsection.23}
-\contentsline {section}{\numberline {2.4}Tools to Develop DSS}{10}{section.24}
-\contentsline {subsection}{\numberline {2.4.1}Data Warehouse Systems}{10}{subsection.25}
-\contentsline {subsection}{\numberline {2.4.2}On-line Analytical Processing}{10}{subsection.26}
-\contentsline {subsection}{\numberline {2.4.3}Data Mining}{11}{subsection.27}
-\contentsline {subsection}{\numberline {2.4.4}Web-based DSS}{11}{subsection.28}
-\contentsline {section}{\numberline {2.5}DSS Design}{12}{section.31}
-\contentsline {subsection}{\numberline {2.5.1}Analyzing Business Decision Making Process}{12}{subsection.32}
-\contentsline {subsection}{\numberline {2.5.2}Decision Making Process}{13}{subsection.33}
-\contentsline {section}{\numberline {2.6}Decision Support Implementation and Development}{13}{section.34}
-\contentsline {subsection}{\numberline {2.6.1}Choosing a System Development Approach}{14}{subsection.35}
-\contentsline {subsection}{\numberline {2.6.2}Designing User Interface}{16}{subsection.42}
-\contentsline {subsubsection}{\numberline {2.6.2.1}ROMC Design Approach}{17}{subsubsection.43}
-\contentsline {subsubsection}{\numberline {2.6.2.2}UI design success Factors}{17}{subsubsection.44}
-\contentsline {section}{\numberline {2.7}Decision Support Architecture}{18}{section.45}
-\contentsline {section}{\numberline {2.8}Decision Support Networking and Security}{18}{section.46}
-\contentsline {subsection}{\numberline {2.8.1}Security}{19}{subsection.47}
-\contentsline {section}{\numberline {2.9}Evaluation and Impact}{20}{section.48}
-\contentsline {chapter}{\numberline {3}Connect Hydro Project}{22}{chapter.51}
-\contentsline {section}{\numberline {3.1}Small Hydro Power Plants}{22}{section.52}
-\contentsline {subsection}{\numberline {3.1.1}Advantages of Small Hydro Power Plants}{24}{subsection.57}
-\contentsline {subsection}{\numberline {3.1.2}Disadvantages of Small Hydro Power Plants}{24}{subsection.58}
-\contentsline {subsection}{\numberline {3.1.3}Small Hydro Power Plants Types}{25}{subsection.59}
-\contentsline {section}{\numberline {3.2}Control Strategies}{26}{section.62}
-\contentsline {subsection}{\numberline {3.2.1}Local Control Strategy}{27}{subsection.63}
-\contentsline {subsection}{\numberline {3.2.2}Cooperative Control Strategy}{28}{subsection.64}
-\contentsline {subsection}{\numberline {3.2.3}Centralized Control Strategy}{28}{subsection.65}
-\contentsline {section}{\numberline {3.3}Connect Hydro Problem}{28}{section.66}
-\contentsline {subsection}{\numberline {3.3.1}Technical \& Financial Aspects}{29}{subsection.67}
-\contentsline {subsection}{\numberline {3.3.2}Proposed Concept}{30}{subsection.68}
-\contentsline {section}{\numberline {3.4}Proposed Implementation}{30}{section.69}
-\contentsline {subsection}{\numberline {3.4.1}Technical Level}{31}{subsection.70}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Implementing a control system with external logic}{31}{subsubsection.71}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Components of the central server}{31}{subsubsection.72}
-\contentsline {subsubsection}{\numberline {3.4.1.3}Components of the networking unit}{32}{subsubsection.73}
-\contentsline {subsubsection}{\numberline {3.4.1.4}Central server tasks}{32}{subsubsection.74}
-\contentsline {subsection}{\numberline {3.4.2}Software Level}{33}{subsection.75}
-\contentsline {chapter}{\numberline {4}Decision Support in Connect Hydro}{34}{chapter.78}
-\contentsline {section}{\numberline {4.1}Connect Hydro DSS Type}{34}{section.79}
-\contentsline {section}{\numberline {4.2}Connect Hydro Event Matrix}{35}{section.80}
-\contentsline {section}{\numberline {4.3}Connect Hydro DSS Design \& Implementation}{38}{section.85}
-\contentsline {section}{\numberline {4.4}Visualization for Connect Hydro}{39}{section.86}
-\contentsline {chapter}{\numberline {5}System Architecture and Details}{41}{chapter.91}
-\contentsline {section}{\numberline {5.1}Frameworks and Technologies}{41}{section.92}
-\contentsline {subsection}{\numberline {5.1.1}Web Development}{41}{subsection.93}
-\contentsline {subsection}{\numberline {5.1.2}Front-End Technologies}{41}{subsection.94}
-\contentsline {subsubsection}{\numberline {5.1.2.1}Asynchronous Javascript And Xml}{42}{subsubsection.95}
-\contentsline {subsubsection}{\numberline {5.1.2.2}Bootstrap}{42}{subsubsection.96}
-\contentsline {subsection}{\numberline {5.1.3}Back-End Technologies}{43}{subsection.97}
-\contentsline {subsubsection}{\numberline {5.1.3.1}Spring}{43}{subsubsection.98}
-\contentsline {subsubsection}{\numberline {5.1.3.2}MySQL Database}{44}{subsubsection.99}
-\contentsline {section}{\numberline {5.2}Database Design and Implementation}{44}{section.100}
-\contentsline {section}{\numberline {5.3}Web Portal}{44}{section.101}
-\contentsline {section}{\numberline {5.4}Data Visualization}{44}{section.102}
-\contentsline {section}{\numberline {5.5}Decision Support}{44}{section.103}
-\contentsline {chapter}{\numberline {6}Evaluation}{45}{chapter.104}
-\contentsline {chapter}{\numberline {7}Conclusion}{46}{chapter.105}
-\contentsline {section}{\numberline {7.1}Summary}{46}{section.106}
-\contentsline {section}{\numberline {7.2}Lessons Learned}{46}{section.107}
-\contentsline {section}{\numberline {7.3}Future Research}{46}{section.108}
-\contentsline {subsection}{\numberline {7.3.1}Machine Learning}{46}{subsection.109}
-\contentsline {subsection}{\numberline {7.3.2}No-SQL Database}{46}{subsection.110}
-\contentsline {chapter}{\nonumberline Bibliography}{48}{chapter*.112}
+\contentsline {subsection}{\numberline {1.2.1}Types of Renewable Energy Sources}{4}{subsection.10}
+\contentsline {section}{\numberline {1.3}Motivation}{5}{section.13}
+\contentsline {section}{\numberline {1.4}Problem Statement}{5}{section.14}
+\contentsline {section}{\numberline {1.5}Goal and Approach}{6}{section.15}
+\contentsline {section}{\numberline {1.6}Original Contribution}{7}{section.16}
+\contentsline {section}{\numberline {1.7}Outline of the Thesis}{7}{section.17}
+\contentsline {chapter}{\numberline {2}Decision Support Systems}{9}{chapter.18}
+\contentsline {section}{\numberline {2.1}History of Decision support systems}{9}{section.19}
+\contentsline {section}{\numberline {2.2}Concept of DSS}{10}{section.20}
+\contentsline {section}{\numberline {2.3}Types of DSS}{11}{section.23}
+\contentsline {subsection}{\numberline {2.3.1}Communication-driven DSS}{12}{subsection.24}
+\contentsline {subsection}{\numberline {2.3.2}Data-driven DSS}{13}{subsection.25}
+\contentsline {subsection}{\numberline {2.3.3}Document-driven DSS}{13}{subsection.26}
+\contentsline {subsection}{\numberline {2.3.4}Knowledge-driven DSS}{13}{subsection.27}
+\contentsline {subsection}{\numberline {2.3.5}Model-driven DSS}{14}{subsection.28}
+\contentsline {section}{\numberline {2.4}Tools to Develop DSS}{15}{section.29}
+\contentsline {subsection}{\numberline {2.4.1}Data Warehouse Systems}{15}{subsection.30}
+\contentsline {subsection}{\numberline {2.4.2}On-line Analytical Processing}{15}{subsection.31}
+\contentsline {subsection}{\numberline {2.4.3}Data Mining}{16}{subsection.32}
+\contentsline {subsection}{\numberline {2.4.4}Web-based DSS}{16}{subsection.33}
+\contentsline {section}{\numberline {2.5}DSS Design}{17}{section.36}
+\contentsline {subsection}{\numberline {2.5.1}Analyzing Business Decision Making Process}{17}{subsection.37}
+\contentsline {subsection}{\numberline {2.5.2}Decision Making Process}{18}{subsection.38}
+\contentsline {section}{\numberline {2.6}Decision Support Implementation and Development}{18}{section.39}
+\contentsline {subsection}{\numberline {2.6.1}Choosing a System Development Approach}{19}{subsection.40}
+\contentsline {subsection}{\numberline {2.6.2}Designing User Interface}{21}{subsection.47}
+\contentsline {subsubsection}{\numberline {2.6.2.1}ROMC Design Approach}{22}{subsubsection.48}
+\contentsline {subsubsection}{\numberline {2.6.2.2}UI design success Factors}{22}{subsubsection.49}
+\contentsline {section}{\numberline {2.7}Decision Support Architecture}{23}{section.50}
+\contentsline {section}{\numberline {2.8}Decision Support Networking and Security}{23}{section.51}
+\contentsline {subsection}{\numberline {2.8.1}Security}{24}{subsection.52}
+\contentsline {section}{\numberline {2.9}Evaluation and Impact}{25}{section.53}
+\contentsline {chapter}{\numberline {3}Connect Hydro Project}{27}{chapter.56}
+\contentsline {section}{\numberline {3.1}Small Hydro Power Plants}{27}{section.57}
+\contentsline {subsection}{\numberline {3.1.1}Hydro Power Classification}{28}{subsection.60}
+\contentsline {subsection}{\numberline {3.1.2}Advantages of Small Hydro Power Plants}{29}{subsection.63}
+\contentsline {subsection}{\numberline {3.1.3}Disadvantages of Small Hydro Power Plants}{29}{subsection.64}
+\contentsline {subsection}{\numberline {3.1.4}Small Hydro Power Plants Types}{30}{subsection.65}
+\contentsline {section}{\numberline {3.2}Control Strategies}{31}{section.68}
+\contentsline {subsection}{\numberline {3.2.1}Local Control Strategy}{32}{subsection.69}
+\contentsline {subsection}{\numberline {3.2.2}Cooperative Control Strategy}{33}{subsection.70}
+\contentsline {subsection}{\numberline {3.2.3}Centralized Control Strategy}{33}{subsection.71}
+\contentsline {section}{\numberline {3.3}Connect Hydro Problem}{33}{section.72}
+\contentsline {subsection}{\numberline {3.3.1}Technical \& Financial Aspects}{34}{subsection.73}
+\contentsline {subsection}{\numberline {3.3.2}Proposed Concept}{35}{subsection.74}
+\contentsline {section}{\numberline {3.4}Proposed Implementation}{35}{section.75}
+\contentsline {subsection}{\numberline {3.4.1}Technical Level}{36}{subsection.76}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Implementing a control system with external logic}{36}{subsubsection.77}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Components of the central server}{36}{subsubsection.78}
+\contentsline {subsubsection}{\numberline {3.4.1.3}Components of the networking unit}{37}{subsubsection.79}
+\contentsline {subsubsection}{\numberline {3.4.1.4}Central server tasks}{38}{subsubsection.80}
+\contentsline {subsection}{\numberline {3.4.2}Software Level}{38}{subsection.81}
+\contentsline {chapter}{\numberline {4}Decision Support in Connect Hydro}{40}{chapter.84}
+\contentsline {section}{\numberline {4.1}Connect Hydro DSS Type}{40}{section.85}
+\contentsline {section}{\numberline {4.2}Connect Hydro Event Matrix}{41}{section.86}
+\contentsline {section}{\numberline {4.3}Connect Hydro DSS Design \& Implementation}{44}{section.91}
+\contentsline {section}{\numberline {4.4}Visualization for Connect Hydro}{45}{section.92}
+\contentsline {chapter}{\numberline {5}System Architecture and Development Technologies}{47}{chapter.97}
+\contentsline {section}{\numberline {5.1}Web Development Techniques}{47}{section.98}
+\contentsline {subsection}{\numberline {5.1.1}Responsive Web Design}{48}{subsection.99}
+\contentsline {subsection}{\numberline {5.1.2}Asynchronous Javascript (Ajax)}{48}{subsection.102}
+\contentsline {section}{\numberline {5.2}Front-End Technologies}{50}{section.105}
+\contentsline {subsection}{\numberline {5.2.1}Bootstrap}{50}{subsection.106}
+\contentsline {subsubsection}{\numberline {5.2.1.1}Advantages of Bootstrap}{51}{subsubsection.107}
+\contentsline {section}{\numberline {5.3}Back-End Technologies}{51}{section.108}
+\contentsline {subsection}{\numberline {5.3.1}Spring Framework}{52}{subsection.109}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Dependency Injection}{52}{subsubsection.110}
+\contentsline {section}{\numberline {5.4}System Architecture \& Components}{53}{section.113}
+\contentsline {subsection}{\numberline {5.4.1}Database Design and Implementation}{53}{subsection.114}
+\contentsline {subsection}{\numberline {5.4.2}Web Portal}{58}{subsection.127}
+\contentsline {subsection}{\numberline {5.4.3}Decision Support}{59}{subsection.128}
+\contentsline {subsection}{\numberline {5.4.4}Data Visualization}{59}{subsection.129}
+\contentsline {chapter}{\numberline {6}Evaluation}{60}{chapter.130}
+\contentsline {chapter}{\numberline {7}Conclusion}{61}{chapter.131}
+\contentsline {section}{\numberline {7.1}Summary}{61}{section.132}
+\contentsline {section}{\numberline {7.2}Lessons Learned}{61}{section.133}
+\contentsline {section}{\numberline {7.3}Future Research}{61}{section.134}
+\contentsline {subsection}{\numberline {7.3.1}Machine Learning}{61}{subsection.135}
+\contentsline {subsection}{\numberline {7.3.2}No-SQL Database}{61}{subsection.136}
+\contentsline {chapter}{\nonumberline Bibliography}{64}{chapter*.138}

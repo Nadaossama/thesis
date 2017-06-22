@@ -11,10 +11,39 @@ Rapid prototyping approach.
 \newblock \url{https://www.slideshare.net/delaco/1-rapid-prototyping-model}.
 \newblock Accessed: 2017-06-12.
 
+\bibitem{RWD}
+Responsive web design definition.
+\newblock
+  \url{https://developers.google.com/web/fundamentals/design-and-ui/responsive/}.
+\newblock Accessed: 2017-06-18.
+
+\bibitem{RWD3}
+Responsive web design image.
+\newblock
+  \url{http://www.business2community.com/web-design/5-reasons-business-needs-responsive-website-01640405#dPBrxMkk7MrjOeWx.97}.
+\newblock Accessed: 2017-06-18.
+
+\bibitem{RWD2}
+Responsive web design origin.
+\newblock \url{https://alistapart.com/article/responsive-web-design/}.
+\newblock Accessed: 2017-06-18.
+
 \bibitem{SmallScale}
 Small scale hydropower.
 \newblock \url{http://www.small-hydro.com/about/small-scale-hydrpower.aspx}.
 \newblock Accessed: 2017-06-13.
+
+\bibitem{WebDevelopment}
+Web development definition.
+\newblock \url{https://www.techopedia.com/definition/23889/web-development}.
+\newblock Accessed: 2017-06-18.
+
+\bibitem{SpringAdv}
+{\sc Aswani}.
+\newblock Spring framework advantages and disadvantages.
+\newblock \url{http://www.aksindiblog.com/
+  spring-framework-advantages-disadvantages.html}.
+\newblock Accessed: 2017-06-21.
 
 \bibitem{bhargava2001decision}
 {\sc Bhargava, H., and Power, D.}
@@ -34,10 +63,49 @@ Small scale hydropower.
   neighbor-to-neighbor communication for linear systems.
 \newblock {\em Automatica 48}, 6 (2012), 1088--1096.
 
+\bibitem{Backend}
+{\sc FERGUSON, N.}
+\newblock What's the difference between frontend and backend?
+\newblock
+  \url{https://careerfoundry.com/en/blog/web-development/whats-the-difference-between-frontend-and-backend/}.
+\newblock Accessed: 2017-06-20.
+
+\bibitem{fridleifsson2001geothermal}
+{\sc Fridleifsson, I.~B.}
+\newblock Geothermal energy for the benefit of the people.
+\newblock {\em Renewable and sustainable energy reviews 5}, 3 (2001), 299--312.
+
+\bibitem{garrett2005ajax}
+{\sc Garrett, J.~J., et~al.}
+\newblock Ajax: A new approach to web applications.
+
+\bibitem{Bootstrap5}
+{\sc Gimmer, C.}
+\newblock Top 5 reasons to use bootstrap.
+\newblock \url{https://bootstrapbay.com/blog/reasons-to-use-bootstrap/}.
+\newblock Accessed: 2017-06-20.
+
 \bibitem{gorry1989framework}
 {\sc Gorry, G.~A., and Morton, M. S.~S.}
 \newblock A framework for management information systems.
 \newblock {\em MIT Sloan Management Review 30}, 3 (1989), 49.
+
+\bibitem{hall1991cooling}
+{\sc Hall, D.}
+\newblock Cooling the greenhouse with bioenergy.
+\newblock {\em Nature 353\/} (1991), 11--12.
+
+\bibitem{herzog2001renewable}
+{\sc Herzog, A.~V., Lipman, T.~E., and Kammen, D.~M.}
+\newblock Renewable energy sources.
+\newblock {\em Encyclopedia of Life Support Systems (EOLSS). Forerunner
+  Volume-‘Perspectives and Overview of Life Support Systems and Sustainable
+  Development\/} (2001).
+
+\bibitem{hiemstra2009fuelwood}
+{\sc Hiemstra-van~der Horst, G., and Hovorka, A.~J.}
+\newblock Fuelwood: The “other” renewable energy source for africa?
+\newblock {\em Biomass and bioenergy 33}, 11 (2009), 1605--1616.
 
 \bibitem{HydroPower}
 {\sc José Luis~Carrasco, Andrea~Pain, D.~S.}
@@ -45,11 +113,24 @@ Small scale hydropower.
 \newblock \url{http://www.sswm.info/content/hydropower-small-scale}.
 \newblock Accessed: 2017-06-13.
 
+\bibitem{SpringBoot}
+{\sc Katamreddy, S. P.~R.}
+\newblock Why spring boot?
+\newblock \url{https://dzone.com/articles/why-springboot}.
+\newblock Accessed: 2017-06-21.
+
 \bibitem{khodashahri2013decision}
 {\sc Khodashahri, N.~G., and Sarabi, M. M.~H.}
 \newblock Decision support system (dss).
 \newblock {\em Singaporean Journal of Business Economics and Management
   Studies, Vol1}, 6 (2013).
+
+\bibitem{FrontEndSKI}
+{\sc lawomir Wilczyn~ski, S.}
+\newblock Front-end frameworks. introduction (part 1).
+\newblock
+  \url{http://www.merixstudio.com/blog/front-end-frameworks-introduction-part-1/}.
+\newblock Accessed: 2017-06-20.
 
 \bibitem{SDLC}
 {\sc LLC, T.}
@@ -79,10 +160,24 @@ Small scale hydropower.
 \newblock Policies and Tools for Sustainable Water Management in the European
   Union.
 
+\bibitem{DI}
+{\sc Nare, H.}
+\newblock Spring dependency injection.
+\newblock \url{http://nataraz2java.blogspot.co.at/2013/11/
+  spring-dependency-injection.html}.
+\newblock Accessed: 2017-06-21.
+
 \bibitem{paish2002small}
 {\sc Paish, O.}
 \newblock Small hydro power: technology and current status.
 \newblock {\em Renewable and sustainable energy reviews 6}, 6 (2002), 537--556.
+
+\bibitem{panwar2011role}
+{\sc Panwar, N., Kaushik, S., and Kothari, S.}
+\newblock Role of renewable energy sources in environmental protection: a
+  review.
+\newblock {\em Renewable and Sustainable Energy Reviews 15}, 3 (2011),
+  1513--1524.
 
 \bibitem{powell2001dm}
 {\sc Powell, R.}
@@ -126,5 +221,16 @@ Small scale hydropower.
 {\sc Timofeyev, M.}
 \newblock Hydro power plants.
 \newblock {\em National Research Tomsk Polytechnic University.\/}.
+
+\bibitem{AJAX}
+{\sc Wodehouse, C.}
+\newblock How ajax (asynchronous javascript + xml) works.
+\newblock \url{https://www.upwork.com/ hiring/development/how-ajax-works/}.
+\newblock Accessed: 2017-06-20.
+
+\bibitem{youm2000renewable}
+{\sc Youm, I., Sarr, J., Sall, M., and Kane, M.}
+\newblock Renewable energy activities in senegal: a review.
+\newblock {\em Renewable and Sustainable Energy Reviews 4}, 1 (2000), 75--89.
 
 \end{thebibliography}

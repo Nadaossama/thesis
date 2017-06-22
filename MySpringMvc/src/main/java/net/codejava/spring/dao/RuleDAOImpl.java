@@ -63,9 +63,9 @@ public class RuleDAOImpl implements RuleDAO {
 		String sql = "SELECT avg(dt.loValue) FROM (SELECT loValue From Sensor_Values WHERE Sensor_PowerPlant_ID ="
 				+ PowerPlantID + " AND Sensor_Type_ID= 5 GROUP BY CEIL(TO_SECONDS(loTs)/1800) ORDER by lots) dt";
 		// List<String> Data = new ArrayList<String>();
-		//System.out.println(sql);
+		System.out.println(sql);
 		String Data = jdbcTemplate.queryForObject(sql, new Object[] {}, String.class);
-		//System.out.println("Water Level " + Data);
+		System.out.println("Water Level " + Data);
 		//System.out.println("Water Level" + Data);
 		if (Data != null && Double.parseDouble(Data) >= Double.parseDouble(parameters)) {
 			return "Water Level is High! Turn off Turbine and Activate Rack Cleaning.";
