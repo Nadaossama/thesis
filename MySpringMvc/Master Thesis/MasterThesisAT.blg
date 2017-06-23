@@ -18,6 +18,9 @@ Warning--to sort, need author or key in WebDevelopment
 Warning--to sort, need author or key in RWD
 Warning--to sort, need author or key in RWD2
 Warning--to sort, need author or key in RWD3
+Warning--to sort, need author or key in WhatisMySQL
+Warning--to sort, need author or key in MySQL
+Warning--to sort, need author or key in DecisionTree
 Warning--empty journal in garrett2005ajax
 Too many commas in name 1 of "Markus Jager, Markus M. Schwarzb, Dagmar Auera, Barbara Platzer, Josef Küng" for entry SEIT2017
 while executing---line 1127 of file Structure/acm.bst
@@ -25,45 +28,45 @@ Too many commas in name 1 of "Markus Jager, Markus M. Schwarzb, Dagmar Auera, Ba
 while executing---line 1127 of file Structure/acm.bst
 Warning--empty journal in power2007brief
 Warning--empty year in HydroPP
-You've used 40 entries,
+You've used 43 entries,
             2253 wiz_defined-function locations,
-            752 strings with 9962 characters,
-and the built_in function-call counts, 10201 in all, are:
-= -- 1008
-> -- 368
+            764 strings with 10260 characters,
+and the built_in function-call counts, 10705 in all, are:
+= -- 1059
+> -- 371
 < -- 0
-+ -- 160
++ -- 163
 - -- 118
-* -- 649
-:= -- 1640
-add.period$ -- 131
-call.type$ -- 40
-change.case$ -- 178
+* -- 664
+:= -- 1697
+add.period$ -- 140
+call.type$ -- 43
+change.case$ -- 187
 chr.to.int$ -- 0
-cite$ -- 50
-duplicate$ -- 344
-empty$ -- 947
+cite$ -- 56
+duplicate$ -- 365
+empty$ -- 1016
 format.name$ -- 118
-if$ -- 2163
+if$ -- 2289
 int.to.chr$ -- 0
-int.to.str$ -- 40
+int.to.str$ -- 43
 missing$ -- 22
-newline$ -- 213
+newline$ -- 228
 num.names$ -- 66
-pop$ -- 263
+pop$ -- 293
 preamble$ -- 1
-purify$ -- 138
+purify$ -- 144
 quote$ -- 0
-skip$ -- 212
+skip$ -- 227
 stack$ -- 0
-substring$ -- 550
-swap$ -- 75
+substring$ -- 565
+swap$ -- 78
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 160
-warning$ -- 10
+type$ -- 172
+warning$ -- 13
 while$ -- 95
-width$ -- 42
-write$ -- 400
+width$ -- 45
+write$ -- 427
 (There were 4 error messages)

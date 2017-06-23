@@ -68,16 +68,19 @@
 \BOOKMARK [1][-]{section.108}{5.3 Back-End Technologies}{chapter.97}% 68
 \BOOKMARK [2][-]{subsection.109}{5.3.1 Spring Framework}{section.108}% 69
 \BOOKMARK [3][-]{subsubsection.110}{5.3.1.1 Dependency Injection}{subsection.109}% 70
-\BOOKMARK [1][-]{section.113}{5.4 System Architecture \046 Components}{chapter.97}% 71
-\BOOKMARK [2][-]{subsection.114}{5.4.1 Database Design and Implementation}{section.113}% 72
-\BOOKMARK [2][-]{subsection.127}{5.4.2 Web Portal}{section.113}% 73
-\BOOKMARK [2][-]{subsection.128}{5.4.3 Decision Support}{section.113}% 74
-\BOOKMARK [2][-]{subsection.129}{5.4.4 Data Visualization}{section.113}% 75
-\BOOKMARK [0][-]{chapter.130}{6 Evaluation}{}% 76
-\BOOKMARK [0][-]{chapter.131}{7 Conclusion}{}% 77
-\BOOKMARK [1][-]{section.132}{7.1 Summary}{chapter.131}% 78
-\BOOKMARK [1][-]{section.133}{7.2 Lessons Learned}{chapter.131}% 79
-\BOOKMARK [1][-]{section.134}{7.3 Future Research}{chapter.131}% 80
-\BOOKMARK [2][-]{subsection.135}{7.3.1 Machine Learning}{section.134}% 81
-\BOOKMARK [2][-]{subsection.136}{7.3.2 No-SQL Database}{section.134}% 82
-\BOOKMARK [0][-]{chapter*.138}{Bibliography}{}% 83
+\BOOKMARK [2][-]{subsection.113}{5.3.2 MySQL Database}{section.108}% 71
+\BOOKMARK [1][-]{section.114}{5.4 System Architecture \046 Components}{chapter.97}% 72
+\BOOKMARK [2][-]{subsection.115}{5.4.1 Database Design and Implementation}{section.114}% 73
+\BOOKMARK [2][-]{subsection.128}{5.4.2 Web Portal}{section.114}% 74
+\BOOKMARK [2][-]{subsection.131}{5.4.3 Decision Support}{section.114}% 75
+\BOOKMARK [2][-]{subsection.138}{5.4.4 Data Visualization}{section.114}% 76
+\BOOKMARK [0][-]{chapter.143}{6 Evaluation}{}% 77
+\BOOKMARK [0][-]{chapter.144}{7 Conclusion}{}% 78
+\BOOKMARK [1][-]{section.145}{7.1 Summary}{chapter.144}% 79
+\BOOKMARK [1][-]{section.146}{7.2 Lessons Learned}{chapter.144}% 80
+\BOOKMARK [1][-]{section.147}{7.3 Future Research}{chapter.144}% 81
+\BOOKMARK [2][-]{subsection.148}{7.3.1 Machine Learning}{section.147}% 82
+\BOOKMARK [2][-]{subsection.149}{7.3.2 No-SQL Database}{section.147}% 83
+\BOOKMARK [3][-]{subsubsection.150}{7.3.2.1 NoSQL Database Types}{subsection.149}% 84
+\BOOKMARK [3][-]{subsubsection.151}{7.3.2.2 The Benefits of NoSQL}{subsection.149}% 85
+\BOOKMARK [0][-]{chapter*.153}{Bibliography}{}% 86

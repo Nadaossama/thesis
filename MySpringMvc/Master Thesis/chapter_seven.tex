@@ -17,3 +17,47 @@
 
 \subsection{No-SQL Database}
 \label{subsec:NoSQLDatabase}
+NoSQL encompasses a wide variety of different database technologies that were developed in response to the demands presented in building modern applications:
+
+Developers are working with applications that create massive volumes of new, rapidly changing data types — structured, semi-structured, unstructured and polymorphic data.
+
+Long gone is the twelve-to-eighteen month waterfall development cycle. Now small teams work in agile sprints, iterating quickly and pushing code every week or two, some even multiple times every day.
+
+Applications that once served a finite audience are now delivered as services that must be always-on, accessible from many different devices and scaled globally to millions of users.
+
+Organizations are now turning to scale-out architectures using open source software, commodity servers and cloud computing instead of large monolithic servers and storage infrastructure.
+
+Relational databases were not designed to cope with the scale and agility challenges that face modern applications, nor were they built to take advantage of the commodity storage and processing power available today.
+
+Launching an application on any database typically requires careful planning to ensure performance, high availability, security, and disaster recovery – and these obligations continue as long as you run the application. With MongoDB Atlas, you receive all of the features of MongoDB without any of the operational heavy lifting, allowing you to focus instead on learning and building your apps. Features include:
+\begin{itemize}
+	\item On-demand, pay as you go model
+	\item Seamless upgrades and auto-healing
+	\item Fully elastic. Scale up and down with ease
+	\item Deep monitoring \& customizable alerts
+	\item Highly secure by default
+	\item Continuous backups with point-in-time recovery
+\end{itemize}
+\subsubsection{NoSQL Database Types}
+\begin{itemize}
+	\item Document databases pair each key with a complex data structure known as a document. Documents can contain many different key-value pairs, or key-array pairs, or even nested documents.
+	\item Graph stores are used to store information about networks of data, such as social connections. Graph stores include Neo4J and Giraph.
+	\item key-value stores are the simplest NoSQL databases. Every single item in the database is stored as an attribute name (or 'key'), together with its value. Examples of key-value stores are Riak and Berkeley DB. Some key-value stores, such as Redis, allow each value to have a type, such as 'integer', which adds functionality.
+	\item Wide-column stores such as Cassandra and HBase are optimized for queries over large datasets, and store columns of data together, instead of rows.
+\end{itemize}
+\subsubsection{The Benefits of NoSQL}
+When compared to relational databases, NoSQL databases are more scalable and provide superior performance, and their data model addresses several issues that the relational model is not designed to address:
+\begin{itemize}
+	\item Large volumes of rapidly changing structured, semi-structured, and unstructured data
+
+	\item Agile sprints, quick schema iteration, and frequent code pushes
+
+	\item Object-oriented programming that is easy to use and flexible
+
+	\item Geographically distributed scale-out architecture instead of expensive, monolithic architecture
+	\item Selecting the appropriate data model: document, key-value \& wide column, or graph model
+
+	\item The pros and cons of consistent and eventually consistent systems
+
+	\item Why idiomatic drivers minimize onboarding time for new developers and simplify application development
+\end{itemize}

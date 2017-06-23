@@ -1,10 +1,20 @@
 \begin{thebibliography}{10}
 
+\bibitem{DecisionTree}
+Decision tree - classification.
+\newblock \url{http://www.saedsayad.com/decision_tree.htm}.
+\newblock Accessed: 2017-06-22.
+
 \bibitem{ROMC}
 Designing and evaluating dss user interfaces.
 \newblock
   \url{http://www.dsc.ufcg.edu.br/~garcia/cursos/SAD/Notas/Cap5DSSResources.pdf}.
 \newblock Accessed: 2017-06-12.
+
+\bibitem{MySQL}
+Mysql.
+\newblock \url{http://searchenterpriselinux.techtarget.com/definition/MySQL}.
+\newblock Accessed: 2017-06-21.
 
 \bibitem{RPA}
 Rapid prototyping approach.
@@ -37,6 +47,11 @@ Small scale hydropower.
 Web development definition.
 \newblock \url{https://www.techopedia.com/definition/23889/web-development}.
 \newblock Accessed: 2017-06-18.
+
+\bibitem{WhatisMySQL}
+What is mysql?
+\newblock \url{https://dev.mysql.com/doc/refman/5.7/en/what-is-mysql.html}.
+\newblock Accessed: 2017-06-21.
 
 \bibitem{SpringAdv}
 {\sc Aswani}.

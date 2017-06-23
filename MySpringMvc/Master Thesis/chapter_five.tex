@@ -74,8 +74,8 @@ We can have two classes A and B where Class A depends on Class B. DI will inject
 \includegraphics[scale=0.5]{Images/DI.png}
 \caption[Dependency Injection]{Dependency Injection \cite{DI}}
 \end{figure}
-% \subsection{MySQL Database}
-% MySQL is the most popular Open Source SQL database management system. It is developed, distributed, and supported by Oracle Corporation \cite{WhatisMySQL}. MySQL is an open source relational database management system (RDBMS) based on Structured Query Language (SQL) \cite{MySQL}. 
+\subsection{MySQL Database}
+MySQL is the most popular Open Source SQL database management system. It is developed, distributed, and supported by Oracle Corporation \cite{WhatisMySQL}. MySQL is an open source relational database management system (RDBMS) based on Structured Query Language (SQL) \cite{MySQL}. It has a Client – Server architecture where a user can access MySQL Server using a MySQL Client the client can be the command line, desktop applications or web applications. Some of MySQL advantages include speed, reliability, ease of use and most importantly scalability. 
 \section{System Architecture \& Components}
 \label{SystemArchitectureAndCompronents}
 In the Following sections, we will discuss how different components of the application were implemented, Why they were implemented in that way and discuss any considerations that were taken during the development process. We will start by discussing the database Design and Implementation followed by the web portal, the decision support and finally the data visualization.
@@ -154,7 +154,7 @@ A device is identified by its unique ID and Name; an IP address is also included
 Each Sensor had the following specifications: Unique ID, Name, variables indicating the transformed value type and parameters and a sensor type. The transformed value parameters maps the vdFactor in the original connect hydro database. The transformed value type is added to handle future situations where a transformed value is not just a numeric value but a percentage or anything else. As already mentioned each sensor has a type, all the sensor types are added in a separate table and is referenced from the sensors table. The power plant operators can add rules specific to every sensor in their power plant that are processed and evaluated later in the decision support module. These rules are specified in a separate table as well and are identified by a name and parameter/s.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Images/SensorRelations.png}
+\includegraphics[scale=0.4]{Images/SensorRelations.png}
 \caption[Sensor Relations]{Sensor Relations}
 \end{figure}
 The sensor Values table is the table that maps the data in the tbllog201611 to our database. It contains some columns with the same names as the original table like loLoggerTime, loTs and loValue. It also contains the Transformed\_Value column which is the raw value (loValue) multiplied by the transformation parameters.
@@ -165,21 +165,72 @@ The database included some other tables that were not connected any tables. They
 \includegraphics[scale=0.5]{Images/Othertables.png}
 \caption[Separate Tables]{Separate Tables}
 \end{figure}
-For the scope of our project, we extracted one month data from the original connect hydro database and using a series of manual SQL queries added them into our database. We chose September 2016 for the demo data as it highlighted a few interesting events which were later used for the decision support and the data visualization. The Data extracted corresponding to that month included 1062321 records. An example query used is:\\
-\begin{center}
-\begin{verbatim}
-INSERT INTO `Sensor_Values` 
-( loLoggerTime, loTs, loValue, Transformed_Value, Sensor_ID, Sensor_Type_ID) 
-SELECT loLoggertime, loTs, loValue , '1', 1, 2 
-FROM `tbllog201611` 
-WHERE loDeviceId = 'Lippenannerl' AND loPort = 'a0' OR loPort = 'A0' ;
-\end{verbatim}
-\end{center}
+For the scope of our project, we extracted one month data from the original connect hydro database and using a series of manual SQL queries added them into our database. We chose September 2016 for the demo data as it highlighted a few interesting events which were later used for the decision support and the data visualization. The Data extracted corresponding to that month included 1062321 records which were more than enough to simulate the different actions and visualization.
+% \begin{center}
+% \begin{verbatim}
+% INSERT INTO `Sensor_Values` 
+% ( loLoggerTime, loTs, loValue, Transformed_Value, Sensor_ID, Sensor_Type_ID) 
+% SELECT loLoggertime, loTs, loValue , '1', 1, 2 
+% FROM `tbllog201611` 
+% WHERE loDeviceId = 'Lippenannerl' AND loPort = 'a0' OR loPort = 'A0' ;
+% \end{verbatim}
+% \end{center}
 \subsection{Web Portal}
-A web portal was developed for our prototype in this thesis. It included a connection to the database, the decision support system module and the data visualization. For our development we chose Spring MVC framework mainly because it's flexibility and ease of integrating all the technologies we use in it. It is based on Java which was the preferred language for the connect hydro team.
+A web portal was developed for our prototype in this thesis. It included the MySQL database discussed in the previous section, the decision support system module and the data visualization which will be discussed in the next few sections. For our development we chose Spring MVC (Model-View-Controller) framework mainly because it's flexibility and ease of integrating with all the technologies we used in the prototype. It is based on Java which was the preferred language for the connect hydro team. In spring every Model represents an object and in our case we mapped it to our database tables. Each Model had an associated DAO class. DAO should perform raw database operations and translate them to some higher level constructs (i.e. return them to the controller as Java objects). 
 
-The first functionality that was implemented in the portal was the sign in. 
+Earlier in this chapter we discussed bootstrap; In our prototype we used bootstrap for the front-end development because of its flexibility, responsive designs as well as its mobile compatibility. Our website can be opened from any browser and any mobile device once hosted.
+
+The first functionality of the portal is the log-in functionality. Whenever the user first opens the website (web portal), he is directed to log in page. The Login HTML page sends a request to the controller along with the email and password the user entered. A request is sent to the database using the UserDAO class to verify the credentials he entered. If the user exists in the database in the Users table and the credentials entered is correct, he is directed to the homepage else he is not allowed to proceed. A screen shot of the login view as shown in figure 5.10.
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{Images/Login.png}
+\caption[Login Page]{Login Page}
+\end{figure}
 \subsection{Decision Support}
 \label{subsec:DecisionSuport}
+In an ideal situation, a decision support system should be triggered when the sensor data is entered into the database or every defined interval. In our case that was not possible as we were using static data for the month of September 2016 and couldn't have direct access to the connect hydro database. Our decision support system was triggered on demand. 
+
+As mentioned before in \textit{ChapterFour}, there are 2 different types of DSS implementations included in our system. The first is the event matrix which was already explained and the second are the rules for the knowledge-driven part of our DSS. The power plant operators come up with rules that given certain conditions, the DSS should propose an action such that the defined rule is applied.
+\begin{itemize}
+	\item If water Level < 27, Turbines should be Turned Off.
+	\item If Water Turbidity is high > 25, Activate Rack Cleaning.
+	\item If No Energy Output and water level < 25 , Turn off turbines.
+\end{itemize}
+The above are a few examples of rules that can be defined by owners. In our implementation we wanted to be flexible and allow for future additions of rules, therefore the rules logic was implemented in Java. Power plant operators only had to define a rule name and its parameters and add it to the database, then in a Java class a rule with the same name is added by the developers and the logic is implemented where the message that would be sent to the operator or the actions proposed are added. During our investigation we found that when the rules are applied, it is better and provide better results if the sensor data is retrieved from the previous power plant rather than the one applying the rules. For example: Given two Power plants A \& B, If B wants to apply the rules and check what kind of actions the system proposes to him, the system should check the data from A. If water level is low at power plant A then it will definitely be low at power plant B or if the water is unclean it will not clean itself by the time if reaches power plant B. Another scenario would be that power plant A does rack cleaning, Power plant B will need to be informed to close its canal to avoid all the leaves and dirt coming into his power plant and ruining his turbines.
+
+In our decision support system, the average value of last 30 minutes data of a specific sensor was calculated and used in the rules (i.e. compared to the parameter defined by the operator in the rule). Ajax calls and JSON data was used to send the requests to the server and send the results back to the view in our website. The following Images show different actions proposed to different power plants in our portal after the rules and the decision matrix events are applied to the sensor data received.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{Images/Screen1.png}
+\caption[Power Plant 1]{Power Plant 1}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{Images/Screen2.png}
+\caption[Power Plant 2]{Power Plant 2}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.58]{Images/Screen3.png}
+\caption[Power Plant 3]{Power Plant 3}
+\end{figure}
 \subsection{Data Visualization}
 \label{subsec:DataVisualization}
+In our web portal, two types of visualization were included, a decision tree for the event matrix and line charts for the sensor data visualization. Both were highlighted in \textit{ChapterFour} but in this section we will explain their contribution towards our final goal and how they were implemented.
+
+Decision tree are defined as the classification or regression models in the form of a tree structure \cite{DecisionTree}. It breaks down a dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed. The final result is a tree with decision nodes and leaf nodes. A decision node has two or more branches. Leaf node represents a classification or decision. The topmost decision node in a tree which corresponds to the best predictor called root node. Decision trees can handle both categorical and numerical data \cite{DecisionTree}. In our scope the decision tree is added as a tool to further convince the power plant owners that the decisions produced by the DSS were contributing to the final goal of maximizing their energy output. 
+
+The Decision tree in our prototype was developed using HTML and CSS scripts. It was included to convince the power plant operators that the decisions proposed to them are well informed.
+
+The second visualization added were two line charts showing the "water level vs Energy Output" and "Energy Output per day" for a specific power plant in a specific date range. The user would start by choosing a power plant, start date and end date then clicking choose as shown below.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Images/ChooseVis.png}
+\caption[Requesting Visualization Data]{Requesting Visualization Data}
+\end{figure}
+An Ajax request is sent to the controller to retrieve the required data. The controller queries the database for the required sensor data. In our implementation we queried the database for the average value of each sensor involved (i.e. Water Level and Energy Output) per day. A list is returned to view in a JSON object. This JSOn object is then parsed and its data bounded to the charts. For the charts visualization we used the "D3" and "C3" libraries, they are JavaScript libraries for manipulating documents based on data and provide an option to bind to JSON data directly without needing anymore data parsing. One Interesting feature provided by the C3 library is the value displaying when the user hovers on the chart as show below.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.45]{Images/MouseHover.png}
+\caption[Display Data on Mouse Hover]{Display Data on Mouse Hover}
+\end{figure}

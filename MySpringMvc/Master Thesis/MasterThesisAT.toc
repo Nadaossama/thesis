@@ -72,16 +72,19 @@
 \contentsline {section}{\numberline {5.3}Back-End Technologies}{51}{section.108}
 \contentsline {subsection}{\numberline {5.3.1}Spring Framework}{52}{subsection.109}
 \contentsline {subsubsection}{\numberline {5.3.1.1}Dependency Injection}{52}{subsubsection.110}
-\contentsline {section}{\numberline {5.4}System Architecture \& Components}{53}{section.113}
-\contentsline {subsection}{\numberline {5.4.1}Database Design and Implementation}{53}{subsection.114}
-\contentsline {subsection}{\numberline {5.4.2}Web Portal}{58}{subsection.127}
-\contentsline {subsection}{\numberline {5.4.3}Decision Support}{59}{subsection.128}
-\contentsline {subsection}{\numberline {5.4.4}Data Visualization}{59}{subsection.129}
-\contentsline {chapter}{\numberline {6}Evaluation}{60}{chapter.130}
-\contentsline {chapter}{\numberline {7}Conclusion}{61}{chapter.131}
-\contentsline {section}{\numberline {7.1}Summary}{61}{section.132}
-\contentsline {section}{\numberline {7.2}Lessons Learned}{61}{section.133}
-\contentsline {section}{\numberline {7.3}Future Research}{61}{section.134}
-\contentsline {subsection}{\numberline {7.3.1}Machine Learning}{61}{subsection.135}
-\contentsline {subsection}{\numberline {7.3.2}No-SQL Database}{61}{subsection.136}
-\contentsline {chapter}{\nonumberline Bibliography}{64}{chapter*.138}
+\contentsline {subsection}{\numberline {5.3.2}MySQL Database}{53}{subsection.113}
+\contentsline {section}{\numberline {5.4}System Architecture \& Components}{53}{section.114}
+\contentsline {subsection}{\numberline {5.4.1}Database Design and Implementation}{54}{subsection.115}
+\contentsline {subsection}{\numberline {5.4.2}Web Portal}{58}{subsection.128}
+\contentsline {subsection}{\numberline {5.4.3}Decision Support}{59}{subsection.131}
+\contentsline {subsection}{\numberline {5.4.4}Data Visualization}{62}{subsection.138}
+\contentsline {chapter}{\numberline {6}Evaluation}{64}{chapter.143}
+\contentsline {chapter}{\numberline {7}Conclusion}{65}{chapter.144}
+\contentsline {section}{\numberline {7.1}Summary}{65}{section.145}
+\contentsline {section}{\numberline {7.2}Lessons Learned}{65}{section.146}
+\contentsline {section}{\numberline {7.3}Future Research}{65}{section.147}
+\contentsline {subsection}{\numberline {7.3.1}Machine Learning}{65}{subsection.148}
+\contentsline {subsection}{\numberline {7.3.2}No-SQL Database}{65}{subsection.149}
+\contentsline {subsubsection}{\numberline {7.3.2.1}NoSQL Database Types}{66}{subsubsection.150}
+\contentsline {subsubsection}{\numberline {7.3.2.2}The Benefits of NoSQL}{67}{subsubsection.151}
+\contentsline {chapter}{\nonumberline Bibliography}{70}{chapter*.153}
