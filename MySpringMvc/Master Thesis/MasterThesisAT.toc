@@ -79,12 +79,12 @@
 \contentsline {subsection}{\numberline {5.4.3}Decision Support}{59}{subsection.131}
 \contentsline {subsection}{\numberline {5.4.4}Data Visualization}{62}{subsection.138}
 \contentsline {chapter}{\numberline {6}Evaluation}{64}{chapter.143}
-\contentsline {chapter}{\numberline {7}Conclusion}{65}{chapter.144}
-\contentsline {section}{\numberline {7.1}Summary}{65}{section.145}
-\contentsline {section}{\numberline {7.2}Lessons Learned}{65}{section.146}
-\contentsline {section}{\numberline {7.3}Future Research}{65}{section.147}
-\contentsline {subsection}{\numberline {7.3.1}Machine Learning}{65}{subsection.148}
-\contentsline {subsection}{\numberline {7.3.2}No-SQL Database}{65}{subsection.149}
-\contentsline {subsubsection}{\numberline {7.3.2.1}NoSQL Database Types}{66}{subsubsection.150}
-\contentsline {subsubsection}{\numberline {7.3.2.2}The Benefits of NoSQL}{67}{subsubsection.151}
-\contentsline {chapter}{\nonumberline Bibliography}{70}{chapter*.153}
+\contentsline {chapter}{\numberline {7}Conclusion}{66}{chapter.144}
+\contentsline {section}{\numberline {7.1}Summary}{66}{section.145}
+\contentsline {section}{\numberline {7.2}Lessons Learned}{66}{section.146}
+\contentsline {section}{\numberline {7.3}Future Research}{66}{section.147}
+\contentsline {subsection}{\numberline {7.3.1}Machine Learning}{66}{subsection.148}
+\contentsline {subsection}{\numberline {7.3.2}No-SQL Database}{66}{subsection.149}
+\contentsline {subsubsection}{\numberline {7.3.2.1}NoSQL Database Types}{67}{subsubsection.150}
+\contentsline {subsubsection}{\numberline {7.3.2.2}The Benefits of NoSQL}{68}{subsubsection.151}
+\contentsline {chapter}{\nonumberline Bibliography}{71}{chapter*.153}
