@@ -1,63 +1,69 @@
 \chapter{Conclusion}
 \markright{Conclusion}
 \label{ChapterSeven}
-
-
 \section{Summary}
 \label{sec:Summary}
+Renewable energy is the new trend that all governments are directing research into. Small hydro power plants have a huge, untapped potential in most areas of the world and can make a significant contribution to future energy needs. In Austria, 9\% of its power demand is supplied from small hydro power stations. While decision support systems are not a new field, implementing a decision support system for small hydro power stations is a new area of study.
 
+The main area of focus of this thesis is Decision support systems for small hydro power stations. The work is split in three main steps. The first part included researching and documenting the different types of Decision support systems as well as the techniques used to develop them. The second part presented the Connect Hydro project which aims to introduce a system to connect small hydro power plants along the same river to optimize their energy production as well as minimize their maintenance cost. The third part included discussing how a decision support system can benefit a project like connect hydro. A combination of two decision support systems is proposed; Data-driven DSS and Knowledge-Driven DSS. The The final practical result of the thesis work is a web-based prototype designed and developed based on some chosen techniques that are presented in the research discussed in \textit{ChapterTwo}. It is developed using Spring MVC framework, MySQL Database and Bootstrap for the front-end development. While the Decision support system is the main focus of this thesis, data visualization is included to support it which proved to be an extremely helpful tool.
 \section{Lessons Learned}
 \label{sec:LessonsLearned}
-
+The value of this thesis is given by the research work conducted in the area of the decision support systems. Studying the existent work is the most important point in defining a solution for the given problem. State-of-the-art gives a starting point and an overview on which approaches exist, what are their advantages and drawbacks. By knowing this, one can propose a solution that minimizes the drawback and fits in to the domain constraints for the given problem. Implementing a prototype without any user specification or feedback proves to be difficult but figuring out a way to evaluate the work nonetheless is very important.
+% The integration of the database synchronization solution in the mobile application was slightly different from the expectation as no configuration could be done on the server side, and the client side had to implement most of the processing methods.
+% As we could notice, starting with an overview of both the theoretical part and of the domain definition, gives an image on how the system should be implemented, what could be the possible problems that can be encountered. These aspects help in avoiding big design flaws that can appear later in the application and that are more costly than a intense initial analysis.
 \section{Future Research}
 \label{sec:FutureResearch}
+The prototype and the research work started in this master thesis can be further on continued in several directions. Firstly, a decision support system module that is triggered on a regular interval rather on demand would be better suited to the connect hydro project. The power plant operators would receive regular messages (SMS or Emails) when an action needs to be executed instead of on demand when they choose to check which is the current situation in the prototype developed. 
 
-\subsection{Machine Learning}
-\label{subsec:MachineLearning}
+Investigating the benefits of converting the database to a No-SQL database can prove to be worthwhile. Currently there is too much data being inputed and processed as the sensors are sending data every 10 seconds. A No-SQL database is best suited for applications that create massive volumes of new data. It provides object-oriented programming that is easy to use and flexible. In the connect hydro project it can greatly improve the performance of the system and allow for faster data analysis and decision production.
 
-\subsection{No-SQL Database}
-\label{subsec:NoSQLDatabase}
-NoSQL encompasses a wide variety of different database technologies that were developed in response to the demands presented in building modern applications:
+Future research can also be directed towards finding an approach to control the power plants autonomously without the need of human interaction. In an optimal situation, the decision support system is triggered at the specified time and certain actions should be taken to optimize the power plant's output at that time. The system should be able to connect to the power plant's control unit and execute the action directly (Turn-on the turbine, start Rack-cleaning, etc.). In the case of human operation, the operator can choose not to do the action or is not available at the power plant location at that time to execute it resulting in less than optimal results. This approach eliminates the need for human operation thus resulting in better optimized energy production. Another addition to the proposed approach can include using machine learning techniques. The techniques would learn from the history of the operator's actions, the actions that the decision support system initiated and the sensor data at the time of these actions, what are the optimal actions to be executed at any time which would eventually lead to a completely autonomous optimal system.
+% \subsection{Machine Learning}
+% \label{subsec:MachineLearning}
 
-Developers are working with applications that create massive volumes of new, rapidly changing data types — structured, semi-structured, unstructured and polymorphic data.
+% \subsection{No-SQL Database}
+% \label{subsec:NoSQLDatabase}
+% NoSQL encompasses a wide variety of different database technologies that were developed in response to the demands presented in building modern applications:
 
-Long gone is the twelve-to-eighteen month waterfall development cycle. Now small teams work in agile sprints, iterating quickly and pushing code every week or two, some even multiple times every day.
+% Developers are working with applications that create massive volumes of new, rapidly changing data types — structured, semi-structured, unstructured and polymorphic data.
 
-Applications that once served a finite audience are now delivered as services that must be always-on, accessible from many different devices and scaled globally to millions of users.
+% Long gone is the twelve-to-eighteen month waterfall development cycle. Now small teams work in agile sprints, iterating quickly and pushing code every week or two, some even multiple times every day.
 
-Organizations are now turning to scale-out architectures using open source software, commodity servers and cloud computing instead of large monolithic servers and storage infrastructure.
+% Applications that once served a finite audience are now delivered as services that must be always-on, accessible from many different devices and scaled globally to millions of users.
 
-Relational databases were not designed to cope with the scale and agility challenges that face modern applications, nor were they built to take advantage of the commodity storage and processing power available today.
+% Organizations are now turning to scale-out architectures using open source software, commodity servers and cloud computing instead of large monolithic servers and storage infrastructure.
 
-Launching an application on any database typically requires careful planning to ensure performance, high availability, security, and disaster recovery – and these obligations continue as long as you run the application. With MongoDB Atlas, you receive all of the features of MongoDB without any of the operational heavy lifting, allowing you to focus instead on learning and building your apps. Features include:
-\begin{itemize}
-	\item On-demand, pay as you go model
-	\item Seamless upgrades and auto-healing
-	\item Fully elastic. Scale up and down with ease
-	\item Deep monitoring \& customizable alerts
-	\item Highly secure by default
-	\item Continuous backups with point-in-time recovery
-\end{itemize}
-\subsubsection{NoSQL Database Types}
-\begin{itemize}
-	\item Document databases pair each key with a complex data structure known as a document. Documents can contain many different key-value pairs, or key-array pairs, or even nested documents.
-	\item Graph stores are used to store information about networks of data, such as social connections. Graph stores include Neo4J and Giraph.
-	\item key-value stores are the simplest NoSQL databases. Every single item in the database is stored as an attribute name (or 'key'), together with its value. Examples of key-value stores are Riak and Berkeley DB. Some key-value stores, such as Redis, allow each value to have a type, such as 'integer', which adds functionality.
-	\item Wide-column stores such as Cassandra and HBase are optimized for queries over large datasets, and store columns of data together, instead of rows.
-\end{itemize}
-\subsubsection{The Benefits of NoSQL}
-When compared to relational databases, NoSQL databases are more scalable and provide superior performance, and their data model addresses several issues that the relational model is not designed to address:
-\begin{itemize}
-	\item Large volumes of rapidly changing structured, semi-structured, and unstructured data
+% Relational databases were not designed to cope with the scale and agility challenges that face modern applications, nor were they built to take advantage of the commodity storage and processing power available today.
 
-	\item Agile sprints, quick schema iteration, and frequent code pushes
+% Launching an application on any database typically requires careful planning to ensure performance, high availability, security, and disaster recovery – and these obligations continue as long as you run the application. With MongoDB Atlas, you receive all of the features of MongoDB without any of the operational heavy lifting, allowing you to focus instead on learning and building your apps. Features include:
+% \begin{itemize}
+% 	\item On-demand, pay as you go model
+% 	\item Seamless upgrades and auto-healing
+% 	\item Fully elastic. Scale up and down with ease
+% 	\item Deep monitoring \& customizable alerts
+% 	\item Highly secure by default
+% 	\item Continuous backups with point-in-time recovery
+% \end{itemize}
+% \subsubsection{NoSQL Database Types}
+% \begin{itemize}
+% 	\item Document databases pair each key with a complex data structure known as a document. Documents can contain many different key-value pairs, or key-array pairs, or even nested documents.
+% 	\item Graph stores are used to store information about networks of data, such as social connections. Graph stores include Neo4J and Giraph.
+% 	\item key-value stores are the simplest NoSQL databases. Every single item in the database is stored as an attribute name (or 'key'), together with its value. Examples of key-value stores are Riak and Berkeley DB. Some key-value stores, such as Redis, allow each value to have a type, such as 'integer', which adds functionality.
+% 	\item Wide-column stores such as Cassandra and HBase are optimized for queries over large datasets, and store columns of data together, instead of rows.
+% \end{itemize}
+% \subsubsection{The Benefits of NoSQL}
+% When compared to relational databases, NoSQL databases are more scalable and provide superior performance, and their data model addresses several issues that the relational model is not designed to address:
+% \begin{itemize}
+% 	\item Large volumes of rapidly changing structured, semi-structured, and unstructured data
 
-	\item Object-oriented programming that is easy to use and flexible
+% 	\item Agile sprints, quick schema iteration, and frequent code pushes
 
-	\item Geographically distributed scale-out architecture instead of expensive, monolithic architecture
-	\item Selecting the appropriate data model: document, key-value \& wide column, or graph model
+% 	\item Object-oriented programming that is easy to use and flexible
 
-	\item The pros and cons of consistent and eventually consistent systems
+% 	\item Geographically distributed scale-out architecture instead of expensive, monolithic architecture
+% 	\item Selecting the appropriate data model: document, key-value \& wide column, or graph model
 
-	\item Why idiomatic drivers minimize onboarding time for new developers and simplify application development
-\end{itemize}
+% 	\item The pros and cons of consistent and eventually consistent systems
+
+% 	\item Why idiomatic drivers minimize onboarding time for new developers and simplify application development
+% \end{itemize}
